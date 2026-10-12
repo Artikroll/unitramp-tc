@@ -68,7 +68,6 @@ h3{font-size:24px;letter-spacing:-.02em;line-height:1.15;font-weight:700}
 .gap{display:inline;background:var(--gap-bg);color:#7A4E0E;border:1px dashed var(--gap);border-radius:4px;padding:1px 6px;font:500 .78em/1.4 var(--b-font);letter-spacing:0;text-transform:none;white-space:normal;box-decoration-break:clone;-webkit-box-decoration-break:clone}
 .gap::before{content:"нужны данные · ";font-weight:600}
 .gap.ok::before{content:"подтвердить · "}
-.gap.ph::before{content:"заглушка · "}
 .on-dark .gap{background:rgba(255,212,120,.12);color:#FFD88A;border-color:rgba(255,212,120,.5)}
 body.clean .gap{display:none}
 .gaps-toggle{transition:opacity .3s,transform .3s;position:fixed;left:16px;bottom:16px;z-index:60;display:flex;align-items:center;gap:8px;height:40px;padding:0 14px;border-radius:999px;background:var(--gap-bg);color:#7A4E0E;border:1px dashed var(--gap);font:600 13px/1 var(--b-font);cursor:pointer;box-shadow:0 6px 20px -8px rgba(0,0,0,.3)}
@@ -424,15 +423,15 @@ body.menu-open .hdr .logo .l-dark{opacity:0}body.menu-open .hdr .logo .l-light{o
 /* TEAM */
 .team{background:var(--bg)}
 .team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
-.person .ph{aspect-ratio:4/5;border-radius:var(--r-xl);background:var(--bg-2);position:relative;overflow:hidden;display:grid;place-items:center}
-.person .ph::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,transparent 0 14px,rgba(16,21,29,.035) 14px 15px)}
-.person .ph b{font:800 72px/1 var(--h-font);color:rgba(16,21,29,.22);letter-spacing:-.04em;position:relative}
-.person h3{font-size:20px;margin:14px 0 4px}
-.person p{font-size:15px;color:var(--ink-2)}
-.person p.what{font-size:14px;color:var(--ink-3);margin-top:8px}
-.person.lead-p .ph{background:var(--navy)}
-.person.lead-p .ph b{color:rgba(255,255,255,.28)}
-.person.lead-p .ph::before{background:repeating-linear-gradient(135deg,transparent 0 14px,rgba(255,255,255,.04) 14px 15px)}
+.person .ph{aspect-ratio:4/5;border-radius:var(--r-xl);background:var(--bg-2);position:relative;overflow:hidden;display:grid;place-items:end center;transition:background .3s}
+.person .ph svg{width:62%;fill:none;stroke:rgba(16,21,29,.18);stroke-width:2}
+.person .ph svg circle{fill:rgba(16,21,29,.06)}
+.person .ph .ph-l{position:absolute;left:14px;top:14px;font:600 12px/1 var(--b-font);letter-spacing:.04em;color:var(--ink-3);background:rgba(255,255,255,.7);padding:6px 10px;border-radius:var(--r-s)}
+.person:hover .ph{background:#E1DDD4}
+.person .role{margin-top:18px;font:600 12px/1.3 var(--b-font);letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.person h3{font-size:22px;margin:8px 0 6px}
+.person p.what{font-size:15px;color:var(--ink-2);line-height:1.45}
+.team-note{margin-top:32px}
 
 /* FAQ */
 .faq{background:var(--paper)}
@@ -617,10 +616,9 @@ form.done .sent{opacity:1;pointer-events:auto}
   .fac-r{gap:10px}
   .fac-r figure:nth-child(3){margin-top:24px}
   .team-grid{grid-template-columns:1fr 1fr;gap:16px}
-  .person .ph b{font-size:44px}
-  .person h3{font-size:17px;margin-top:12px}
-  .person p{font-size:14px}
-  .person p.what{display:none}
+  .person h3{font-size:17px}
+  .person .role{font-size:11px;margin-top:12px}
+  .person p.what{font-size:13px}
   .qa summary{font-size:18px;padding:20px 0}
   .qa .a p{padding:0 0 22px;font-size:16px}
   form.lead-form{padding:24px 20px;grid-template-columns:1fr}
@@ -1071,11 +1069,24 @@ form.done .sent{opacity:1;pointer-events:auto}
       <p class="lead" data-r>С вами работают руководители и менеджер проекта, а не колл-центр. <span class="gap">утверждённый список от Кирилла</span></p>
     </div>
     <div class="team-grid">
-      <div class="person lead-p" data-r><div class="ph"><b>РС</b></div><span class="gap ph" style="display:inline-block;margin-top:12px">портрет</span><h3>Роман Сотников</h3><p>Основатель</p><p class="what">Концепции парков и развитие направления</p></div>
-      <div class="person lead-p" data-r style="transition-delay:.06s"><div class="ph"><b>КШ</b></div><span class="gap ph" style="display:inline-block;margin-top:12px">портрет</span><h3>Кирилл Шувалов</h3><p>Генеральный директор</p><p class="what">Договор, сроки и ответственность по проекту</p></div>
-      <div class="person" data-r style="transition-delay:.12s"><div class="ph"><b>В</b></div><span class="gap ph" style="display:inline-block;margin-top:12px">портрет, фамилия</span><h3>Вячеслав</h3><p>Главный инженер</p><p class="what">Проектирование, производство, безопасность</p></div>
-      <div class="person" data-r style="transition-delay:.18s"><div class="ph"><b>АК</b></div><span class="gap ph" style="display:inline-block;margin-top:12px">портрет</span><h3>Александр Казанцев</h3><p>Старший менеджер проектов</p><p class="what">Ведёт проект от расчёта до запуска</p></div>
+      <div class="person" data-r style="transition-delay:0.00s">
+        <div class="ph"><svg viewBox="0 0 120 150" aria-hidden="true"><circle cx="60" cy="58" r="24"/><path d="M14 150c4-34 22-52 46-52s42 18 46 52"/></svg><span class="ph-l">Фото 4:5</span></div>
+        <div class="role">Основатель</div><h3>Роман Сотников</h3><p class="what">Концепции парков и развитие направления</p>
+      </div>
+      <div class="person" data-r style="transition-delay:0.06s">
+        <div class="ph"><svg viewBox="0 0 120 150" aria-hidden="true"><circle cx="60" cy="58" r="24"/><path d="M14 150c4-34 22-52 46-52s42 18 46 52"/></svg><span class="ph-l">Фото 4:5</span></div>
+        <div class="role">Генеральный директор</div><h3>Кирилл Шувалов</h3><p class="what">Договор, сроки и ответственность по проекту</p>
+      </div>
+      <div class="person" data-r style="transition-delay:0.12s">
+        <div class="ph"><svg viewBox="0 0 120 150" aria-hidden="true"><circle cx="60" cy="58" r="24"/><path d="M14 150c4-34 22-52 46-52s42 18 46 52"/></svg><span class="ph-l">Фото 4:5</span></div>
+        <div class="role">Главный инженер</div><h3>Вячеслав <span class="gap">фамилия</span></h3><p class="what">Проектирование, производство, безопасность</p>
+      </div>
+      <div class="person" data-r style="transition-delay:0.18s">
+        <div class="ph"><svg viewBox="0 0 120 150" aria-hidden="true"><circle cx="60" cy="58" r="24"/><path d="M14 150c4-34 22-52 46-52s42 18 46 52"/></svg><span class="ph-l">Фото 4:5</span></div>
+        <div class="role">Старший менеджер проектов</div><h3>Александр Казанцев</h3><p class="what">Ведёт проект от расчёта до запуска</p>
+      </div>
     </div>
+    <p class="team-note" data-r><span class="gap">портреты всех четырёх в одном стиле: вертикаль 4:5, один фон и свет, по пояс</span></p>
   </div>
 </section>
 
