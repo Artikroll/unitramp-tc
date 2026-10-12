@@ -209,7 +209,7 @@ body.menu-open .hdr .logo .l-dark{opacity:0}body.menu-open .hdr .logo .l-light{o
 /* CASES */
 .cases{background:var(--bg)}
 .case-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
-.case{grid-column:span 4;cursor:pointer;display:flex;flex-direction:column;background:transparent;border:0;text-align:left;padding:0}
+.case{grid-column:span 3;cursor:pointer;display:flex;flex-direction:column;background:transparent;border:0;text-align:left;padding:0}
 .case.big{grid-column:span 7}
 .case.big .case-img{aspect-ratio:16/10}
 .case.pair{grid-column:span 5}
@@ -1176,21 +1176,16 @@ var D = document, $ = function(s,c){return (c||D).querySelector(s)}, $$ = functi
 
 /* ---------- cases data (unitramp.ru project pages, checked 12.10.2026) ---------- */
 var CASES = [
- {id:'panda',big:true,title:'Panda Park',city:'Павлодар, Казахстан',year:'2020',area:'580',term:'65',mount:null,
-  tags:[['В торговом центре','acc'],['Заказчик: владелец ТЦ','']],
-  did:'Семейный парк из шести независимых зон и вся инфраструктура: ресепшн, раздевалки, зона ожидания, входная группа.',
-  text:'Парк в одном из главных торговых центров Павлодара. Заказчик проекта сам владелец ТЦ. Спроектировали не только игровую часть, но и всю инфраструктуру для гостей. Арена разделена на шесть зон, поэтому каждый посетитель находит своё.',
-  img:['c-panda.jpg','c-panda-2.jpg'],url:'https://unitramp.ru/proekty-batutnyh-centrov/batutnyj-centr-panda-park'},
+ {id:'kometa',big:true,title:'«Комета»',city:'Орск',year:'2026',area:'600',term:'55',
+  tags:[['Семейный центр','']],
+  did:'Батуты с интерактивом, скалодром, лабиринт. 3D-проект сделали до первой встречи, детали обсуждали на месте.',
+  text:'Детский развлекательный центр, который нужно было построить очень быстро. Сразу сделали объёмный 3D-проект, затем приехали к заказчику и обсудили все детали на месте.',
+  img:['c-kometa.jpg','p-kometa-2.jpg','c-kometa-9.jpg'],url:'https://unitramp.ru/detskie-razvlekatelnye-centry/detskij-razvlekatelnyj-centr-kometa'},
  {id:'armirum',title:'«Армирум»',city:'Омск',year:'2026',area:'880',term:'40',
   tags:[['Ниндзя-спорт и OCR','']],
   did:'Один из крупнейших залов полосы препятствий для детей и взрослых. Монтаж под ключ нашей командой.',
   text:'Зал OCR и ниндзя-спорта: полоса препятствий, которую проходят и дети, и взрослые. Проект, производство и монтаж под ключ выполнила команда UNITRAMP.',
   img:['c-armirum.jpg','c-armirum-2.jpg'],url:'https://unitramp.ru/proekty-ninja-parkov/sovremennaya-polosa-prepyatstvij-armirum'},
- {id:'kometa',title:'«Комета»',city:'Орск',year:'2026',area:'600',term:'55',
-  tags:[['Семейный центр','']],
-  did:'Батуты с интерактивом, скалодром, лабиринт. 3D-проект сделали до первой встречи, детали обсуждали на месте.',
-  text:'Детский развлекательный центр, который нужно было построить очень быстро. Сразу сделали объёмный 3D-проект, затем приехали к заказчику и обсудили все детали на месте.',
-  img:['c-kometa.jpg','p-kometa-2.jpg','c-kometa-9.jpg'],url:'https://unitramp.ru/detskie-razvlekatelnye-centry/detskij-razvlekatelnyj-centr-kometa'},
  {id:'orbita',title:'«Орбита Семьи»',city:'Севастополь',year:'2023',area:'650',term:'55',mount:'18',
   tags:[['Семейный парк','']],
   did:'Крупнейший семейный парк города. Помещение было почти готово, поэтому производство уложили в сжатый срок.',
@@ -1201,6 +1196,11 @@ var CASES = [
   did:'Встроили колонны и перепады высот в игровую логику. Путь гостя распределяет поток по зонам.',
   text:'Заказчик хотел центр, который визуально и технологически отличается от конкурентов. Перепады высот и массивные колонны помещения стали частью игровой логики, а продуманный маршрут распределяет гостей по зонам.',
   img:['c-neopolis.jpg','c-neopolis-2.jpg'],url:'https://unitramp.ru/detskie-razvlekatelnye-centry/detskij-razvlekatelnyj-centr-neopolis'},
+ {id:'panda',title:'Panda Park',city:'Павлодар, Казахстан',year:'2020',area:'580',term:'65',mount:null,
+  tags:[['В торговом центре','acc'],['Заказчик: владелец ТЦ','']],
+  did:'Семейный парк из шести независимых зон и вся инфраструктура: ресепшн, раздевалки, зона ожидания, входная группа.',
+  text:'Парк в одном из главных торговых центров Павлодара. Заказчик проекта сам владелец ТЦ. Спроектировали не только игровую часть, но и всю инфраструктуру для гостей. Арена разделена на шесть зон, поэтому каждый посетитель находит своё.',
+  img:['c-panda.jpg','c-panda-2.jpg'],url:'https://unitramp.ru/proekty-batutnyh-centrov/batutnyj-centr-panda-park'},
  {id:'positive',title:'Positive Energy',city:'Омск',year:'2024',area:'600',term:'40',mount:'16',
   tags:[['Семейный центр','']],
   did:'Лабиринт с каскадной горкой, сухой бассейн, интерактивная мишень и арена. 3D-проект и встречи с заказчиком на каждом этапе.',
