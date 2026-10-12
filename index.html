@@ -166,7 +166,7 @@ body.menu-open .hdr .logo .l-dark{opacity:0}body.menu-open .hdr .logo .l-light{o
 .band{overflow:hidden;padding:24px 0 8px;background:var(--bg);border-top:1px solid var(--line-2)}
 .band-track{display:flex;gap:48px;white-space:nowrap;will-change:transform;font:800 clamp(64px,11vw,176px)/1 var(--h-font);letter-spacing:-.05em}
 .band-track span{display:inline-flex;align-items:center;gap:48px}
-.band-track .o{color:transparent;-webkit-text-stroke:1.5px var(--ink)}
+.band-track .o{color:#CFCAC0}
 .band-track .shape{width:.42em;height:.42em;background:var(--accent);flex:none}
 .band-track .shape.c{border-radius:50%}
 .band-track .shape.t{background:none;width:0;height:0;border-left:.24em solid transparent;border-right:.24em solid transparent;border-bottom:.42em solid var(--accent)}
@@ -271,7 +271,9 @@ body.menu-open .hdr .logo .l-dark{opacity:0}body.menu-open .hdr .logo .l-light{o
 .mdl-warn .box b{font:800 24px/1.25 var(--h-font);letter-spacing:-.02em;display:block;margin-bottom:12px;color:#fff}
 .mdl-warn .box p{color:var(--on-navy-2);font-size:16px}
 .mdl-warn .upd{grid-column:7/13;display:grid;grid-template-columns:1fr 1fr;border-radius:var(--r-l);overflow:hidden;background:var(--bg)}
-.mdl-warn .upd img{width:100%;height:100%;object-fit:cover}
+.mdl-warn .upd-num{background:var(--accent);color:#fff;padding:28px;display:flex;flex-direction:column;justify-content:flex-end}
+.mdl-warn .upd-num b{font:800 96px/.9 var(--h-font);letter-spacing:-.05em}
+.mdl-warn .upd-num span{font-size:15px;line-height:1.4;margin-top:12px;color:rgba(255,255,255,.85)}
 .mdl-warn .upd div{padding:28px}
 .mdl-warn .upd h3{margin:12px 0 8px}
 .mdl-warn .upd p{font-size:15px;color:var(--ink-2)}
@@ -595,7 +597,7 @@ form.done .sent{opacity:1;pointer-events:auto}
   .mdl-cell.hd h3{font-size:24px}
   .mdl-warn .box{padding:24px}
   .mdl-warn .upd{grid-template-columns:1fr}
-  .mdl-warn .upd img{aspect-ratio:16/10}
+  .mdl-warn .upd-num b{font-size:72px}
   .mdl-warn .upd div{padding:20px}
   .fmt{padding:24px}
   .fmt .area-vis{height:160px}
@@ -842,7 +844,7 @@ form.done .sent{opacity:1;pointer-events:auto}
         <p>В модели аренды деньги парка получает оператор, а ТЦ получает ставку и поток. В расчёте показываем экономику каждой стороны отдельно, чтобы решение принималось на верных цифрах.</p>
       </div>
       <div class="upd" data-r>
-        <img src="assets/img/c-chudo.jpg" alt="Обновлённая батутная арена «Чудо Остров»" loading="lazy">
+        <div class="upd-num"><b>23</b><span>дня занял монтаж новой арены вместо старой</span></div>
         <div><div class="eyebrow tri"><i></i>Уже есть парк</div><h3>Обновим действующий центр</h3><p>Новая концепция и замена оборудования. «Чудо Остров», Великий Новгород: демонтаж старой арены и монтаж новой под ключ.</p></div>
       </div>
     </div>
@@ -1193,17 +1195,17 @@ var CASES = [
   tags:[['Семейный парк','']],
   did:'Крупнейший семейный парк города. Помещение было почти готово, поэтому производство уложили в сжатый срок.',
   text:'Заказчик хотел самый крупный и интересный парк на полуострове. Помещение было почти готово к монтажу, поэтому проектировщики быстро сделали 3D-проект, а производство уложилось в сжатый срок. В парке интерактивная арена, спиннер, интерактивный волейбол, баскетбольная зона.',
-  img:['p-orbita-3.jpg','p-orbita-1.jpg','p-orbita-4.jpg'],url:'https://unitramp.ru/detskie-razvlekatelnye-centry/razvlekatelnyj-centr-orbita-semi'},
+  img:['p-orbita-1.jpg','p-orbita-4.jpg'],url:'https://unitramp.ru/detskie-razvlekatelnye-centry/razvlekatelnyj-centr-orbita-semi'},
  {id:'neopolis',title:'«Неополис»',city:'Чита',year:'2026',area:'500',term:'55',
   tags:[['Семейный центр','']],
   did:'Встроили колонны и перепады высот в игровую логику. Путь гостя распределяет поток по зонам.',
   text:'Заказчик хотел центр, который визуально и технологически отличается от конкурентов. Перепады высот и массивные колонны помещения стали частью игровой логики, а продуманный маршрут распределяет гостей по зонам.',
   img:['c-neopolis.jpg','c-neopolis-2.jpg'],url:'https://unitramp.ru/detskie-razvlekatelnye-centry/detskij-razvlekatelnyj-centr-neopolis'},
- {id:'chudo',title:'«Чудо Остров»',city:'Великий Новгород',year:'2024',area:'635',term:'85',mount:'23',termNote:'с длинной подготовкой',
-  tags:[['Реконструкция','']],
-  did:'Демонтаж действующей арены и монтаж новой под ключ. Монтаж занял 23 календарных дня.',
-  text:'Заказчик пришёл с задачей заменить действующую арену. Реконструкцию планировали заранее, проект несколько раз проверяли по правилам безопасности. Демонтаж старого и монтаж нового оборудования выполнила наша команда.',
-  img:['c-chudo.jpg'],url:'https://unitramp.ru/detskie-razvlekatelnye-centry/batutnyj-centr-chudo-ostrov'}
+ {id:'positive',title:'Positive Energy',city:'Омск',year:'2024',area:'600',term:'40',mount:'16',
+  tags:[['Семейный центр','']],
+  did:'Лабиринт с каскадной горкой, сухой бассейн, интерактивная мишень и арена. 3D-проект и встречи с заказчиком на каждом этапе.',
+  text:'Семейный центр, который нужно было открыть в сжатые сроки. Быстро сделали 3D-проект и учли пожелания заказчиков на личных встречах. В центре лабиринт с каскадной горкой, большой сухой бассейн, зона интерактивной мишени и активная арена. Монтаж занял 16 дней.',
+  img:['c-positive.jpg','c-positive-3.jpg','c-positive-2.jpg'],url:'https://unitramp.ru/detskie-razvlekatelnye-centry/positive-energy'}
 ];
 var grid = $('#caseGrid');
 CASES.forEach(function(c,i){
@@ -1272,7 +1274,7 @@ var pxEls=$$('[data-px]'), desk=function(){return window.innerWidth>=1200};
 function onScroll(){
   var y=window.scrollY, H=D.documentElement.scrollHeight-window.innerHeight;
   prog.style.transform='scaleX('+(H>0?y/H:0)+')';
-  hdr.classList.toggle('solid',y>window.innerHeight*0.75);
+  hdr.classList.toggle('solid',y>(window.innerWidth<768?40:window.innerHeight*0.75));
   D.body.classList.toggle('at-top',y<window.innerHeight*0.6);
   hdr.classList.toggle('hide',y>lastY && y>window.innerHeight*1.2 && !D.body.classList.contains('menu-open'));
   lastY=y;
