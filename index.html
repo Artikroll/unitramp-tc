@@ -162,13 +162,10 @@ body.menu-open .hdr .logo .l-dark{opacity:0}body.menu-open .hdr .logo .l-light{o
 .why-out p{font:700 22px/1.35 var(--h-font);letter-spacing:-.02em}
 
 /* BAND */
-.band{overflow:hidden;padding:24px 0 8px;background:var(--bg);border-top:1px solid var(--line-2)}
-.band-track{display:flex;gap:48px;white-space:nowrap;will-change:transform;font:800 clamp(64px,11vw,176px)/1 var(--h-font);letter-spacing:-.05em}
-.band-track span{display:inline-flex;align-items:center;gap:48px}
-.band-track .o{color:#CFCAC0}
-.band-track .shape{width:.42em;height:.42em;background:var(--accent);flex:none}
-.band-track .shape.c{border-radius:50%}
-.band-track .shape.t{background:none;width:0;height:0;border-left:.24em solid transparent;border-right:.24em solid transparent;border-bottom:.42em solid var(--accent)}
+.band{padding:40px 0;background:var(--bg);border-top:1px solid var(--line-2);border-bottom:1px solid var(--line-2)}
+.band-row{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;font:800 clamp(26px,3.6vw,52px)/1.1 var(--h-font);letter-spacing:-.04em}
+.band-row .o{color:#B9B3A7}
+.band-row i{width:.32em;height:.32em;border-radius:50%;background:var(--accent);flex:none}
 
 /* TASKS */
 .tasks{background:var(--bg)}
@@ -421,16 +418,17 @@ body.menu-open .hdr .logo .l-dark{opacity:0}body.menu-open .hdr .logo .l-light{o
 .fac-certs span{height:32px;padding:0 12px;border-radius:var(--r-s);display:inline-flex;align-items:center;background:rgba(255,255,255,.14);font:600 13px/1 var(--b-font)}
 
 /* TEAM */
-.team{background:var(--bg)}
+.team{background:var(--paper)}
 .team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
-.person .ph{aspect-ratio:4/5;border-radius:var(--r-xl);background:var(--bg-2);position:relative;overflow:hidden;display:grid;place-items:end center;transition:background .3s}
+.person .ph{aspect-ratio:4/5;border-radius:var(--r-xl);background:var(--bg);position:relative;overflow:hidden;display:grid;place-items:end center;transition:background .3s}
 .person .ph svg{width:62%;fill:none;stroke:rgba(16,21,29,.18);stroke-width:2}
 .person .ph svg circle{fill:rgba(16,21,29,.06)}
 .person .ph .ph-l{position:absolute;left:14px;top:14px;font:600 12px/1 var(--b-font);letter-spacing:.04em;color:var(--ink-3);background:rgba(255,255,255,.7);padding:6px 10px;border-radius:var(--r-s)}
 .person:hover .ph{background:#E1DDD4}
 .person .role{margin-top:18px;font:600 12px/1.3 var(--b-font);letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
 .person h3{font-size:22px;margin:8px 0 6px}
-.person p.what{font-size:15px;color:var(--ink-2);line-height:1.45}
+.person p.what{font-size:15px;color:var(--ink-2);line-height:1.45;margin-top:10px;padding-top:10px;border-top:1px solid var(--line)}
+.person p.what .resp{display:block;font-size:12px;color:var(--ink-3);margin-bottom:2px}
 .team-note{margin-top:32px}
 
 /* FAQ */
@@ -497,6 +495,39 @@ form.done .sent{opacity:1;pointer-events:auto}
 .foot .col a:hover{color:#fff}
 .foot .bottom{grid-column:1/-1;margin-top:40px;padding-top:24px;border-top:1px solid var(--line-navy);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px}
 
+/* FEATURES */
+.feats{background:var(--paper)}
+.feat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.feat{position:relative;aspect-ratio:9/14;border-radius:var(--r-xl);overflow:hidden;border:0;padding:0;cursor:pointer;background:var(--navy);text-align:left;color:#fff}
+.feat img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease-out)}
+.feat::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(9,13,21,0) 40%,rgba(9,13,21,.85) 100%)}
+.feat.dark{background:radial-gradient(circle at 30% 20%,#22345A,#0E1726 70%)}
+.feat.d2{background:radial-gradient(circle at 70% 25%,#1C3A6B,#0E1726 70%)}
+.feat:hover img{transform:scale(1.05)}
+.feat .play{position:absolute;left:50%;top:44%;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;background:rgba(255,255,255,.92);z-index:2;transition:transform .35s var(--ease-out)}
+.feat .play::before{content:"";position:absolute;left:26px;top:21px;border-left:16px solid var(--ink);border-top:11px solid transparent;border-bottom:11px solid transparent}
+.feat:hover .play{transform:scale(1.1)}
+.feat .ft{position:absolute;left:18px;right:18px;bottom:18px;z-index:2;display:flex;flex-direction:column;gap:6px}
+.feat .ft b{font:800 21px/1.15 var(--h-font);letter-spacing:-.02em}
+.feat .ft em{font-style:normal;font-size:14px;line-height:1.4;color:rgba(255,255,255,.8)}
+
+/* OWN PARK */
+.own{background:var(--bg)}
+.own-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;align-items:start}
+.own-l{grid-column:1/6;position:sticky;top:110px}
+.own-l h2{margin:20px 0 24px}
+.own-l .btn{margin-top:32px}
+.own-list{grid-column:7/13;display:grid;gap:16px}
+.own-item{background:var(--paper);border-radius:var(--r-l);padding:28px 28px 28px 92px;position:relative}
+.own-item .n{position:absolute;left:28px;top:26px;width:40px;height:40px;border-radius:50%;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;font:800 15px/1 var(--h-font)}
+.own-item h3{font-size:21px;margin-bottom:8px}
+.own-item p{font-size:16px;color:var(--ink-2)}
+.own-item.hl{background:var(--accent);color:#fff}
+.own-item.hl .n{background:rgba(255,255,255,.18);color:#fff}
+.own-item.hl p{color:rgba(255,255,255,.85)}
+.own-item.hl .gap{background:rgba(255,255,255,.14);color:#fff;border-color:rgba(255,255,255,.6)}
+.own-honest{font-size:14px;color:var(--ink-3);margin-top:8px;padding:0 4px}
+
 /* parallax helpers */
 [data-px]{will-change:transform}
 
@@ -522,6 +553,8 @@ form.done .sent{opacity:1;pointer-events:auto}
   .case.big .case-img,.case.pair .case-img{aspect-ratio:4/3}
   .mdl-warn .box,.mdl-warn .upd{grid-column:1/-1}
   .fmt-grid{grid-template-columns:1fr}
+  .feat-grid{grid-template-columns:1fr 1fr}
+  .own-l,.own-list{grid-column:1/-1}.own-l{position:relative;top:0}.own-list{margin-top:32px}
   .econ-r{margin-top:40px}
   .proc-vis{display:none}
   .proc-steps{grid-column:1/-1}
@@ -565,7 +598,7 @@ form.done .sent{opacity:1;pointer-events:auto}
   .stat{grid-template-columns:1fr;gap:10px;padding:28px 0}
   .stat .num{font-size:52px}
   .why-out{padding:20px;gap:14px}.why-out p{font-size:18px}
-  .band{padding:12px 0 0}
+  .band{display:none}
   .task{grid-template-columns:40px 1fr;gap:14px;padding:22px 0}
   .task .ico{width:28px;height:28px}
   .task:hover{padding-left:0}
@@ -599,6 +632,16 @@ form.done .sent{opacity:1;pointer-events:auto}
   .mdl-warn .upd-num b{font-size:72px}
   .mdl-warn .upd div{padding:20px}
   .fmt{padding:24px}
+  .feat-grid{gap:10px}
+  .feat{aspect-ratio:3/4}
+  .feat .play{width:48px;height:48px;margin:-24px 0 0 -24px}
+  .feat .play::before{left:19px;top:15px;border-left-width:13px;border-top-width:9px;border-bottom-width:9px}
+  .feat .ft{left:12px;right:12px;bottom:12px}
+  .feat .ft b{font-size:16px}
+  .feat .ft em{font-size:12px}
+  .own-item{padding:22px 20px 22px 72px}
+  .own-item .n{left:20px;top:20px;width:36px;height:36px}
+  .own-item h3{font-size:18px}
   .fmt .area-vis{height:160px}
   .fmt .range{font-size:38px}
   .map{aspect-ratio:1/1.05}
@@ -647,6 +690,7 @@ form.done .sent{opacity:1;pointer-events:auto}
     </a>
     <nav aria-label="Разделы">
       <a href="#cases">Объекты</a>
+      <a href="#team">Команда</a>
       <a href="#models">Модели</a>
       <a href="#economics">Экономика</a>
       <a href="#process">Как работаем</a>
@@ -659,6 +703,7 @@ form.done .sent{opacity:1;pointer-events:auto}
 </header>
 <div class="mmenu" id="mmenu">
   <a href="#cases">Объекты</a>
+  <a href="#team">Команда</a>
   <a href="#models">Модели участия</a>
   <a href="#formats">Форматы</a>
   <a href="#economics">Экономика</a>
@@ -672,7 +717,7 @@ form.done .sent{opacity:1;pointer-events:auto}
 
 <!-- 1 HERO -->
 <section class="hero" aria-label="Первый экран">
-  <div class="hero-media"><img src="assets/img/hero.jpg" alt="Дети и инструктор на полосе препятствий в семейном парке «Орбита Семьи», Севастополь" fetchpriority="high" data-px="0.18"></div>
+  <div class="hero-media"><img src="assets/img/hero.jpg" alt="Дети и инструктор на полосе препятствий в семейном парке «Орбита Семьи», Севастополь" fetchpriority="high"></div>
   <div class="hero-cap">«Орбита Семьи», Севастополь · 650 м²</div>
   <div class="wrap">
     <h1 id="h1">Семейный развлекательный центр под ключ для вашего торгового центра</h1>
@@ -700,7 +745,7 @@ form.done .sent{opacity:1;pointer-events:auto}
     <div class="left">
       <div class="eyebrow" data-r><i></i>Почему сейчас</div>
       <h2 class="split" data-r="fade"><span class="ln"><span>Досуг стал</span></span><span class="ln"><span>главным арендатором</span></span><span class="ln"><span>новых ТЦ</span></span></h2>
-      <p class="lead" data-r>Покупатели идут в торговый центр не только за покупками. Развлекательные арендаторы растут, одежда теряет посещаемость.</p>
+      <p class="lead" data-r>Покупки ушли на маркетплейсы, и магазинами площади уже не заполнить. Крупные моллы ставят активити-парки, спа и спортивные секции. Рынок торговых центров перестраивается, и вопрос в том, войдёт ли ваш ТЦ в этот тренд.</p>
     </div>
     <div class="rows">
       <div class="stat" data-r>
@@ -717,17 +762,14 @@ form.done .sent{opacity:1;pointer-events:auto}
       </div>
       <div class="why-out" data-r>
         <div class="mk">!</div>
-        <p>Окупается не любой досуг, а формат, который подходит аудитории вашего ТЦ и правильно запущен. С этого мы и начинаем.</p>
+        <p>Окупается не любой досуг, а формат, который подходит аудитории вашего ТЦ и правильно запущен. С этого мы и начинаем: делаем крытые семейные парки с 2014 года.</p>
       </div>
     </div>
   </div>
 </section>
 
 <div class="band" aria-hidden="true">
-  <div class="band-track" id="band">
-    <span>Расчёт <i class="shape c"></i> <b class="o">Проект</b> <i class="shape c"></i> Производство <i class="shape c"></i> <b class="o">Монтаж</b> <i class="shape c"></i> Запуск <i class="shape c"></i></span>
-    <span>Расчёт <i class="shape c"></i> <b class="o">Проект</b> <i class="shape c"></i> Производство <i class="shape c"></i> <b class="o">Монтаж</b> <i class="shape c"></i> Запуск <i class="shape c"></i></span>
-  </div>
+  <div class="wrap band-row"><span>Расчёт</span><i></i><span class="o">Проект</span><i></i><span>Производство</span><i></i><span class="o">Монтаж</span><i></i><span>Запуск</span></div>
 </div>
 
 <!-- 3 TASKS -->
@@ -796,6 +838,36 @@ form.done .sent{opacity:1;pointer-events:auto}
       <p class="small" style="max-width:36em">81 реализованный проект в 63 городах. Покажем объект рядом с вами и расскажем, как он работает. <span class="gap ok">организуем ли визит на объекты клиентов</span></p>
       <a class="link-arr" href="https://unitramp.ru/projects/" target="_blank" rel="noopener">Все проекты на unitramp.ru <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M3 9h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.8"/></svg></a>
     </div>
+  </div>
+</section>
+
+<!-- 11 TEAM -->
+<section class="sec team" id="team">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow" data-r><i></i>Команда</div>
+      <h2 class="split" data-r="fade"><span class="ln"><span>Люди, которые</span></span><span class="ln"><span>отвечают за проект</span></span></h2>
+      <p class="lead" data-r>За проект на десятки миллионов отвечают конкретные люди. Вы знаете их по именам и говорите с ними напрямую, а не с колл-центром. <span class="gap">утверждённый список от Кирилла</span></p>
+    </div>
+    <div class="team-grid">
+      <div class="person" data-r style="transition-delay:0.00s">
+        <div class="ph"><svg viewBox="0 0 120 150" aria-hidden="true"><circle cx="60" cy="58" r="24"/><path d="M14 150c4-34 22-52 46-52s42 18 46 52"/></svg><span class="ph-l">Фото 4:5</span></div>
+        <div class="role">Основатель</div><h3>Роман Сотников</h3><p class="what"><span class="resp">Отвечает за</span>концепция парка и формат под вашу аудиторию</p>
+      </div>
+      <div class="person" data-r style="transition-delay:0.06s">
+        <div class="ph"><svg viewBox="0 0 120 150" aria-hidden="true"><circle cx="60" cy="58" r="24"/><path d="M14 150c4-34 22-52 46-52s42 18 46 52"/></svg><span class="ph-l">Фото 4:5</span></div>
+        <div class="role">Генеральный директор</div><h3>Кирилл Шувалов</h3><p class="what"><span class="resp">Отвечает за</span>договор, сроки и бюджет проекта</p>
+      </div>
+      <div class="person" data-r style="transition-delay:0.12s">
+        <div class="ph"><svg viewBox="0 0 120 150" aria-hidden="true"><circle cx="60" cy="58" r="24"/><path d="M14 150c4-34 22-52 46-52s42 18 46 52"/></svg><span class="ph-l">Фото 4:5</span></div>
+        <div class="role">Главный инженер</div><h3>Вячеслав <span class="gap">фамилия</span></h3><p class="what"><span class="resp">Отвечает за</span>проект, производство и безопасность оборудования</p>
+      </div>
+      <div class="person" data-r style="transition-delay:0.18s">
+        <div class="ph"><svg viewBox="0 0 120 150" aria-hidden="true"><circle cx="60" cy="58" r="24"/><path d="M14 150c4-34 22-52 46-52s42 18 46 52"/></svg><span class="ph-l">Фото 4:5</span></div>
+        <div class="role">Старший менеджер проектов</div><h3>Александр Казанцев</h3><p class="what"><span class="resp">Отвечает за</span>ваш контакт на всех этапах, от расчёта до открытия</p>
+      </div>
+    </div>
+    <p class="team-note" data-r><span class="gap">портреты всех четырёх в одном стиле: вертикаль 4:5, один фон и свет, по пояс</span></p>
   </div>
 </section>
 
@@ -883,13 +955,32 @@ form.done .sent{opacity:1;pointer-events:auto}
         <div class="area-vis"><div class="sq" style="width:196px;height:152px"></div></div>
         <div class="range">1 000+ <small>м²</small></div>
         <h3 style="color:#fff">Семейный развлекательный комплекс</h3>
-        <ul><li>Зоны по возрастам и единая тематика</li><li>Событийная площадка, кафе, детские праздники</li><li>Проект начинаем с расчёта экономики площадки</li></ul>
+        <ul><li>Зоны по возрастам и единая тематика</li><li>Событийная площадка, кафе, детские праздники</li><li>Проект начинаем с расчёта экономики площадки</li><li>Мощности производства и проектирования рассчитаны на парки до 5 000–8 000 м²</li></ul>
         <div class="meta on-dark">
           <div><span>Пример</span><b class="gap">реализованный объект от 1 000 м²</b></div>
+          <div><span>Масштаб</span><b class="gap ok">до 5 000–8 000 м² со слов Романа</b></div>
           <div><span>Бюджет</span><b class="gap">вилка от отдела продаж</b></div>
         </div>
       </article>
     </div>
+  </div>
+</section>
+
+<!-- FEATURES VIDEO -->
+<section class="sec feats" id="features">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow ring" data-r><i></i>Фишки индустрии</div>
+      <h2 class="split" data-r="fade"><span class="ln"><span>То, чего вы ещё</span></span><span class="ln"><span>не видели в парках</span></span></h2>
+      <p class="lead" data-r>Аттракционы, ради которых семьи возвращаются. Короткие ролики с пояснениями основателя: можно посмотреть самому и переслать партнёру.</p>
+    </div>
+    <div class="feat-grid">
+      <button class="feat" type="button" data-r><img src="assets/img/p-orbita-1.jpg" alt="Интерактивная стена" loading="lazy" style="object-position:35% 50%"><span class="play"></span><span class="ft"><b>Интерактивная стена</b><em>Игра на реакцию: таймер, очки, соревнование</em></span></button>
+      <button class="feat" type="button" data-r style="transition-delay:.06s"><img src="assets/img/p-orbita-3.jpg" alt="Спиннер на батутной арене" loading="lazy" style="object-position:62% 50%"><span class="play"></span><span class="ft"><b>Спиннер</b><em>Вращающиеся планки: перепрыгни или пригнись</em></span></button>
+      <button class="feat dark" type="button" data-r style="transition-delay:.12s"><span class="play"></span><span class="ft"><b>Липкая стена</b><em>Прыжок и «прилипание» в костюме</em></span></button>
+      <button class="feat dark d2" type="button" data-r style="transition-delay:.18s"><span class="play"></span><span class="ft"><b>Интерактивный пол</b><em>Проекция, которая реагирует на шаги</em></span></button>
+    </div>
+    <p class="team-note" data-r><span class="gap">ролики 20–40 секунд с озвучкой Романа: интерактивная стена, спиннер, липкая стена, интерактивный пол, велосипед 360</span></p>
   </div>
 </section>
 
@@ -1060,35 +1151,6 @@ form.done .sent{opacity:1;pointer-events:auto}
   </div>
 </section>
 
-<!-- 11 TEAM -->
-<section class="sec team" id="team">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow" data-r><i></i>Команда</div>
-      <h2 class="split" data-r="fade"><span class="ln"><span>Люди, которые</span></span><span class="ln"><span>отвечают за проект</span></span></h2>
-      <p class="lead" data-r>С вами работают руководители и менеджер проекта, а не колл-центр. <span class="gap">утверждённый список от Кирилла</span></p>
-    </div>
-    <div class="team-grid">
-      <div class="person" data-r style="transition-delay:0.00s">
-        <div class="ph"><svg viewBox="0 0 120 150" aria-hidden="true"><circle cx="60" cy="58" r="24"/><path d="M14 150c4-34 22-52 46-52s42 18 46 52"/></svg><span class="ph-l">Фото 4:5</span></div>
-        <div class="role">Основатель</div><h3>Роман Сотников</h3><p class="what">Концепции парков и развитие направления</p>
-      </div>
-      <div class="person" data-r style="transition-delay:0.06s">
-        <div class="ph"><svg viewBox="0 0 120 150" aria-hidden="true"><circle cx="60" cy="58" r="24"/><path d="M14 150c4-34 22-52 46-52s42 18 46 52"/></svg><span class="ph-l">Фото 4:5</span></div>
-        <div class="role">Генеральный директор</div><h3>Кирилл Шувалов</h3><p class="what">Договор, сроки и ответственность по проекту</p>
-      </div>
-      <div class="person" data-r style="transition-delay:0.12s">
-        <div class="ph"><svg viewBox="0 0 120 150" aria-hidden="true"><circle cx="60" cy="58" r="24"/><path d="M14 150c4-34 22-52 46-52s42 18 46 52"/></svg><span class="ph-l">Фото 4:5</span></div>
-        <div class="role">Главный инженер</div><h3>Вячеслав <span class="gap">фамилия</span></h3><p class="what">Проектирование, производство, безопасность</p>
-      </div>
-      <div class="person" data-r style="transition-delay:0.18s">
-        <div class="ph"><svg viewBox="0 0 120 150" aria-hidden="true"><circle cx="60" cy="58" r="24"/><path d="M14 150c4-34 22-52 46-52s42 18 46 52"/></svg><span class="ph-l">Фото 4:5</span></div>
-        <div class="role">Старший менеджер проектов</div><h3>Александр Казанцев</h3><p class="what">Ведёт проект от расчёта до запуска</p>
-      </div>
-    </div>
-    <p class="team-note" data-r><span class="gap">портреты всех четырёх в одном стиле: вертикаль 4:5, один фон и свет, по пояс</span></p>
-  </div>
-</section>
 
 <!-- 12 FAQ -->
 <section class="sec faq" id="faq">
@@ -1107,6 +1169,25 @@ form.done .sent{opacity:1;pointer-events:auto}
       <details class="qa"><summary>Какая гарантия?<i class="pm"></i></summary><div class="a"><p>12 месяцев на оборудование. <span class="gap">условия постгарантийного обслуживания</span></p></div></details>
       <details class="qa"><summary>Работаете в нашем регионе?<i class="pm"></i></summary><div class="a"><p>У нас 81 объект в 63 городах и 5 странах. Доставку и монтаж организуем сами.</p></div></details>
       <details class="qa"><summary>Можно посмотреть производство?<i class="pm"></i></summary><div class="a"><p>Да, приглашаем на экскурсию по цехам в Новосибирске. Заодно покажем оборудование вашего будущего парка в работе.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- OWN PARK -->
+<section class="sec own" id="own">
+  <div class="wrap own-grid">
+    <div class="own-l">
+      <div class="eyebrow tri" data-r><i></i>Модель «свой парк»</div>
+      <h2 class="split" data-r="fade"><span class="ln"><span>Свой парк: выручка</span></span><span class="ln"><span>остаётся в вашем ТЦ</span></span></h2>
+      <p class="lead" data-r>Оператор платит вам ставку и забирает выручку парка. Свой парк оставляет её в торговом центре, а площадь становится вашим бизнесом, а не только арендой.</p>
+      <a href="#form" class="btn btn-primary" data-r>Посчитать окупаемость для моей площади <svg class="arr" viewBox="0 0 18 18" fill="none"><path d="M3 9h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.8"/></svg></a>
+    </div>
+    <div class="own-list">
+      <div class="own-item" data-r><div class="n">01</div><h3>Выручка парка остаётся у вас</h3><p>Билеты, праздники, абонементы и кафе приносят деньги собственнику, а не оператору.</p></div>
+      <div class="own-item" data-r><div class="n">02</div><h3>Якорь не уйдёт к соседу</h3><p>Арендатор может съехать при первой выгодной ставке рядом. Свой парк остаётся причиной семейного визита в ваш ТЦ.</p></div>
+      <div class="own-item" data-r><div class="n">03</div><h3>Вы управляете форматом</h3><p>Сами решаете, как обновлять зоны, какие проводить события и как связывать парк с фудкортом и арендаторами.</p></div>
+      <div class="own-item hl" data-r><div class="n">04</div><h3>Окупаемость видна до вложений</h3><p>Считаем вложения, расходы и сценарии посещаемости под вашу площадку до подписания договора. <span class="gap">типичный срок окупаемости по нашим проектам</span></p></div>
+      <p class="own-honest" data-r>Вместе с выручкой собственник берёт на себя персонал, обслуживание и маркетинг парка. Поэтому обучаем команду при запуске и показываем эти расходы в расчёте.</p>
     </div>
   </div>
 </section>
@@ -1280,7 +1361,7 @@ function countUp(root){
 setTimeout(function(){countUp($('.hero'))},700);
 
 /* ---------- header, progress, parallax, band ---------- */
-var hdr=$('#hdr'), prog=$('#progress'), band=$('#band'), lastY=0, ticking=false;
+var hdr=$('#hdr'), prog=$('#progress'), lastY=0, ticking=false;
 var pxEls=$$('[data-px]'), desk=function(){return window.innerWidth>=1200};
 function onScroll(){
   var y=window.scrollY, H=D.documentElement.scrollHeight-window.innerHeight;
@@ -1294,11 +1375,9 @@ function onScroll(){
     pxEls.forEach(function(el){
       var r=el.parentElement.getBoundingClientRect(); if(r.bottom<-200||r.top>vh+200)return;
       var k=parseFloat(el.dataset.px)||0, mid=r.top+r.height/2-vh/2;
-      var f = desk()?1:0.5;
+      var f = desk()?0.45:0;
       el.style.transform='translate3d(0,'+(-mid*k*f).toFixed(1)+'px,0) scale('+(el.closest('.hero')?1:1.08)+')';
     });
-    var br=band.parentElement.getBoundingClientRect();
-    if(br.bottom>0&&br.top<vh){band.style.transform='translate3d('+(-(vh-br.top)*0.45).toFixed(1)+'px,0,0)'}
   }
   ticking=false;
 }
