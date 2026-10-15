@@ -8,6 +8,7 @@
 <meta name="theme-color" content="#0E1726">
 <link rel="icon" href="assets/img/logo.svg">
 <style>
+html{overflow-x:clip}
 @font-face{font-family:"Manrope";src:url(assets/fonts/Manrope-700.ttf) format("truetype");font-weight:700;font-display:swap}
 @font-face{font-family:"Manrope";src:url(assets/fonts/Manrope-800.ttf) format("truetype");font-weight:800;font-display:swap}
 @font-face{font-family:"Golos";src:url(assets/fonts/GolosText-400.ttf) format("truetype");font-weight:400;font-display:swap}
@@ -677,6 +678,39 @@ form.done .sent{opacity:1;pointer-events:auto}
   .hero-media img{transform:none!important}
   html{scroll-behavior:auto}
 }
+
+/* numbers */
+.nums{background:var(--navy);color:var(--on-navy)}
+.nums .sec-head h2{color:#fff}
+.nums .lead{color:var(--on-navy-2)}
+.nm-row{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line-navy)}
+.nm-row>div{padding:28px 28px 30px 0;min-width:0}
+.nm-row b{display:block;font:700 clamp(44px,5vw,72px)/1 var(--h-font);letter-spacing:-.04em;color:#fff;margin-bottom:12px}
+.nm-row span{font-size:16px;color:var(--on-navy)}
+.nm-row small{display:block;font-size:13px;color:var(--on-navy-2);margin-top:8px}
+.nm-cost{display:grid;grid-template-columns:.9fr 1.1fr;gap:0;margin-top:48px;border-radius:var(--r-xl);overflow:hidden;background:var(--navy-2)}
+.nm-cost>*{min-width:0}
+.nm-l{padding:36px}
+.nm-l h3{font:700 26px/1.2 var(--h-font);color:#fff;margin-bottom:10px}
+.nm-l p{color:var(--on-navy-2);font-size:15px;margin-bottom:22px}
+.nm-l label{display:flex;justify-content:space-between;font-weight:600;margin-bottom:12px}
+.nm-l label output{color:#fff;font:700 22px var(--h-font)}
+.nm-l input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:4px;border-radius:2px;background:rgba(233,237,245,.2);outline:none}
+.nm-l input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:24px;height:24px;border-radius:50%;background:var(--accent);border:4px solid #fff;cursor:pointer}
+.nm-l input[type=range]::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:var(--accent);border:4px solid #fff;cursor:pointer}
+.nm-pre{display:flex;gap:8px;margin-top:16px;flex-wrap:wrap}
+.nm-pre button{border:1px solid var(--line-navy);background:none;color:var(--on-navy);border-radius:99px;padding:8px 14px;font:600 14px var(--b-font);cursor:pointer}
+.nm-pre button:hover{border-color:#fff}
+.nm-r{padding:36px;display:grid;grid-template-columns:1fr 1fr;gap:0;background:var(--accent)}
+.nm-r>div{padding:0 18px 22px 0;min-width:0}
+.nm-r dt{font-size:13px;color:rgba(255,255,255,.75);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}
+.nm-r dd{font:700 clamp(24px,2.4vw,34px)/1.1 var(--h-font);color:#fff}
+.nm-r .tot{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.3);padding-top:20px}
+.nm-r .tot dd{font-size:clamp(34px,3.6vw,52px)}
+.nm-r p{grid-column:1/-1;font-size:13px;color:rgba(255,255,255,.8)}
+.nm-row.t2{margin-top:48px}
+@media (max-width:900px){.nm-row{grid-template-columns:1fr}.nm-row>div{padding:22px 0;border-bottom:1px solid var(--line-navy)}.nm-cost{grid-template-columns:1fr}.nm-l,.nm-r{padding:24px 20px}}
+@media(max-width:600px){.btn{white-space:normal;height:auto;min-height:56px;padding:14px 24px;text-align:center;line-height:1.25}}
 </style>
 </head>
 <body>
@@ -691,7 +725,7 @@ form.done .sent{opacity:1;pointer-events:auto}
     <nav aria-label="Разделы">
       <a href="#cases">Объекты</a>
       <a href="#team">Команда</a>
-      <a href="#models">Модели</a>
+      <a href="#models">Модели</a><a href="#numbers">Цифры</a>
       <a href="#economics">Экономика</a>
       <a href="#process">Как работаем</a>
       <a href="#factory">Производство</a>
@@ -831,11 +865,11 @@ form.done .sent{opacity:1;pointer-events:auto}
     <div class="sec-head">
       <div class="eyebrow" data-r><i></i>Объекты</div>
       <h2 class="split" data-r="fade"><span class="ln"><span>Парки, которые</span></span><span class="ln"><span>уже работают</span></span></h2>
-      <p class="lead" data-r>Город, площадь, срок и что сделали. Данные со страниц проектов на unitramp.ru. <span class="gap">какие из объектов стоят в ТЦ, кроме Panda Park, у менеджеров проектов</span></p>
+      <p class="lead" data-r>Город, площадь, срок и что сделали. Данные со страниц проектов на unitramp.ru.</p>
     </div>
     <div class="case-grid" id="caseGrid"></div>
     <div class="cases-foot" data-r>
-      <p class="small" style="max-width:36em">81 реализованный проект в 63 городах. Покажем объект рядом с вами и расскажем, как он работает. <span class="gap ok">организуем ли визит на объекты клиентов</span></p>
+      <p class="small" style="max-width:36em">81 реализованный проект в 63 городах. Покажем объект рядом с вами и расскажем, как он работает.</p>
       <a class="link-arr" href="https://unitramp.ru/projects/" target="_blank" rel="noopener">Все проекты на unitramp.ru <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M3 9h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.8"/></svg></a>
     </div>
   </div>
@@ -860,14 +894,14 @@ form.done .sent{opacity:1;pointer-events:auto}
       </div>
       <div class="person" data-r style="transition-delay:0.12s">
         <div class="ph"><svg viewBox="0 0 120 150" aria-hidden="true"><circle cx="60" cy="58" r="24"/><path d="M14 150c4-34 22-52 46-52s42 18 46 52"/></svg><span class="ph-l">Фото 4:5</span></div>
-        <div class="role">Главный инженер</div><h3>Вячеслав <span class="gap">фамилия</span></h3><p class="what"><span class="resp">Отвечает за</span>проект, производство и безопасность оборудования</p>
+        <div class="role">Главный инженер</div><h3>Вячеслав</h3><p class="what"><span class="resp">Отвечает за</span>проект, производство и безопасность оборудования</p>
       </div>
       <div class="person" data-r style="transition-delay:0.18s">
         <div class="ph"><svg viewBox="0 0 120 150" aria-hidden="true"><circle cx="60" cy="58" r="24"/><path d="M14 150c4-34 22-52 46-52s42 18 46 52"/></svg><span class="ph-l">Фото 4:5</span></div>
         <div class="role">Старший менеджер проектов</div><h3>Александр Казанцев</h3><p class="what"><span class="resp">Отвечает за</span>ваш контакт на всех этапах, от расчёта до открытия</p>
       </div>
     </div>
-    <p class="team-note" data-r><span class="gap">портреты всех четырёх в одном стиле: вертикаль 4:5, один фон и свет, по пояс</span></p>
+    
   </div>
 </section>
 
@@ -904,7 +938,7 @@ form.done .sent{opacity:1;pointer-events:auto}
       <div class="mdl-cell c3" data-c="3" data-k="Что получает ТЦ">Ставку и долю результата по условиям договора.</div>
 
       <div class="mdl-cell rh">Что делаем мы</div>
-      <div class="mdl-cell c1" data-c="1" data-k="Что делаем мы">Проектируем парк под площадь и аудиторию, производим и запускаем для оператора. <span class="gap ok">помогаем ли с поиском оператора</span></div>
+      <div class="mdl-cell c1" data-c="1" data-k="Что делаем мы">Проектируем парк под площадь и аудиторию, производим и запускаем для оператора.</div>
       <div class="mdl-cell c2" data-c="2" data-k="Что делаем мы">Полный цикл: расчёт, проект, производство, монтаж, документы, обучение персонала.</div>
       <div class="mdl-cell c3" data-c="3" data-k="Что делаем мы">Считаем экономику для обеих сторон по одним исходным данным, дальше полный цикл.</div>
     </div>
@@ -922,6 +956,41 @@ form.done .sent{opacity:1;pointer-events:auto}
 </section>
 
 <!-- 6 FORMATS -->
+<section class="sec nums" id="numbers">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow" data-r><i></i>Цифры для решения</div>
+      <h2 class="split" data-r="fade"><span class="ln"><span>Рынок, бюджет</span></span><span class="ln"><span>и сроки</span></span></h2>
+      <p class="lead" data-r>Проверенные цифры рынка и наши ориентиры по стоимости. Точную смету считаем после 3D-проекта, до начала производства.</p>
+    </div>
+    <div class="nm-row" data-r>
+      <div><b>14%</b><span>арендаторов новых ТЦ занимают развлечения</span><small>CMWP, «Известия», 08.09.2026</small></div>
+      <div><b>+3%</b><span>рост трафика в развлечениях, при −6% в одежде</span><small>Focus Technologies, 19.09.2026</small></div>
+      <div><b>30–40%</b><span>дольше остаются в ТЦ, где есть развлечения</span><small>оценка УК «Аструм Недвижимость», 2026</small></div>
+    </div>
+    <div class="nm-cost" data-r>
+      <div class="nm-l">
+        <h3>Сколько стоит парк на вашей площади</h3>
+        <p>Ориентир по нашим проектам: оборудование 20–35 тыс. ₽ за м², монтаж около 20% сверху. <span class="gap ok">вилка цены за м²</span></p>
+        <label for="nmA">Площадь парка <output id="nmAo">1 000 м²</output></label>
+        <input type="range" id="nmA" min="200" max="3000" step="50" value="1000">
+        <div class="nm-pre"><button data-a="500">500 м²</button><button data-a="1000">1 000 м²</button><button data-a="2000">2 000 м²</button></div>
+      </div>
+      <dl class="nm-r">
+        <div><dt>Оборудование</dt><dd id="nmE">20–35 млн ₽</dd></div>
+        <div><dt>Монтаж ≈20%</dt><dd id="nmM">4–7 млн ₽</dd></div>
+        <div class="tot"><dt>Итого ориентир</dt><dd id="nmT">24–42 млн ₽</dd></div>
+        <p>Без ремонта помещения, отделки и инженерных сетей. Состав зон и тематика двигают цену внутри вилки.</p>
+      </dl>
+    </div>
+    <div class="nm-row t2" data-r>
+      <div><b>40–55</b><span>рабочих дней срок реализации проекта</span><small>23 проекта с указанным сроком на unitramp.ru</small></div>
+      <div><b>10–21</b><span>день монтажа на объекте</span><small>«Пружина» 10, Positive Energy 16, MONKEY 21 день</small></div>
+      <div><b>2 500 м²</b><span>своих цехов в Новосибирске, гарантия 12 месяцев</span><small>ТР ЕАЭС 038, ГОСТ 33807</small></div>
+    </div>
+  </div>
+</section>
+
 <section class="sec formats" id="formats">
   <div class="wrap">
     <div class="sec-head">
@@ -980,7 +1049,7 @@ form.done .sent{opacity:1;pointer-events:auto}
       <button class="feat dark" type="button" data-r style="transition-delay:.12s"><span class="play"></span><span class="ft"><b>Липкая стена</b><em>Прыжок и «прилипание» в костюме</em></span></button>
       <button class="feat dark d2" type="button" data-r style="transition-delay:.18s"><span class="play"></span><span class="ft"><b>Интерактивный пол</b><em>Проекция, которая реагирует на шаги</em></span></button>
     </div>
-    <p class="team-note" data-r><span class="gap">ролики 20–40 секунд с озвучкой Романа: интерактивная стена, спиннер, липкая стена, интерактивный пол, велосипед 360</span></p>
+    
   </div>
 </section>
 
@@ -1034,7 +1103,7 @@ form.done .sent{opacity:1;pointer-events:auto}
           <div class="kpi"><s></s><span>жителей в 10 мин на авто</span></div>
           <div class="kpi"><s></s><span>вложения в оборудование и монтаж</span></div>
         </div>
-        <p class="note2">Структура настоящего анализа для одного из ТРЦ: 12 разделов от локации до плана проверки на 90 дней. Цифры клиента скрыты. <span class="gap">платный ли анализ и сколько дней готовится</span></p>
+        <p class="note2">Структура настоящего анализа для одного из ТРЦ: 12 разделов от локации до плана проверки на 90 дней. Цифры клиента скрыты.</p>
       </div>
     </div>
   </div>
@@ -1065,19 +1134,19 @@ form.done .sent{opacity:1;pointer-events:auto}
         <div class="proc-step" data-f="2">
           <div class="n">03 <em>Смета и договор</em></div>
           <h3>Состав, цена и график</h3>
-          <p>Фиксируем состав оборудования, стоимость и график производства и монтажа. <span class="gap ok">смета не растёт после согласования 3D</span></p>
+          <p>Фиксируем состав оборудования, стоимость и график производства и монтажа.</p>
           <figure class="pimg"><img src="assets/img/f-plan.jpg" alt="Планировка зон парка" loading="lazy"><span class="tag">Планировка зон</span></figure>
         </div>
         <div class="proc-step" data-f="3">
           <div class="n">04 <em>Производство</em></div>
           <h3>Своё производство в Новосибирске</h3>
-          <p>Изготавливаем оборудование в своих цехах и печатаем оформление. Срок не зависит от посредников. <span class="gap ok">тестовая сборка до отгрузки</span></p>
+          <p>Изготавливаем оборудование в своих цехах и печатаем оформление. Срок не зависит от посредников.</p>
           <figure class="pimg"><img src="assets/img/f-factory.jpg" alt="Производство мягких элементов" loading="lazy"><span class="tag">Производство UNITRAMP</span></figure>
         </div>
         <div class="proc-step" data-f="4">
           <div class="n">05 <em>Монтаж</em></div>
           <h3>Своя бригада на объекте</h3>
-          <p>Монтаж занимает от 10 до 21 дня. Порядок работ согласуем с управляющей компанией. <span class="gap ok">ночной или поэтапный монтаж в работающем ТЦ</span></p>
+          <p>Монтаж занимает от 10 до 21 дня. Порядок работ согласуем с управляющей компанией.</p>
           <figure class="pimg"><img src="assets/img/pr-mount.jpg" alt="Монтаж каркаса полосы препятствий" loading="lazy" style="object-position:50% 40%"><span class="tag">Монтаж · «Армирум», Омск</span></figure>
         </div>
         <div class="proc-step" data-f="5">
@@ -1115,11 +1184,11 @@ form.done .sent{opacity:1;pointer-events:auto}
     </div>
     <div class="risk-grid">
       <div class="risk" data-r><div class="q"><i></i>Сорвём открытие</div><h3>Срок</h3><p>График производства и монтажа прописываем в договоре.</p><div class="ans"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M2 8.5l4 4 8-9" fill="none" stroke="#145AF5" stroke-width="2"/></svg><span>Обычно 40–55 рабочих дней от договора до открытия.</span></div></div>
-      <div class="risk" data-r style="transition-delay:.06s"><div class="q"><i></i>Смета вырастет</div><h3>Бюджет</h3><p>Смету согласуем после 3D-проекта, до начала производства.</p><div class="ans"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M2 8.5l4 4 8-9" fill="none" stroke="#145AF5" stroke-width="2"/></svg><span>Цена не меняется без вашего согласия. <span class="gap ok">формулировка у Кирилла</span></span></div></div>
+      <div class="risk" data-r style="transition-delay:.06s"><div class="q"><i></i>Смета вырастет</div><h3>Бюджет</h3><p>Смету согласуем после 3D-проекта, до начала производства.</p><div class="ans"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M2 8.5l4 4 8-9" fill="none" stroke="#145AF5" stroke-width="2"/></svg><span>Цена не меняется без вашего согласия.</span></div></div>
       <div class="risk" data-r style="transition-delay:.12s"><div class="q"><i></i>Десять подрядчиков</div><h3>Координация</h3><p>Расчёт, проект, производство и монтаж делает одна компания.</p><div class="ans"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M2 8.5l4 4 8-9" fill="none" stroke="#145AF5" stroke-width="2"/></svg><span>Один договор и один ответственный менеджер.</span></div></div>
-      <div class="risk" data-r><div class="q"><i></i>Пострадают арендаторы</div><h3>Работа ТЦ</h3><p>Порядок и время работ согласуем с управляющей компанией до выхода на объект.</p><div class="ans"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M2 8.5l4 4 8-9" fill="none" stroke="#145AF5" stroke-width="2"/></svg><span>Монтаж на объекте от 10 до 21 дня. <span class="gap ok">ночной или поэтапный монтаж</span></span></div></div>
-      <div class="risk" data-r style="transition-delay:.06s"><div class="q"><i></i>Проблемы с проверками</div><h3>Безопасность</h3><p>Оборудование соответствует ТР ЕАЭС 038 и ГОСТ 33807. К изделиям паспорта и инструкции.</p><div class="ans"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M2 8.5l4 4 8-9" fill="none" stroke="#145AF5" stroke-width="2"/></svg><span>Передаём пакет документов для запуска. <span class="gap ok">помощь с регистрацией в Гостехнадзоре</span></span></div></div>
-      <div class="risk" data-r style="transition-delay:.12s"><div class="q"><i></i>После запуска некому звонить</div><h3>Сервис</h3><p>Гарантия 12 месяцев на оборудование.</p><div class="ans"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M2 8.5l4 4 8-9" fill="none" stroke="#145AF5" stroke-width="2"/></svg><span>Обучаем персонал при запуске. <span class="gap">условия постгарантийного обслуживания</span></span></div></div>
+      <div class="risk" data-r><div class="q"><i></i>Пострадают арендаторы</div><h3>Работа ТЦ</h3><p>Порядок и время работ согласуем с управляющей компанией до выхода на объект.</p><div class="ans"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M2 8.5l4 4 8-9" fill="none" stroke="#145AF5" stroke-width="2"/></svg><span>Монтаж на объекте от 10 до 21 дня.</span></div></div>
+      <div class="risk" data-r style="transition-delay:.06s"><div class="q"><i></i>Проблемы с проверками</div><h3>Безопасность</h3><p>Оборудование соответствует ТР ЕАЭС 038 и ГОСТ 33807. К изделиям паспорта и инструкции.</p><div class="ans"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M2 8.5l4 4 8-9" fill="none" stroke="#145AF5" stroke-width="2"/></svg><span>Передаём пакет документов для запуска.</span></div></div>
+      <div class="risk" data-r style="transition-delay:.12s"><div class="q"><i></i>После запуска некому звонить</div><h3>Сервис</h3><p>Гарантия 12 месяцев на оборудование.</p><div class="ans"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M2 8.5l4 4 8-9" fill="none" stroke="#145AF5" stroke-width="2"/></svg><span>Обучаем персонал при запуске.</span></div></div>
     </div>
   </div>
 </section>
@@ -1141,7 +1210,7 @@ form.done .sent{opacity:1;pointer-events:auto}
       <div style="margin-top:36px;display:flex;gap:12px;flex-wrap:wrap" data-r>
         <a href="#form" class="btn btn-light" data-topic="tour">Приехать на экскурсию</a>
       </div>
-      <p class="small" style="color:rgba(255,255,255,.75);margin-top:16px" data-r><span class="gap">фото и видео цехов: съёмка Егора</span></p>
+      
     </div>
     <div class="fac-r">
       <figure data-r="clip"><img src="assets/img/f-factory.jpg" alt="Производство мягких элементов UNITRAMP" data-px="0.06" loading="lazy"><figcaption>Мягкие элементы перед отгрузкой</figcaption></figure>
@@ -1161,12 +1230,12 @@ form.done .sent{opacity:1;pointer-events:auto}
       <p class="lead" data-r>Не нашли ответ? Руководитель проектов ответит в мессенджере.</p>
     </div>
     <div class="faq-list" data-r>
-      <details class="qa"><summary>Сколько стоит парк?<i class="pm"></i></summary><div class="a"><p>Зависит от площади, состава зон и модели участия. Предварительную вилку даём после первого разговора, точную смету после 3D-проекта. <span class="gap">ориентир стоимости за м²</span></p></div></details>
+      <details class="qa"><summary>Сколько стоит парк?<i class="pm"></i></summary><div class="a"><p>Зависит от площади, состава зон и модели участия. Предварительную вилку даём после первого разговора, точную смету после 3D-проекта. Ориентир: 20–35 тыс. ₽ за м² оборудования, расчёт в блоке «Цифры».</p></div></details>
       <details class="qa"><summary>Сколько времени занимает проект?<i class="pm"></i></summary><div class="a"><p>От договора до открытия обычно 40–55 рабочих дней. Монтаж на объекте занимает от 10 до 21 дня.</p></div></details>
-      <details class="qa"><summary>Помешает ли монтаж работе торгового центра?<i class="pm"></i></summary><div class="a"><p>Порядок, время работ и маршрут завоза согласуем с управляющей компанией до выхода на объект. <span class="gap ok">ночной или поэтапный монтаж</span></p></div></details>
+      <details class="qa"><summary>Помешает ли монтаж работе торгового центра?<i class="pm"></i></summary><div class="a"><p>Порядок, время работ и маршрут завоза согласуем с управляющей компанией до выхода на объект.</p></div></details>
       <details class="qa"><summary>Кто будет управлять парком?<i class="pm"></i></summary><div class="a"><p>Зависит от модели: оператор, ваша управляющая компания или партнёр в совместном проекте. Если управляете сами, обучаем персонал при запуске.</p></div></details>
       <details class="qa"><summary>Какие документы мы получим?<i class="pm"></i></summary><div class="a"><p>Сертификаты соответствия ТР ЕАЭС 038 и ГОСТ 33807, паспорта изделий, инструкции по эксплуатации и пакет документов для запуска.</p></div></details>
-      <details class="qa"><summary>Какая гарантия?<i class="pm"></i></summary><div class="a"><p>12 месяцев на оборудование. <span class="gap">условия постгарантийного обслуживания</span></p></div></details>
+      <details class="qa"><summary>Какая гарантия?<i class="pm"></i></summary><div class="a"><p>12 месяцев на оборудование.</p></div></details>
       <details class="qa"><summary>Работаете в нашем регионе?<i class="pm"></i></summary><div class="a"><p>У нас 81 объект в 63 городах и 5 странах. Доставку и монтаж организуем сами.</p></div></details>
       <details class="qa"><summary>Можно посмотреть производство?<i class="pm"></i></summary><div class="a"><p>Да, приглашаем на экскурсию по цехам в Новосибирске. Заодно покажем оборудование вашего будущего парка в работе.</p></div></details>
     </div>
@@ -1256,6 +1325,7 @@ form.done .sent{opacity:1;pointer-events:auto}
       <div class="where" id="mWhere"></div>
       <dl id="mDl"></dl>
       <p id="mText"></p>
+      
       <a id="mLink" class="link-arr" target="_blank" rel="noopener">Страница проекта на unitramp.ru <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M3 9h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.8"/></svg></a>
     </div>
   </div>
@@ -1439,5 +1509,8 @@ var gaps=$$('.gap'); $('#gapsN').textContent=gaps.length;
 $('#gapsToggle').addEventListener('click',function(){D.body.classList.toggle('clean')});
 })();
 </script>
+<script>(function(){var a=document.getElementById('nmA');if(!a)return;function f(x){return x>=10?Math.round(x):Math.round(x*10)/10}
+function r(){var s=+a.value,lo=s*20000/1e6,hi=s*35000/1e6;document.getElementById('nmAo').textContent=s.toLocaleString('ru-RU')+' м²';document.getElementById('nmE').textContent=f(lo)+'–'+f(hi)+' млн ₽';document.getElementById('nmM').textContent=f(lo*.2)+'–'+f(hi*.2)+' млн ₽';document.getElementById('nmT').textContent=f(lo*1.2)+'–'+f(hi*1.2)+' млн ₽'}
+a.addEventListener('input',r);document.querySelectorAll('.nm-pre button').forEach(function(b){b.addEventListener('click',function(){a.value=b.dataset.a;r()})});r()})();</script>
 </body>
 </html>
