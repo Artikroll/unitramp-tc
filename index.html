@@ -282,7 +282,7 @@ body.menu-open .hdr .logo .l-dark{opacity:0}body.menu-open .hdr .logo .l-light{o
 .fmt{background:var(--paper);border-radius:var(--r-xl);padding:32px;display:flex;flex-direction:column;position:relative;overflow:hidden;transition:transform .4s var(--ease-out),box-shadow .4s}
 .fmt:hover{transform:translateY(-6px);box-shadow:0 24px 48px -28px rgba(16,21,29,.35)}
 .fmt.main{background:var(--navy);color:var(--on-navy)}
-.fmt .area-vis{height:160px;display:flex;align-items:flex-end;margin-bottom:28px;position:relative}
+.fmt .area-vis{height:160px;display:flex;align-items:flex-end;margin-bottom:28px;position:relative;border-radius:12px;overflow:hidden}.fmt .area-vis img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.fmt .area-vis .av-cap{position:relative;margin:10px;padding:4px 9px;border-radius:6px;background:rgba(0,0,0,.55);color:#fff;font-size:12px}
 .fmt .sq{background:var(--bg-2);border-radius:4px;position:relative;transform-origin:0 100%;transform:scale(.2);opacity:.2;transition:transform 1.2s var(--ease-out),opacity .8s}
 .fmt.main .sq{background:var(--accent)}
 .fmt .sq::after{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:14px 14px;border-radius:4px}
@@ -302,7 +302,7 @@ body.menu-open .hdr .logo .l-dark{opacity:0}body.menu-open .hdr .logo .l-light{o
 .fmt .meta div{display:flex;justify-content:space-between;gap:12px}
 .fmt .meta span{color:var(--ink-3)}
 .fmt.main .meta span{color:var(--on-navy-2)}
-.fmt .badge{position:absolute;top:24px;right:24px}
+.fmt .badge{position:absolute;top:24px;right:24px;z-index:3}
 
 /* ECONOMICS */
 .econ{background:var(--navy);color:var(--on-navy);overflow:hidden}
@@ -1000,7 +1000,7 @@ form.done .sent{opacity:1;pointer-events:auto}
     </div>
     <div class="fmt-grid">
       <article class="fmt" data-r data-fmt>
-        <div class="area-vis"><div class="sq" style="width:96px;height:96px"></div></div>
+        <div class="area-vis"><img src="assets/img/c-neopolis.jpg" alt="«Неополис», Чита" loading="lazy"></div>
         <div class="range">до 600 <small>м²</small></div>
         <h3>Семейный центр</h3>
         <ul><li>Лабиринт с горками и сухим бассейном</li><li>Малышковая зона до 5 лет</li><li>Активная арена с интерактивом</li></ul>
@@ -1010,7 +1010,7 @@ form.done .sent{opacity:1;pointer-events:auto}
         </div>
       </article>
       <article class="fmt" data-r data-fmt style="transition-delay:.08s">
-        <div class="area-vis"><div class="sq" style="width:124px;height:124px"></div></div>
+        <div class="area-vis"><img src="assets/img/c-armirum.jpg" alt="«Армирум», Омск" loading="lazy"></div>
         <div class="range">600–1 000 <small>м²</small></div>
         <h3>Активити-парк</h3>
         <ul><li>Несколько зон для детей 3–14 лет и взрослых</li><li>Ниндзя-трасса, скалодром, интерактивные аттракционы</li><li>Зона праздников и кафе для родителей</li></ul>
@@ -1021,7 +1021,7 @@ form.done .sent{opacity:1;pointer-events:auto}
       </article>
       <article class="fmt main" data-r data-fmt style="transition-delay:.16s">
         <span class="tag acc badge">Наш фокус</span>
-        <div class="area-vis"><div class="sq" style="width:196px;height:152px"></div></div>
+        <div class="area-vis"><img src="assets/img/pr-3d.jpg" alt="3D-проект комплекса" loading="lazy"><span class="av-cap">3D-проект</span></div>
         <div class="range">1 000+ <small>м²</small></div>
         <h3 style="color:#fff">Семейный развлекательный комплекс</h3>
         <ul><li>Зоны по возрастам и единая тематика</li><li>Событийная площадка, кафе, детские праздники</li><li>Проект начинаем с расчёта экономики площадки</li><li>Мощности производства и проектирования рассчитаны на парки до 5 000–8 000 м²</li></ul>
