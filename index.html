@@ -901,6 +901,34 @@ main{background:#fff;margin:12px 12px 0;border-radius:28px;overflow:clip;box-sha
   .lead-form.done{min-height:600px}
   .hero-cta .row{display:none}
 }
+
+/* v4: фон первого экрана, лента компаний, команда без фото, «Почему сейчас» */
+.he{position:relative;overflow:hidden}
+.he-bg{position:absolute;left:0;right:0;top:0;height:min(820px,92vh);z-index:0}
+.he-bg img{width:100%;height:100%;object-fit:cover;object-position:50% 62%}
+.he-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,18,32,.78) 0%,rgba(11,18,32,.55) 34%,rgba(11,18,32,.72) 62%,var(--navy) 100%),radial-gradient(70% 60% at 50% 30%,rgba(11,18,32,0),rgba(11,18,32,.45))}
+.he .wrap{position:relative;z-index:1;padding-top:150px}
+.he-eb{display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border:1px solid rgba(255,255,255,.28);border-radius:999px;font:600 13px/1 var(--b-font);letter-spacing:.06em;text-transform:uppercase;color:#fff;background:rgba(255,255,255,.08);backdrop-filter:blur(6px);margin-bottom:24px}
+.he-eb i{width:7px;height:7px;border-radius:50%;background:#3BD16F;box-shadow:0 0 0 4px rgba(59,209,111,.22)}
+.he h1{font-size:clamp(44px,5.2vw,76px);text-shadow:0 2px 30px rgba(0,0,0,.35)}
+.he-sub{color:rgba(255,255,255,.9);text-shadow:0 1px 14px rgba(0,0,0,.4)}
+.he .hx-trust{color:#fff}
+.lg{position:relative;z-index:1;border-top:1px solid rgba(255,255,255,.12);padding:26px 0 30px}
+.lg-h{text-align:center;font:600 13px/1 var(--b-font);letter-spacing:.12em;text-transform:uppercase;color:var(--on-navy-2);margin-bottom:20px}
+.lg-m{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.lg-t{display:flex;gap:56px;width:max-content;animation:lgrun 38s linear infinite}
+.lg-m:hover .lg-t{animation-play-state:paused}
+.lg-t span{font:800 24px/1 var(--h-font);letter-spacing:-.02em;color:rgba(255,255,255,.62);white-space:nowrap}
+@keyframes lgrun{to{transform:translateX(-50%)}}
+.hdr nav a{white-space:nowrap}
+@media (prefers-reduced-motion:reduce){.lg-t{animation:none;flex-wrap:wrap;justify-content:center;width:auto}}
+.w2e-photo{margin-top:40px;border-radius:24px;overflow:hidden;position:relative;aspect-ratio:21/8}
+.w2e-photo img{width:100%;height:100%;object-fit:cover}
+.w2e-photo figcaption{position:absolute;left:20px;bottom:16px;font-size:13px;color:#fff;background:rgba(11,18,32,.55);padding:6px 12px;border-radius:999px}
+.team-grid.noph .person{background:#fff;border-radius:var(--r-xl);padding:30px 28px;border:1px solid var(--line)}
+.team-grid.noph .person h3{font-size:26px;margin:8px 0 14px}
+.team-grid.noph .ph{display:none}
+@media(max-width:767px){.he .wrap{padding-top:110px}.he-bg{height:640px}.he h1{font-size:34px}.he-eb{font-size:11px;padding:7px 12px}.lg-t span{font-size:19px}.lg-t{gap:36px}.w2e-photo{aspect-ratio:4/3}.team-grid.t3.noph{grid-template-columns:1fr}.team-grid.t3.noph .person:last-child{max-width:none}}
 </style>
 </head>
 <body>
@@ -948,8 +976,10 @@ main{background:#fff;margin:12px 12px 0;border-radius:28px;overflow:clip;box-sha
 
 <!-- 1 HERO -->
 <section class="hero he" aria-label="Первый экран">
+  <div class="he-bg"><img src="assets/img/bz-hero.jpg" alt="" fetchpriority="high"></div>
   <div class="wrap">
     <div class="he-top">
+      <div class="he-eb"><i></i>Для собственников и управляющих ТЦ</div>
       <h1 id="h1">Семейные парки для торговых центров под ключ</h1>
       <p class="he-sub">Профессионально создаём досуговые центры для всей семьи, ради которых едут в ваш ТЦ и остаются дольше.</p>
       <ul class="hx-trust"><li>12 лет опыта</li><li>81 проект</li><li>63 города и 5 стран</li><li>40–55 рабочих дней до открытия</li></ul>
@@ -973,6 +1003,10 @@ main{background:#fff;margin:12px 12px 0;border-radius:28px;overflow:clip;box-sha
       <a href="tel:88007007809" class="btn btn-ghost hx-tel"><svg class="ic"><use href="#i-tel"/></svg>8 800 700-78-09</a>
     </div>
   </div>
+  <div class="lg" aria-label="Компании, с которыми мы работали">
+    <div class="lg-h">Нам доверяют <span class="gap">список компаний и логотипы пришлёт Кирилл, сейчас названия с созвона 30.10</span></div>
+    <div class="lg-m"><div class="lg-t"><span>World Class</span><span>Мега</span><span>Сколково</span><span>Сбербанк</span><span>Газпром</span><span>Северсталь</span><span>Манжерок</span><span>Cirque du Soleil</span><span>Аватария</span><span>Superland</span><span aria-hidden="true">World Class</span><span aria-hidden="true">Мега</span><span aria-hidden="true">Сколково</span><span aria-hidden="true">Сбербанк</span><span aria-hidden="true">Газпром</span><span aria-hidden="true">Северсталь</span><span aria-hidden="true">Манжерок</span><span aria-hidden="true">Cirque du Soleil</span><span aria-hidden="true">Аватария</span><span aria-hidden="true">Superland</span></div></div>
+  </div>
 </section>
 
 <!-- 2 WHY NOW -->
@@ -981,10 +1015,11 @@ main{background:#fff;margin:12px 12px 0;border-radius:28px;overflow:clip;box-sha
     <div class="eyebrow" data-r><i></i>Почему сейчас</div>
     <h2 class="w2e-h" data-r>Формат ТЦ постоянно меняется. Выигрывает тот, куда <em>хочется приехать</em> всей семьёй.</h2>
     <div class="w2e-row">
-      <div data-r><b>Досуг + покупки</b><p>Торговый центр становится местом притяжения: сюда едут провести время и заодно делают покупки.</p></div>
-      <div data-r style="transition-delay:.06s"><b>Формула концепции</b><p>Знаем, как вывести ТЦ в топ своего города и какой должна быть современная концепция.</p></div>
+      <div data-r><b>Досуг + покупки</b><p>Покупки уходят на маркетплейсы, одними магазинами площадь уже не заполнить. Крупные ТЦ ставят активити-парки, спа и спортивные секции: сюда едут провести время и заодно делают покупки.</p></div>
+      <div data-r style="transition-delay:.06s"><b>Формула концепции</b><p>Знаем, как вывести ТЦ в топ своего города и какой должна быть современная концепция: зоны для малышей, детей, подростков и взрослых, чтобы семья оставалась на несколько часов.</p></div>
       <div class="st" data-r style="transition-delay:.12s"><div class="stat-big">30–40<small>%</small></div><p>дольше остаются посетители в ТЦ с досуговыми форматами</p><div class="src">Оценка УК «Аструм Недвижимость», Logistics.ru, 2026</div></div>
     </div>
+    <figure class="w2e-photo" data-r><img src="assets/img/c-kometa-wide.jpg" alt="Семейный центр «Комета», Орск" loading="lazy"><figcaption>«Комета», Орск · 600 м²</figcaption></figure>
   </div>
 </section>
 
@@ -1149,17 +1184,14 @@ main{background:#fff;margin:12px 12px 0;border-radius:28px;overflow:clip;box-sha
       <h2 class="split" data-r="fade"><span class="ln"><span>Люди, которые</span></span><span class="ln"><span>отвечают за проект</span></span></h2>
       <p class="lead" data-r>Вы говорите напрямую с теми, кто принимает решения по вашему парку, а не с колл-центром.</p>
     </div>
-    <div class="team-grid t3">
+    <div class="team-grid t3 noph">
       <div class="person" data-r>
-        <div class="ph"><img src="assets/img/t-roman.jpg" alt="Роман Сотников" loading="lazy"></div>
         <div class="role">Основатель</div><h3>Роман Сотников</h3><p class="what"><span class="resp">Отвечает за</span>концепцию парка и формат под вашу аудиторию</p>
       </div>
       <div class="person" data-r style="transition-delay:.06s">
-        <div class="ph"><img src="assets/img/t-kirill.jpg" alt="Кирилл Шувалов" loading="lazy" style="object-position:50% 20%"></div>
         <div class="role">Генеральный директор</div><h3>Кирилл Шувалов</h3><p class="what"><span class="resp">Отвечает за</span>договор, сроки и бюджет проекта</p>
       </div>
       <div class="person" data-r style="transition-delay:.12s">
-        <div class="ph"><img src="assets/img/t-kazantsev.jpg" alt="Александр Казанцев" loading="lazy"></div>
         <div class="role">Старший менеджер проектов</div><h3>Александр Казанцев</h3><p class="what"><span class="resp">Отвечает за</span>ваш контакт на всех этапах, от первой встречи до открытия</p>
       </div>
     </div>
