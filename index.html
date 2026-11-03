@@ -4,11 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>UNITRAMP для торговых центров</title>
-<meta name="description" content="Семейный развлекательный центр под ключ для вашего торгового центра: расчёт экономики площадки, проектирование, своё производство и запуск.">
+<meta name="description" content="Семейные досуговые центры для торговых центров под ключ: концепция, смета, поставка, монтаж и запуск. 12 лет опыта, 81 проект в 63 городах и 5 странах.">
 <meta name="theme-color" content="#0E1726">
 <link rel="icon" href="assets/img/logo.svg">
 <style>
-html{overflow-x:clip}
 @font-face{font-family:"Manrope";src:url(assets/fonts/Manrope-700.ttf) format("truetype");font-weight:700;font-display:swap}
 @font-face{font-family:"Manrope";src:url(assets/fonts/Manrope-800.ttf) format("truetype");font-weight:800;font-display:swap}
 @font-face{font-family:"Golos";src:url(assets/fonts/GolosText-400.ttf) format("truetype");font-weight:400;font-display:swap}
@@ -29,7 +28,7 @@ html{overflow-x:clip}
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:72px}
-body{background:var(--bg);color:var(--ink);font:400 18px/1.55 var(--b-font);overflow-x:hidden;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body{background:var(--bg);color:var(--ink);font:400 18px/1.55 var(--b-font);overflow-x:hidden;overflow-x:clip;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
 button,input,select{font:inherit;color:inherit}
@@ -711,9 +710,205 @@ form.done .sent{opacity:1;pointer-events:auto}
 .nm-row.t2{margin-top:48px}
 @media (max-width:900px){.nm-row{grid-template-columns:1fr}.nm-row>div{padding:22px 0;border-bottom:1px solid var(--line-navy)}.nm-cost{grid-template-columns:1fr}.nm-l,.nm-r{padding:24px 20px}}
 @media(max-width:600px){.btn{white-space:normal;height:auto;min-height:56px;padding:14px 24px;text-align:center;line-height:1.25}}
+
+/* ===== v2 (30.10.2026): правки по разбору Романа ===== */
+.hero-media::after{background:linear-gradient(180deg,rgba(9,13,21,.7) 0%,rgba(9,13,21,.35) 30%,rgba(9,13,21,.3) 55%,rgba(9,13,21,.7) 78%,rgba(9,13,21,.92) 100%),linear-gradient(90deg,rgba(9,13,21,.72),rgba(9,13,21,.15) 55%)}
+.hero-side p{text-shadow:0 1px 12px rgba(0,0,0,.45)}
+.hdr nav{gap:24px}
+.hdr .h-tel{font:700 16px/1 var(--b-font);white-space:nowrap;opacity:.95}
+.hdr .h-msg{display:flex;gap:8px}
+.hdr .h-msg a{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;box-shadow:inset 0 0 0 1.5px currentColor;opacity:.9}
+.hdr .h-msg a:hover{opacity:1}
+.hdr .h-msg svg{width:18px;height:18px;fill:currentColor}
+.hero h1{font-size:clamp(40px,4.2vw,62px)}
+.hero-trust{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:22px;font:600 15px/1.3 var(--b-font);color:rgba(255,255,255,.9)}
+.hero-trust span{display:inline-flex;align-items:center;gap:8px}
+.hero-trust span::before{content:"";width:7px;height:7px;border-radius:50%;background:#3BD16F}
+.hero-cta .row{display:flex;gap:10px}
+.hero-cta .row .btn{flex:1;padding:0 14px}
+.btn svg.ic{width:18px;height:18px;fill:currentColor;flex:none}
+.btn-wa{background:#25D366;color:#fff}
+.btn-tg{background:#2AABEE;color:#fff}
+.cta-inline{margin-top:48px;display:flex;align-items:center;gap:16px 24px;flex-wrap:wrap;padding:24px 28px;border-radius:var(--r-xl);background:var(--paper)}
+.cta-inline p{font:700 20px/1.35 var(--h-font);letter-spacing:-.02em;flex:1 1 320px}
+.cta-inline .acts{display:flex;gap:10px;flex-wrap:wrap}
+.cta-inline .btn{height:50px}
+.cta-inline.dark{background:var(--navy-2);color:#fff}
+.cta-inline.dark .btn-ghost{color:#fff}
+
+/* WHY v2 */
+.why-grid .rows .stat:first-child{border-top:1px solid var(--line)}
+.why-formula{margin-top:40px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.why-formula div{background:var(--paper);border-radius:var(--r-l);padding:22px}
+.why-formula b{display:block;font:800 19px/1.2 var(--h-font);letter-spacing:-.02em;margin-bottom:6px}
+.why-formula span{font-size:15px;color:var(--ink-2);line-height:1.45}
+
+/* PAINS */
+.pains .tasks-list h2{margin-bottom:36px}
+.task h3{font-size:22px}
+
+/* SCOPE */
+.scope{background:var(--paper)}
+.sc-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
+.sc-mode{grid-column:span 6;border-radius:var(--r-xl);padding:36px;background:var(--bg);display:flex;flex-direction:column}
+.sc-mode.full{background:var(--navy);color:var(--on-navy)}
+.sc-mode .tg{font:600 12px/1 var(--b-font);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.sc-mode.full .tg{color:#6E9BFF}
+.sc-mode h3{font-size:30px;font-weight:800;letter-spacing:-.03em;margin:14px 0 12px}
+.sc-mode.full h3{color:#fff}
+.sc-mode p{font-size:16px;color:var(--ink-2)}
+.sc-mode.full p{color:var(--on-navy-2)}
+.sc-mode ul{list-style:none;margin-top:22px;display:grid;gap:10px}
+.sc-mode li{display:grid;grid-template-columns:22px 1fr;gap:10px;font-size:16px;line-height:1.4}
+.sc-mode li::before{content:"";width:18px;height:18px;margin-top:2px;border-radius:50%;background:var(--accent) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3.5 8.5l3 3 6-7' fill='none' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E") center/12px no-repeat}
+.sc-feats{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:8px}
+.sc-f{border-top:2px solid var(--ink);padding-top:20px}
+.sc-f .k{font:800 13px/1 var(--h-font);color:var(--accent);letter-spacing:.06em;text-transform:uppercase;margin-bottom:12px}
+.sc-f h4{font:800 20px/1.2 var(--h-font);letter-spacing:-.02em;margin-bottom:8px}
+.sc-f p{font-size:15px;color:var(--ink-2);line-height:1.5}
+.sc-own{grid-column:1/-1;display:flex;gap:18px;align-items:flex-start;padding:22px 26px;border-radius:var(--r-l);border:1.5px dashed var(--line);font-size:16px;color:var(--ink-2)}
+.sc-own b{color:var(--ink)}
+.sc-own i{flex:none;width:36px;height:36px;border-radius:50%;background:var(--accent-soft);display:grid;place-items:center;font:800 16px/1 var(--h-font);color:var(--accent);font-style:normal}
+
+/* MODELS compact */
+.mdl3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.mdl3 .m{background:var(--paper);border-radius:var(--r-xl);padding:30px;display:flex;flex-direction:column;gap:10px}
+.mdl3 .m .n{font:800 14px/1 var(--h-font);color:var(--accent)}
+.mdl3 .m h3{font-size:24px;font-weight:800;letter-spacing:-.03em}
+.mdl3 .m p{font-size:15px;color:var(--ink-2)}
+.mdl3 .m dl{margin-top:auto;padding-top:14px;border-top:1px solid var(--line);display:grid;gap:8px;font-size:15px}
+.mdl3 .m dt{font-size:12px;color:var(--ink-3);text-transform:uppercase;letter-spacing:.08em}
+.mdl3 .m dd{margin-bottom:4px}
+.mdl3 .m.hl{background:var(--accent);color:#fff}
+.mdl3 .m.hl .n,.mdl3 .m.hl p,.mdl3 .m.hl dt{color:rgba(255,255,255,.85)}
+.mdl3 .m.hl dl{border-color:rgba(255,255,255,.3)}
+.models{background:var(--bg)}
+.mdl-upd{margin-top:16px;display:flex;gap:24px;align-items:center;padding:24px 28px;border-radius:var(--r-xl);background:var(--navy);color:var(--on-navy)}
+.mdl-upd b{font:800 56px/.9 var(--h-font);color:#fff;letter-spacing:-.04em;flex:none}
+.mdl-upd p{font-size:16px;color:var(--on-navy-2)}
+.mdl-upd p strong{color:#fff;font-weight:700}
+
+/* TEAM */
+.team-grid.t3{grid-template-columns:repeat(3,1fr);max-width:1080px}
+.person .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+/* FORM + THANKS */
+.lead-form{position:relative}
+.sent{justify-content:flex-start;padding:40px 40px 36px;gap:14px;overflow:auto}
+.sent .ok{width:56px;height:56px}
+.sent>p{font-size:17px;color:var(--ink-2)}
+.sent .next{list-style:none;counter-reset:n;display:grid;gap:12px;width:100%;margin:6px 0 4px;padding:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.sent .next li{counter-increment:n;display:grid;grid-template-columns:30px 1fr;gap:12px;font-size:15px;line-height:1.45;color:var(--ink)}
+.sent .next li::before{content:counter(n);width:26px;height:26px;border-radius:50%;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;font:800 13px/1 var(--h-font)}
+.sent .acts{display:flex;gap:10px;flex-wrap:wrap}
+.sent .acts .btn{height:48px;padding:0 20px;font-size:15px}
+.sent .again{background:none;border:0;color:var(--ink-3);font-size:14px;cursor:pointer;text-decoration:underline;padding:0}
+.lead-form.done{min-height:560px}
+
+.mmenu .btn{font:600 17px/1 var(--b-font);letter-spacing:0;border-bottom:0;padding:0 24px;height:54px;flex:none}
+.mmenu .btn+.btn{margin-top:10px}
+
+/* ===== v3 (30.10.2026): лист на сером фоне + первый экран с лентой парков ===== */
+html,body{background:#D9DDE3}
+main{background:#fff;margin:12px 12px 0;border-radius:28px;overflow:clip;box-shadow:0 12px 40px -24px rgba(16,21,29,.35)}
+.foot{margin:12px;border-radius:28px}
+.hdr:not(.solid) .wrap{padding-left:calc(var(--pad) + 12px);padding-right:calc(var(--pad) + 12px)}
+.hdr.solid{left:12px;right:12px;top:8px;border-radius:18px}
+.hx-trust{list-style:none;display:flex;flex-wrap:wrap;gap:8px 22px;font:600 15px/1.3 var(--b-font)}
+.hx-trust li{display:flex;align-items:center;gap:8px}
+.hx-trust li::before{content:"";width:7px;height:7px;border-radius:50%;background:#3BD16F}
+.hx-btns{display:flex;gap:12px;flex-wrap:wrap}
+.he{background:radial-gradient(900px 500px at 50% 0%,#24346a 0%,var(--navy) 65%);color:#fff;min-height:0;border-radius:28px 28px 0 0}
+.he .wrap{display:block;padding-top:124px;padding-bottom:56px}
+.he-top{text-align:center;max-width:900px;margin:0 auto}
+.he h1{font-size:clamp(40px,4.4vw,64px);line-height:1.02;letter-spacing:-.04em}
+.he h1 .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em;margin-bottom:-.08em}
+.he-sub{font-size:19px;color:var(--on-navy-2);margin:20px auto 22px;max-width:36em}
+.he .hx-trust{justify-content:center}
+.he-rail{position:relative;margin:40px 0 36px}
+.he-track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.he-track::-webkit-scrollbar{display:none}
+.he-c{position:relative;flex:0 0 calc((100% - 32px)/3);border-radius:22px;overflow:hidden;aspect-ratio:4/3.1;display:block;scroll-snap-align:start;background:var(--navy-2)}
+.he-c img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease-out)}
+.he-c:hover img{transform:scale(1.05)}
+.he-c::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(9,13,21,0) 45%,rgba(9,13,21,.82))}
+.he-c span{position:absolute;left:20px;bottom:18px;right:20px;z-index:1;font-size:14px;color:rgba(255,255,255,.85)}
+.he-c b{display:block;font:800 26px/1.1 var(--h-font);color:#fff;letter-spacing:-.02em}
+.he-arr{position:absolute;top:50%;transform:translateY(-50%);width:52px;height:52px;border-radius:50%;border:0;background:#fff;color:var(--ink);display:grid;place-items:center;cursor:pointer;box-shadow:0 8px 24px -8px rgba(0,0,0,.5);z-index:2;transition:opacity .2s}
+.he-arr svg{width:20px;height:20px}
+.he-arr.prev{left:-18px}.he-arr.next{right:-18px}
+.he-arr[disabled]{opacity:0;pointer-events:none}
+.he .hx-btns{justify-content:center}
+.he .btn-ghost{color:#fff}
+.w2e{background:#fff}
+.w2e-h{max-width:20em;margin-top:20px;font-size:clamp(34px,4vw,58px)}
+.w2e-h em{font-style:normal;color:var(--accent)}
+.w2e-row{display:grid;grid-template-columns:1fr 1fr 1.1fr;gap:20px;margin-top:56px}
+.w2e-row>div{background:var(--bg);border-radius:var(--r-xl);padding:28px}
+.w2e-row b{font:800 22px/1.2 var(--h-font);letter-spacing:-.02em;display:block;margin-bottom:10px}
+.w2e-row p{color:var(--ink-2);font-size:16px}
+.w2e-row .st{background:var(--accent);color:#fff}
+.w2e-row .st p{color:rgba(255,255,255,.85);margin-top:10px}
+.w2e-row .st .src{color:rgba(255,255,255,.6);margin-top:8px}
+.stat-big{font:800 clamp(64px,7vw,104px)/.9 var(--h-font);letter-spacing:-.05em}
+.stat-big small{font-size:.45em}
+@media(max-width:1199px){.he-c{flex-basis:calc((100% - 16px)/2)}.w2e-row{grid-template-columns:1fr}.he-arr.prev{left:-10px}.he-arr.next{right:-10px}}
+@media(max-width:767px){
+  main{margin:6px 6px 0;border-radius:20px}.foot{margin:6px;border-radius:20px}.he{border-radius:20px 20px 0 0}
+  .hdr:not(.solid) .wrap{padding-left:22px;padding-right:22px}.hdr.solid{left:6px;right:6px;top:4px;border-radius:14px}
+  .he .wrap{padding-top:96px;padding-bottom:110px}.he h1{font-size:32px}.he-sub{font-size:16px}
+  .hx-trust{font-size:13px;gap:6px 14px}
+  .he-rail{margin:24px -16px 24px}.he-track{padding:0 16px;gap:10px;scroll-padding:0 16px}.he-c{flex-basis:80%;aspect-ratio:4/3.2}.he-c b{font-size:22px}
+  .he-arr{display:none}
+  .hx-btns .btn{width:100%}.hx-btns .hx-tel{display:none}
+}
+/* MOBILE CALL BAR */
+.callbar{display:none}
+@media (max-width:1199px){
+  .hero-cta .row{display:none}
+  .hero .wrap{padding-bottom:104px}
+  .callbar{display:grid;grid-template-columns:1fr 1fr 1.25fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(14,23,38,.94);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+  .callbar a{height:46px;border-radius:999px;display:flex;align-items:center;justify-content:center;gap:8px;font:600 15px/1 var(--b-font);color:#fff}
+  .callbar a svg{width:18px;height:18px;fill:currentColor}
+  .callbar .c1{background:rgba(255,255,255,.12)}
+  .callbar .c2{background:#25D366}
+  .callbar .c3{background:var(--accent)}
+  body{padding-bottom:70px}
+  body.menu-open .callbar{display:none}
+  .ut-cookie{bottom:calc(78px + env(safe-area-inset-bottom))!important}
+  .foot{padding-bottom:120px}
+}
+@media (min-width:768px) and (max-width:1199px){.callbar{left:50%;right:auto;transform:translateX(-50%);width:min(560px,calc(100% - 32px));bottom:16px;border-radius:999px;padding:8px}}
+@media (max-width:1199px){
+  .hdr .h-tel,.hdr .h-msg{display:none}
+  .sc-feats{grid-template-columns:repeat(2,1fr)}
+  .mdl3{grid-template-columns:1fr}
+  .why-formula{grid-template-columns:1fr}
+}
+@media (max-width:767px){
+  .sc-mode{grid-column:1/-1;padding:26px 22px}
+  .sc-mode h3{font-size:24px}
+  .sc-feats{grid-template-columns:1fr;gap:22px}
+  .sc-own{padding:18px}
+  .team-grid.t3{grid-template-columns:1fr 1fr;gap:16px}
+  .team-grid.t3 .person:last-child{grid-column:1/-1;max-width:calc(50% - 8px)}
+  .mdl-upd{flex-direction:column;align-items:flex-start;gap:10px}
+  .cta-inline{padding:20px}
+  .cta-inline .acts{width:100%}
+  .cta-inline .acts .btn{flex:1}
+  .hero-trust{font-size:13px;gap:6px 14px;margin-top:16px}
+  .sent{padding:28px 22px}
+  .lead-form.done{min-height:600px}
+  .hero-cta .row{display:none}
+}
 </style>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-tel" viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.12.37 2.33.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 13.6c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2z"/></symbol>
+  <symbol id="i-tg" viewBox="0 0 24 24"><path d="M21.9 4.3 18.7 19.5c-.2 1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.3-5 9.1-8.2c.4-.4-.1-.6-.6-.2L6.2 13.2l-4.8-1.5c-1-.3-1-1 .2-1.5L20.6 2.9c.9-.3 1.6.2 1.3 1.4z"/></symbol>
+</svg>
 <div class="progress" id="progress"></div>
 
 <header class="hdr" id="hdr">
@@ -723,431 +918,203 @@ form.done .sent{opacity:1;pointer-events:auto}
       <img class="l-dark" src="assets/img/logo.svg" alt="" aria-hidden="true">
     </a>
     <nav aria-label="Разделы">
+      <a href="#scope">Что делаем</a>
       <a href="#cases">Объекты</a>
+      <a href="#process">Этапы</a>
       <a href="#team">Команда</a>
-      <a href="#models">Модели</a><a href="#numbers">Цифры</a>
-      <a href="#economics">Экономика</a>
-      <a href="#process">Как работаем</a>
-      <a href="#factory">Производство</a>
       <a href="#faq">Вопросы</a>
     </nav>
-    <a href="#form" class="btn btn-primary">Оценить площадь</a>
+    <a class="h-tel" href="tel:88007007809">8 800 700-78-09</a>
+    <div class="h-msg">
+      <a href="https://wa.me/79607901070" target="_blank" rel="noopener" aria-label="Написать в WhatsApp"><svg><use href="#i-wa"/></svg></a>
+      <a href="https://t.me/+79607901070" target="_blank" rel="noopener" aria-label="Написать в Telegram"><svg><use href="#i-tg"/></svg></a>
+    </div>
+    <a href="#form" class="btn btn-primary">Обсудить проект</a>
     <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span></button>
   </div>
 </header>
 <div class="mmenu" id="mmenu">
+  <a href="#pains">Задачи ТЦ</a>
+  <a href="#scope">Что делаем</a>
   <a href="#cases">Объекты</a>
+  <a href="#process">Этапы</a>
   <a href="#team">Команда</a>
-  <a href="#models">Модели участия</a>
-  <a href="#formats">Форматы</a>
-  <a href="#economics">Экономика</a>
-  <a href="#process">Как работаем</a>
-  <a href="#factory">Производство</a>
   <a href="#faq">Вопросы</a>
-  <a href="#form" class="btn btn-primary">Оценить площадь</a>
+  <a href="tel:88007007809" class="btn btn-ghost" style="color:#fff"><svg class="ic"><use href="#i-tel"/></svg>8 800 700-78-09</a>
+  <a href="#form" class="btn btn-primary">Обсудить проект</a>
 </div>
 
 <main id="top">
 
 <!-- 1 HERO -->
-<section class="hero" aria-label="Первый экран">
-  <div class="hero-media"><img src="assets/img/hero.jpg" alt="Дети и инструктор на полосе препятствий в семейном парке «Орбита Семьи», Севастополь" fetchpriority="high"></div>
-  <div class="hero-cap">«Орбита Семьи», Севастополь · 650 м²</div>
+<section class="hero he" aria-label="Первый экран">
   <div class="wrap">
-    <h1 id="h1">Семейный развлекательный центр под ключ для вашего торгового центра</h1>
-    <div class="hero-side">
-      <div class="eyebrow"><i></i>Для собственников ТЦ</div>
-      <p>Считаем экономику площадки до вложений, проектируем, производим на своих цехах в Новосибирске и запускаем парк. Один подрядчик от расчёта до открытия.</p>
+    <div class="he-top">
+      <h1 id="h1">Семейные парки для торговых центров под ключ</h1>
+      <p class="he-sub">Профессионально создаём досуговые центры для всей семьи, ради которых едут в ваш ТЦ и остаются дольше.</p>
+      <ul class="hx-trust"><li>12 лет опыта</li><li>81 проект</li><li>63 города и 5 стран</li><li>40–55 рабочих дней до открытия</li></ul>
     </div>
-    <div class="hero-bottom">
-      <div class="hero-facts">
-        <div class="hero-fact" style="transition-delay:.35s"><b>2014</b><span>год основания, работаем 12 лет</span></div>
-        <div class="hero-fact" style="transition-delay:.45s"><b data-count="81">81</b><span>реализованный проект в 63 городах и 5 странах</span></div>
-        <div class="hero-fact" style="transition-delay:.55s"><b>40–55</b><span>рабочих дней от договора до открытия</span></div>
+    <div class="he-rail">
+      <div class="he-track" id="heTrack">
+        <a class="he-c" href="#cases" data-case="bezoom"><img src="assets/img/bz-wide.jpg" alt="Bezoom, Иркутск" fetchpriority="high"><span><b>Bezoom</b>Иркутск · 500 м²</span></a>
+        <a class="he-c" href="https://unitramp.ru/detskie-razvlekatelnye-centry/detskij-razvlekatelnyj-centr-kosmos" target="_blank" rel="noopener"><img src="assets/img/gm-cover.jpg" alt="«Космос», Гомель" fetchpriority="high"><span><b>«Космос»</b>Гомель · 250 м²</span></a>
+        <a class="he-c" href="https://unitramp.ru/proekty-ninja-parkov/centr-razvlechenij-prityazhenie" target="_blank" rel="noopener"><img src="assets/img/pr-neon.jpg" alt="«Притяжение», Магнитогорск" fetchpriority="high"><span><b>«Притяжение»</b>Магнитогорск · 450 м²</span></a>
+        <a class="he-c" href="#cases" data-case="neopolis"><img src="assets/img/c-neopolis.jpg" alt="«Неополис», Чита" loading="lazy"><span><b>«Неополис»</b>Чита · 500 м²</span></a>
+        <a class="he-c" href="#cases" data-case="panda"><img src="assets/img/c-panda-2.jpg" alt="Panda Park, Павлодар" loading="lazy"><span><b>Panda Park</b>Павлодар · в торговом центре</span></a>
+        <a class="he-c" href="https://unitramp.ru/detskie-razvlekatelnye-centry/razvlekatelnyj-centr-kosmopark-1" target="_blank" rel="noopener"><img src="assets/img/kp-cover.jpg" alt="«Космопарк № 1», Волгодонск" loading="lazy"><span><b>«Космопарк № 1»</b>Волгодонск · 210 м²</span></a>
+        <a class="he-c" href="#cases" data-case="kometa"><img src="assets/img/c-kometa.jpg" alt="«Комета», Орск" loading="lazy"><span><b>«Комета»</b>Орск · 600 м²</span></a>
+        <a class="he-c" href="#cases" data-case="armirum"><img src="assets/img/c-armirum.jpg" alt="«Армирум», Омск" loading="lazy"><span><b>«Армирум»</b>Омск · 880 м²</span></a>
       </div>
-      <div class="hero-cta">
-        <a href="#form" class="btn btn-primary">Оценить площадь <svg class="arr" viewBox="0 0 18 18" fill="none"><path d="M3 9h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.8"/></svg></a>
-        <a href="#cases" class="btn btn-ghost">Смотреть объекты</a>
-      </div>
+      <button class="he-arr prev" type="button" aria-label="Предыдущие парки"><svg viewBox="0 0 18 18" fill="none"><path d="M15 9H3m5-5L3 9l5 5" stroke="currentColor" stroke-width="1.8"/></svg></button>
+      <button class="he-arr next" type="button" aria-label="Следующие парки"><svg viewBox="0 0 18 18" fill="none"><path d="M3 9h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.8"/></svg></button>
+    </div>
+    <div class="hx-btns">
+      <a href="#form" class="btn btn-primary">Обсудить проект <svg class="arr" viewBox="0 0 18 18" fill="none"><path d="M3 9h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.8"/></svg></a>
+      <a href="tel:88007007809" class="btn btn-ghost hx-tel"><svg class="ic"><use href="#i-tel"/></svg>8 800 700-78-09</a>
     </div>
   </div>
 </section>
 
 <!-- 2 WHY NOW -->
-<section class="sec why" id="why">
-  <div class="wrap why-grid">
-    <div class="left">
-      <div class="eyebrow" data-r><i></i>Почему сейчас</div>
-      <h2 class="split" data-r="fade"><span class="ln"><span>Досуг стал</span></span><span class="ln"><span>главным арендатором</span></span><span class="ln"><span>новых ТЦ</span></span></h2>
-      <p class="lead" data-r>Покупки ушли на маркетплейсы, и магазинами площади уже не заполнить. Крупные моллы ставят активити-парки, спа и спортивные секции. Рынок торговых центров перестраивается, и вопрос в том, войдёт ли ваш ТЦ в этот тренд.</p>
-    </div>
-    <div class="rows">
-      <div class="stat" data-r>
-        <div class="num"><span data-count="14">14</span><small>%</small></div>
-        <div><p>площадей в новых торговых центрах в 2026 году заняли развлечения. Впервые больше, чем одежда.</p><div class="src">CMWP, «Известия», 08.09.2026</div></div>
-      </div>
-      <div class="stat" data-r>
-        <div class="num">+3<small>%</small></div>
-        <div><p>посещаемость развлекательных арендаторов. У магазинов одежды за тот же период минус 6%.</p><div class="src">Focus Technologies, Logistics.ru, 19.09.2026</div></div>
-      </div>
-      <div class="stat" data-r>
-        <div class="num">30–40<small>%</small></div>
-        <div><p>настолько дольше посетители остаются в торговом центре, где есть досуговые форматы.</p><div class="src">Оценка УК «Аструм Недвижимость», Logistics.ru, 19.09.2026</div></div>
-      </div>
-      <div class="why-out" data-r>
-        <div class="mk">!</div>
-        <p>Окупается не любой досуг, а формат, который подходит аудитории вашего ТЦ и правильно запущен. С этого мы и начинаем: делаем крытые семейные парки с 2014 года.</p>
-      </div>
+<section class="sec w2e" id="why">
+  <div class="wrap">
+    <div class="eyebrow" data-r><i></i>Почему сейчас</div>
+    <h2 class="w2e-h" data-r>Формат ТЦ постоянно меняется. Выигрывает тот, куда <em>хочется приехать</em> всей семьёй.</h2>
+    <div class="w2e-row">
+      <div data-r><b>Досуг + покупки</b><p>Торговый центр становится местом притяжения: сюда едут провести время и заодно делают покупки.</p></div>
+      <div data-r style="transition-delay:.06s"><b>Формула концепции</b><p>Знаем, как вывести ТЦ в топ своего города и какой должна быть современная концепция.</p></div>
+      <div class="st" data-r style="transition-delay:.12s"><div class="stat-big">30–40<small>%</small></div><p>дольше остаются посетители в ТЦ с досуговыми форматами</p><div class="src">Оценка УК «Аструм Недвижимость», Logistics.ru, 2026</div></div>
     </div>
   </div>
 </section>
 
-<div class="band" aria-hidden="true">
-  <div class="wrap band-row"><span>Расчёт</span><i></i><span class="o">Проект</span><i></i><span>Производство</span><i></i><span class="o">Монтаж</span><i></i><span>Запуск</span></div>
-</div>
-
-<!-- 3 TASKS -->
-<section class="sec tasks" id="tasks">
+<!-- 3 PAINS -->
+<section class="sec tasks pains" id="pains">
   <div class="wrap tasks-grid">
     <figure class="tasks-media" data-r="clip">
-      <img src="assets/img/p-kometa-4.jpg" alt="Ребёнок в сухом бассейне детского центра" data-px="-0.08" loading="lazy">
-      <figcaption>«Комета», Орск</figcaption>
+      <img src="assets/img/c-bezoom-2.jpg" alt="Интерактивная зона парка Bezoom, Иркутск" data-px="-0.08" loading="lazy">
+      <figcaption>Bezoom, Иркутск</figcaption>
     </figure>
     <div class="tasks-list">
       <div class="eyebrow tri" data-r><i></i>С чем приходят торговые центры</div>
-      <h2 class="split" data-r="fade"><span class="ln"><span>Четыре задачи, которые</span></span><span class="ln"><span>решает семейный парк</span></span></h2>
-
+      <h2 class="split" data-r="fade"><span class="ln"><span>Узнаёте</span></span><span class="ln"><span>свой ТЦ?</span></span></h2>
       <div class="task" data-r>
-        <svg class="ico" viewBox="0 0 40 40"><rect x="4" y="4" width="32" height="32" fill="none" stroke="#145AF5" stroke-width="2.5" stroke-dasharray="6 4"/></svg>
-        <div><h3>Пустует якорная площадь</h3><p>Ушёл крупный арендатор, и тысяча квадратных метров не приносит денег и портит этаж. Парк занимает площадь одним арендатором <em>с понятной функцией для семьи</em>.</p></div>
+        <svg class="ico" viewBox="0 0 40 40"><path d="M4 8 L14 20 L22 16 L36 32" fill="none" stroke="#145AF5" stroke-width="2.5"/><circle cx="36" cy="32" r="3" fill="#145AF5"/></svg>
+        <div><h3>Посещаемость упала в 2–3 раза от пиковой</h3><p>Людей в здании заметно меньше, чем было в лучшие годы.</p></div>
       </div>
       <div class="task" data-r>
-        <svg class="ico" viewBox="0 0 40 40"><path d="M4 30 L14 18 L22 24 L36 8" fill="none" stroke="#145AF5" stroke-width="2.5"/><circle cx="36" cy="8" r="3" fill="#145AF5"/></svg>
-        <div><h3>Проседают будни</h3><p>В выходные поток есть, в будни этажи пустые. Семейный досуг даёт <em>повод приехать</em> вечером после работы и задержаться на ужин.</p></div>
+        <svg class="ico" viewBox="0 0 40 40"><rect x="6" y="10" width="28" height="22" rx="3" fill="none" stroke="#145AF5" stroke-width="2.5"/><path d="M6 17h28" stroke="#145AF5" stroke-width="2.5"/></svg>
+        <div><h3>Арендаторы не платят стабильно</h3><p>Из-за низкого трафика магазинам трудно держать аренду.</p></div>
+      </div>
+      <div class="task" data-r>
+        <svg class="ico" viewBox="0 0 40 40"><circle cx="20" cy="20" r="15" fill="none" stroke="#145AF5" stroke-width="2.5"/><path d="M20 11v9l6 4" fill="none" stroke="#145AF5" stroke-width="2.5"/></svg>
+        <div><h3>Время посетителя в ТЦ сокращается</h3><p>Кинотеатр и фудкорт больше не удерживают гостей на нужные часы.</p></div>
       </div>
       <div class="task" data-r>
         <svg class="ico" viewBox="0 0 40 40"><circle cx="13" cy="20" r="9" fill="none" stroke="#145AF5" stroke-width="2.5"/><circle cx="27" cy="20" r="9" fill="#145AF5" opacity=".9"/></svg>
-        <div><h3>Семьи уходят к соседнему ТЦ</h3><p>У конкурента появился парк, и выходные семьи проводят там. Нужен <em>свой формат</em>, который не повторяет соседа и подходит вашей аудитории.</p></div>
+        <div><h3>Соседний ТЦ переманивает аудиторию</h3><p>Семьи уезжают туда, где есть чем заняться детям и подросткам.</p></div>
       </div>
       <div class="task" data-r>
         <svg class="ico" viewBox="0 0 40 40"><path d="M20 5 A15 15 0 1 1 6.5 13.5" fill="none" stroke="#145AF5" stroke-width="2.5"/><path d="M4 6 L7 14 L15 11" fill="none" stroke="#145AF5" stroke-width="2.5"/></svg>
-        <div><h3>Детский центр устарел</h3><p>Действующий парк теряет гостей. Обновляем концепцию и оборудование: в «Чудо Острове» демонтировали старую арену и <em>смонтировали новую за 23 дня</em>.</p></div>
+        <div><h3>Досуговый центр устарел</h3><p>Парк выглядит несовременно, гостей всё меньше, а якорный арендатор не торопится его обновлять.</p></div>
       </div>
-
-      <div class="gives" data-r>
-        <span><i></i>Якорь этажа</span><span><i></i>Причина семейного визита</span><span><i></i>Больше времени в здании</span><span><i></i>Заполненная площадь</span>
+      <div class="cta-inline" data-r>
+        <p>Расскажите, что происходит в вашем ТЦ. Предложим формат под вашу аудиторию.</p>
+        <div class="acts"><a href="#form" class="btn btn-primary">Обсудить проект</a><a href="tel:88007007809" class="btn btn-ghost"><svg class="ic"><use href="#i-tel"/></svg>Позвонить</a></div>
       </div>
-      <p class="note" data-r>Это задачи, под которые мы проектируем парк. Эффект для вашего ТЦ оцениваем в расчёте по вашей площадке, а не обещаем заранее.</p>
     </div>
   </div>
 </section>
 
-<!-- LIVE PEOPLE -->
-<section class="live" aria-label="Живые парки">
+<!-- 4 SCOPE -->
+<section class="sec scope" id="scope">
   <div class="wrap">
-    <div class="live-head">
-      <div class="eyebrow ring" data-r><i></i>Мы продаём не оборудование</div>
-      <h2 class="split" data-r="fade" style="color:#fff"><span class="ln"><span>Работающий парк,</span></span><span class="ln"><span>наполненный людьми</span></span></h2>
-      <p data-r>Площадь окупается, когда в ней гости. Поэтому проектируем маршрут, зоны по возрастам и сценарии визита, а не только расставляем изделия.</p>
+    <div class="sec-head">
+      <div class="eyebrow" data-r><i></i>Что делаем</div>
+      <h2 class="split" data-r="fade"><span class="ln"><span>Берём проект</span></span><span class="ln"><span>целиком или частично</span></span></h2>
+      <p class="lead" data-r>Вы выбираете, какую часть работы отдаёте нам. Состав и цена каждого этапа видны в смете до начала производства.</p>
     </div>
-    <div class="live-grid">
-      <figure data-r="clip"><img src="assets/img/p-orbita-1.jpg" alt="Мальчик на интерактивной стене" data-px="0.06" loading="lazy" style="object-position:40% 50%"><figcaption>«Орбита Семьи», Севастополь</figcaption></figure>
-      <figure data-r="clip"><img src="assets/img/p-kometa-1.jpg" alt="Ребёнок в зоне отдыха детского центра" data-px="-0.06" loading="lazy"><figcaption>«Комета», Орск</figcaption></figure>
-      <figure data-r="clip"><img src="assets/img/p-kometa-3.jpg" alt="Ребёнок на аттракционе" data-px="0.1" loading="lazy"><figcaption>«Комета», Орск</figcaption></figure>
-      <figure data-r="clip"><img src="assets/img/p-orbita-4.jpg" alt="Девочка преодолевает препятствие" data-px="-0.04" loading="lazy"><figcaption>«Орбита Семьи», Севастополь</figcaption></figure>
+    <div class="sc-grid">
+      <div class="sc-mode full" data-r>
+        <span class="tg">Полное курирование</span>
+        <h3>От идеи до открытия</h3>
+        <p>Один подрядчик и один ответственный менеджер на всём пути.</p>
+        <ul><li>Концепция и зонирование под аудиторию ТЦ</li><li>3D-проект будущего парка</li><li>Смета, договор и график</li><li>Поставка оборудования и аттракционов</li><li>Монтаж нашей бригадой</li><li>Документы для запуска, обучение персонала, гарантия 12 месяцев</li></ul>
+      </div>
+      <div class="sc-mode" data-r style="transition-delay:.06s">
+        <span class="tg">Частичное курирование</span>
+        <h3>Только нужные этапы</h3>
+        <p>Если у вас уже есть команда или проект, подключаемся там, где нужны.</p>
+        <ul><li>Концепция и 3D-проект</li><li>Подбор и поставка оборудования</li><li>Монтаж и запуск</li><li>Обновление действующего парка</li></ul>
+      </div>
+      <div class="sc-feats">
+        <div class="sc-f" data-r><div class="k">Опционально</div><h4>Экономическое обоснование</h4><p>Работаем с собственниками и парками в разных странах, собираем статистику посещаемости по каждой локации. На её основе считаем окупаемость вашего будущего парка.</p></div>
+        <div class="sc-f" data-r style="transition-delay:.05s"><div class="k">Опыт</div><h4>Реструктуризация формата ТЦ</h4><p>Помогаем перестроить концепцию торгового центра, чтобы досуг работал на поток всего здания.</p></div>
+        <div class="sc-f" data-r style="transition-delay:.1s"><div class="k">Оборудование</div><h4>Только проверенные фабрики</h4><p>Оборудование и аттракционы поставляем от проверенных фабрик России, Европы и Китая.</p></div>
+        <div class="sc-f" data-r style="transition-delay:.15s"><div class="k">Безопасность</div><h4>Документы для запуска</h4><p>Сертификаты ТР ЕАЭС 038 и ГОСТ 33807, паспорта изделий и инструкции.</p></div>
+      </div>
+      <div class="sc-own" data-r><i>i</i><p><b>Ремонт и отделку помещения ТЦ делает самостоятельно.</b> Мы передаём техзадание: требования к полу, потолкам, электрике и инженерным сетям, чтобы помещение было готово к монтажу в срок.</p></div>
     </div>
   </div>
 </section>
 
-<!-- 4 CASES -->
+<!-- 5 CASES -->
 <section class="sec cases" id="cases">
   <div class="wrap">
     <div class="sec-head">
       <div class="eyebrow" data-r><i></i>Объекты</div>
       <h2 class="split" data-r="fade"><span class="ln"><span>Парки, которые</span></span><span class="ln"><span>уже работают</span></span></h2>
-      <p class="lead" data-r>Город, площадь, срок и что сделали. Данные со страниц проектов на unitramp.ru.</p>
+      <p class="lead" data-r>Город, площадь, срок и что сделали. Нажмите на объект, чтобы посмотреть фото.</p>
     </div>
     <div class="case-grid" id="caseGrid"></div>
-    <div class="cases-foot" data-r>
-      <p class="small" style="max-width:36em">81 реализованный проект в 63 городах. Покажем объект рядом с вами и расскажем, как он работает.</p>
-      <a class="link-arr" href="https://unitramp.ru/projects/" target="_blank" rel="noopener">Все проекты на unitramp.ru <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M3 9h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.8"/></svg></a>
+    <div class="cta-inline dark" data-r>
+      <p>81 проект в 63 городах и 5 странах. Покажем объект рядом с вами и расскажем, как он работает.</p>
+      <div class="acts"><a href="#form" class="btn btn-primary">Обсудить проект</a><a class="btn btn-ghost" href="https://unitramp.ru/projects/" target="_blank" rel="noopener">Все проекты</a></div>
     </div>
   </div>
 </section>
 
-<!-- 11 TEAM -->
-<section class="sec team" id="team">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow" data-r><i></i>Команда</div>
-      <h2 class="split" data-r="fade"><span class="ln"><span>Люди, которые</span></span><span class="ln"><span>отвечают за проект</span></span></h2>
-      <p class="lead" data-r>За проект на десятки миллионов отвечают конкретные люди. Вы знаете их по именам и говорите с ними напрямую, а не с колл-центром. <span class="gap">утверждённый список от Кирилла</span></p>
-    </div>
-    <div class="team-grid">
-      <div class="person" data-r style="transition-delay:0.00s">
-        <div class="ph"><svg viewBox="0 0 120 150" aria-hidden="true"><circle cx="60" cy="58" r="24"/><path d="M14 150c4-34 22-52 46-52s42 18 46 52"/></svg><span class="ph-l">Фото 4:5</span></div>
-        <div class="role">Основатель</div><h3>Роман Сотников</h3><p class="what"><span class="resp">Отвечает за</span>концепция парка и формат под вашу аудиторию</p>
-      </div>
-      <div class="person" data-r style="transition-delay:0.06s">
-        <div class="ph"><svg viewBox="0 0 120 150" aria-hidden="true"><circle cx="60" cy="58" r="24"/><path d="M14 150c4-34 22-52 46-52s42 18 46 52"/></svg><span class="ph-l">Фото 4:5</span></div>
-        <div class="role">Генеральный директор</div><h3>Кирилл Шувалов</h3><p class="what"><span class="resp">Отвечает за</span>договор, сроки и бюджет проекта</p>
-      </div>
-      <div class="person" data-r style="transition-delay:0.12s">
-        <div class="ph"><svg viewBox="0 0 120 150" aria-hidden="true"><circle cx="60" cy="58" r="24"/><path d="M14 150c4-34 22-52 46-52s42 18 46 52"/></svg><span class="ph-l">Фото 4:5</span></div>
-        <div class="role">Главный инженер</div><h3>Вячеслав</h3><p class="what"><span class="resp">Отвечает за</span>проект, производство и безопасность оборудования</p>
-      </div>
-      <div class="person" data-r style="transition-delay:0.18s">
-        <div class="ph"><svg viewBox="0 0 120 150" aria-hidden="true"><circle cx="60" cy="58" r="24"/><path d="M14 150c4-34 22-52 46-52s42 18 46 52"/></svg><span class="ph-l">Фото 4:5</span></div>
-        <div class="role">Старший менеджер проектов</div><h3>Александр Казанцев</h3><p class="what"><span class="resp">Отвечает за</span>ваш контакт на всех этапах, от расчёта до открытия</p>
-      </div>
-    </div>
-    
-  </div>
-</section>
 
-<!-- 5 MODELS -->
-<section class="sec models" id="models">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow ring" data-r><i></i>Модели участия</div>
-      <h2 class="split" data-r="fade"><span class="ln"><span>Три способа</span></span><span class="ln"><span>запустить парк в ТЦ</span></span></h2>
-      <p class="lead" data-r>Сначала договариваемся, кто вкладывает и кто управляет. От этого зависит формат, расчёт и состав нашей работы.</p>
-    </div>
-    <div class="mdl-tabs" role="tablist">
-      <button class="on" data-t="1">Сдать оператору</button><button data-t="2">Свой парк</button><button data-t="3">Совместно</button>
-    </div>
-    <div class="mdl-grid" id="mdl" data-tab="1" data-r>
-      <div class="mdl-cell rh hd"></div>
-      <div class="mdl-cell hd c1" data-c="1"><div class="n">01</div><h3>Сдать площадь оператору</h3><p>ТЦ остаётся арендодателем</p></div>
-      <div class="mdl-cell hd c2" data-c="2"><div class="n">02</div><h3>Свой парк</h3><p>ТЦ сам инвестирует и управляет</p></div>
-      <div class="mdl-cell hd c3" data-c="3"><div class="n">03</div><h3>Совместный проект</h3><p>Вложения делятся между сторонами</p></div>
 
-      <div class="mdl-cell rh">Кто вкладывает в парк</div>
-      <div class="mdl-cell c1" data-c="1" data-k="Кто вкладывает">Оператор. ТЦ может взять на себя подготовку помещения.</div>
-      <div class="mdl-cell c2" data-c="2" data-k="Кто вкладывает">Торговый центр, полностью.</div>
-      <div class="mdl-cell c3" data-c="3" data-k="Кто вкладывает">ТЦ и оператор. Доли фиксируем в начале проекта.</div>
-
-      <div class="mdl-cell rh">Кто управляет</div>
-      <div class="mdl-cell c1" data-c="1" data-k="Кто управляет">Оператор парка.</div>
-      <div class="mdl-cell c2" data-c="2" data-k="Кто управляет">ТЦ или его управляющая компания.</div>
-      <div class="mdl-cell c3" data-c="3" data-k="Кто управляет">Как правило, оператор. Роли закрепляются договором.</div>
-
-      <div class="mdl-cell rh">Что получает ТЦ</div>
-      <div class="mdl-cell c1" data-c="1" data-k="Что получает ТЦ">Арендную ставку, якорь этажа и семейный поток без операционных рисков.</div>
-      <div class="mdl-cell c2" data-c="2" data-k="Что получает ТЦ">Выручку парка и полный контроль над форматом. Вместе с расходами на персонал, обслуживание и маркетинг.</div>
-      <div class="mdl-cell c3" data-c="3" data-k="Что получает ТЦ">Ставку и долю результата по условиям договора.</div>
-
-      <div class="mdl-cell rh">Что делаем мы</div>
-      <div class="mdl-cell c1" data-c="1" data-k="Что делаем мы">Проектируем парк под площадь и аудиторию, производим и запускаем для оператора.</div>
-      <div class="mdl-cell c2" data-c="2" data-k="Что делаем мы">Полный цикл: расчёт, проект, производство, монтаж, документы, обучение персонала.</div>
-      <div class="mdl-cell c3" data-c="3" data-k="Что делаем мы">Считаем экономику для обеих сторон по одним исходным данным, дальше полный цикл.</div>
-    </div>
-    <div class="mdl-warn">
-      <div class="box" data-r>
-        <b>Выручка парка не равна доходу торгового центра</b>
-        <p>В модели аренды деньги парка получает оператор, а ТЦ получает ставку и поток. В расчёте показываем экономику каждой стороны отдельно, чтобы решение принималось на верных цифрах.</p>
-      </div>
-      <div class="upd" data-r>
-        <div class="upd-num"><b>23</b><span>дня занял монтаж новой арены вместо старой</span></div>
-        <div><div class="eyebrow tri"><i></i>Уже есть парк</div><h3>Обновим действующий центр</h3><p>Новая концепция и замена оборудования. «Чудо Остров», Великий Новгород: демонтаж старой арены и монтаж новой под ключ.</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 6 FORMATS -->
-<section class="sec nums" id="numbers">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow" data-r><i></i>Цифры для решения</div>
-      <h2 class="split" data-r="fade"><span class="ln"><span>Рынок, бюджет</span></span><span class="ln"><span>и сроки</span></span></h2>
-      <p class="lead" data-r>Проверенные цифры рынка и наши ориентиры по стоимости. Точную смету считаем после 3D-проекта, до начала производства.</p>
-    </div>
-    <div class="nm-row" data-r>
-      <div><b>14%</b><span>арендаторов новых ТЦ занимают развлечения</span><small>CMWP, «Известия», 08.09.2026</small></div>
-      <div><b>+3%</b><span>рост трафика в развлечениях, при −6% в одежде</span><small>Focus Technologies, 19.09.2026</small></div>
-      <div><b>30–40%</b><span>дольше остаются в ТЦ, где есть развлечения</span><small>оценка УК «Аструм Недвижимость», 2026</small></div>
-    </div>
-    <div class="nm-cost" data-r>
-      <div class="nm-l">
-        <h3>Сколько стоит парк на вашей площади</h3>
-        <p>Ориентир по нашим проектам: оборудование 20–35 тыс. ₽ за м², монтаж около 20% сверху. <span class="gap ok">вилка цены за м²</span></p>
-        <label for="nmA">Площадь парка <output id="nmAo">1 000 м²</output></label>
-        <input type="range" id="nmA" min="200" max="3000" step="50" value="1000">
-        <div class="nm-pre"><button data-a="500">500 м²</button><button data-a="1000">1 000 м²</button><button data-a="2000">2 000 м²</button></div>
-      </div>
-      <dl class="nm-r">
-        <div><dt>Оборудование</dt><dd id="nmE">20–35 млн ₽</dd></div>
-        <div><dt>Монтаж ≈20%</dt><dd id="nmM">4–7 млн ₽</dd></div>
-        <div class="tot"><dt>Итого ориентир</dt><dd id="nmT">24–42 млн ₽</dd></div>
-        <p>Без ремонта помещения, отделки и инженерных сетей. Состав зон и тематика двигают цену внутри вилки.</p>
-      </dl>
-    </div>
-    <div class="nm-row t2" data-r>
-      <div><b>40–55</b><span>рабочих дней срок реализации проекта</span><small>23 проекта с указанным сроком на unitramp.ru</small></div>
-      <div><b>10–21</b><span>день монтажа на объекте</span><small>«Пружина» 10, Positive Energy 16, MONKEY 21 день</small></div>
-      <div><b>2 500 м²</b><span>своих цехов в Новосибирске, гарантия 12 месяцев</span><small>ТР ЕАЭС 038, ГОСТ 33807</small></div>
-    </div>
-  </div>
-</section>
-
-<section class="sec formats" id="formats">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow" data-r><i></i>Форматы по площади</div>
-      <h2 class="split" data-r="fade"><span class="ln"><span>Что поместится</span></span><span class="ln"><span>на вашей площади</span></span></h2>
-      <p class="lead" data-r>Ориентиры по нашим проектам. Точный состав и смету считаем под ваше помещение и аудиторию.</p>
-    </div>
-    <div class="fmt-grid">
-      <article class="fmt" data-r data-fmt>
-        <div class="area-vis"><img src="assets/img/c-neopolis.jpg" alt="«Неополис», Чита" loading="lazy"></div>
-        <div class="range">до 600 <small>м²</small></div>
-        <h3>Семейный центр</h3>
-        <ul><li>Лабиринт с горками и сухим бассейном</li><li>Малышковая зона до 5 лет</li><li>Активная арена с интерактивом</li></ul>
-        <div class="meta">
-          <div><span>Пример</span><b>«Неополис», Чита, 500 м²</b></div>
-          <div><span>Бюджет</span><b class="gap">вилка от отдела продаж</b></div>
-        </div>
-      </article>
-      <article class="fmt" data-r data-fmt style="transition-delay:.08s">
-        <div class="area-vis"><img src="assets/img/c-armirum.jpg" alt="«Армирум», Омск" loading="lazy"></div>
-        <div class="range">600–1 000 <small>м²</small></div>
-        <h3>Активити-парк</h3>
-        <ul><li>Несколько зон для детей 3–14 лет и взрослых</li><li>Ниндзя-трасса, скалодром, интерактивные аттракционы</li><li>Зона праздников и кафе для родителей</li></ul>
-        <div class="meta">
-          <div><span>Пример</span><b>«Армирум», Омск, 880 м²</b></div>
-          <div><span>Бюджет</span><b class="gap">вилка от отдела продаж</b></div>
-        </div>
-      </article>
-      <article class="fmt main" data-r data-fmt style="transition-delay:.16s">
-        <span class="tag acc badge">Наш фокус</span>
-        <div class="area-vis"><img src="assets/img/pr-3d.jpg" alt="3D-проект комплекса" loading="lazy"><span class="av-cap">3D-проект</span></div>
-        <div class="range">1 000+ <small>м²</small></div>
-        <h3 style="color:#fff">Семейный развлекательный комплекс</h3>
-        <ul><li>Зоны по возрастам и единая тематика</li><li>Событийная площадка, кафе, детские праздники</li><li>Проект начинаем с расчёта экономики площадки</li><li>Мощности производства и проектирования рассчитаны на парки до 5 000–8 000 м²</li></ul>
-        <div class="meta on-dark">
-          <div><span>Пример</span><b class="gap">реализованный объект от 1 000 м²</b></div>
-          <div><span>Масштаб</span><b class="gap ok">до 5 000–8 000 м² со слов Романа</b></div>
-          <div><span>Бюджет</span><b class="gap">вилка от отдела продаж</b></div>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- FEATURES VIDEO -->
-<section class="sec feats" id="features">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow ring" data-r><i></i>Фишки индустрии</div>
-      <h2 class="split" data-r="fade"><span class="ln"><span>То, чего вы ещё</span></span><span class="ln"><span>не видели в парках</span></span></h2>
-      <p class="lead" data-r>Аттракционы, ради которых семьи возвращаются. Короткие ролики с пояснениями основателя: можно посмотреть самому и переслать партнёру.</p>
-    </div>
-    <div class="feat-grid">
-      <button class="feat" type="button" data-r><img src="assets/img/p-orbita-1.jpg" alt="Интерактивная стена" loading="lazy" style="object-position:35% 50%"><span class="play"></span><span class="ft"><b>Интерактивная стена</b><em>Игра на реакцию: таймер, очки, соревнование</em></span></button>
-      <button class="feat" type="button" data-r style="transition-delay:.06s"><img src="assets/img/p-orbita-3.jpg" alt="Спиннер на батутной арене" loading="lazy" style="object-position:62% 50%"><span class="play"></span><span class="ft"><b>Спиннер</b><em>Вращающиеся планки: перепрыгни или пригнись</em></span></button>
-      <button class="feat dark" type="button" data-r style="transition-delay:.12s"><span class="play"></span><span class="ft"><b>Липкая стена</b><em>Прыжок и «прилипание» в костюме</em></span></button>
-      <button class="feat dark d2" type="button" data-r style="transition-delay:.18s"><span class="play"></span><span class="ft"><b>Интерактивный пол</b><em>Проекция, которая реагирует на шаги</em></span></button>
-    </div>
-    
-  </div>
-</section>
-
-<!-- 7 ECONOMICS -->
-<section class="sec econ" id="economics">
-  <div class="wrap econ-grid">
-    <div class="econ-l">
-      <div class="eyebrow" data-r><i></i>Расчёт до вложений</div>
-      <h2 class="split" data-r="fade"><span class="ln"><span>Считаем экономику</span></span><span class="ln"><span>до того, как вы</span></span><span class="ln"><span>вложите деньги</span></span></h2>
-      <p class="lead" data-r>Перед проектом разбираем площадку: кто живёт вокруг, с кем вы конкурируете, сколько гостей примет парк и когда он окупится. Итог: рекомендация запускать, запускать с условиями или не запускать.</p>
-      <div class="econ-steps" id="econSteps">
-        <div class="econ-step on" data-s="1"><div class="n">01</div><div><b>Зона охвата</b><span>Сколько жителей и детей 3–14 лет в 10 и 20 минутах от ТЦ, пешком и на машине.</span></div></div>
-        <div class="econ-step" data-s="2"><div class="n">02</div><div><b>Кто живёт вокруг</b><span>Доходы, состав семей, повседневные окна спроса: будни, вечера, выходные.</span></div></div>
-        <div class="econ-step" data-s="3"><div class="n">03</div><div><b>Конкуренты и свободная ниша</b><span>Какие парки уже есть в городе и какой формат на рынке не занят.</span></div></div>
-        <div class="econ-step" data-s="4"><div class="n">04</div><div><b>Вместимость и сценарии визита</b><span>Сколько гостей примет парк одновременно, сколько длится визит, где узкие места.</span></div></div>
-        <div class="econ-step" data-s="5"><div class="n">05</div><div><b>Вложения и окупаемость</b><span>CAPEX по контурам, операционные расходы, сценарии посещаемости и срок окупаемости.</span></div></div>
-        <div class="econ-step" data-s="6"><div class="n">06</div><div><b>Риски и план проверки</b><span>Что может пойти не так и как проверить спрос в первые 90 дней после открытия.</span></div></div>
-      </div>
-    </div>
-    <div class="econ-r">
-      <div class="map" id="map" data-r="fade">
-        <svg viewBox="0 0 600 600" aria-hidden="true">
-          <g class="grid"></g>
-          <path class="road" d="M-20 380 C120 350 220 330 300 300 S470 220 620 170"/>
-          <path class="road" d="M260 -20 C280 120 290 220 300 300 S330 480 350 620"/>
-          <path class="road2" d="M-20 160 C140 200 220 250 300 300 S420 420 620 470"/>
-          <path class="road2" d="M80 620 C150 480 220 380 300 300"/>
-          <circle class="fill" cx="300" cy="300" r="250"/>
-          <circle class="ring r1" cx="300" cy="300" r="95"/>
-          <circle class="ring r2" cx="300" cy="300" r="170"/>
-          <circle class="ring r3" cx="300" cy="300" r="250"/>
-          <text class="lbl" x="300" y="196" text-anchor="middle">10 мин пешком</text>
-          <text class="lbl" x="300" y="121" text-anchor="middle">10 мин на авто</text>
-          <text class="lbl" x="300" y="41" text-anchor="middle">20 мин на авто</text>
-          <g class="dots" id="dots"></g>
-          <g class="comp" style="transition-delay:.1s"><circle cx="452" cy="208" r="9"/></g>
-          <g class="comp" style="transition-delay:.25s"><circle cx="160" cy="430" r="9"/></g>
-          <g class="comp" style="transition-delay:.4s"><circle cx="520" cy="420" r="9"/></g>
-          <circle class="pulse" cx="300" cy="300" r="14"/>
-          <circle class="home" cx="300" cy="300" r="10"/>
-          <circle cx="300" cy="300" r="4" fill="#145AF5"/>
-        </svg>
-        <div class="cap"><div class="legend"><span><i style="background:#fff"></i>Ваш ТЦ</span><span><i style="background:rgba(233,237,245,.55)"></i>Жилые кварталы</span><span><i style="background:#FF6B5A"></i>Конкуренты</span></div><span>Схема</span></div>
-      </div>
-      <div class="report" data-r>
-        <div><div class="rt">Сводный анализ площадки</div><h4>Рынок, аудитория, спрос и экономика проекта</h4></div>
-        <div class="verdict"><i></i>Запускать с условиями</div>
-        <div class="kpis">
-          <div class="kpi"><s></s><span>общий контур проекта, м²</span></div>
-          <div class="kpi"><s></s><span>игровая зона, м²</span></div>
-          <div class="kpi"><s></s><span>жителей в 10 мин на авто</span></div>
-          <div class="kpi"><s></s><span>вложения в оборудование и монтаж</span></div>
-        </div>
-        <p class="note2">Структура настоящего анализа для одного из ТРЦ: 12 разделов от локации до плана проверки на 90 дней. Цифры клиента скрыты.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 8 PROCESS -->
+<!-- 7 PROCESS -->
 <section class="sec process" id="process">
   <div class="wrap">
     <div class="sec-head">
-      <div class="eyebrow tri" data-r><i></i>Как проходит проект</div>
-      <h2 class="split" data-r="fade"><span class="ln"><span>От плана помещения</span></span><span class="ln"><span>до открытия</span></span></h2>
-      <p class="lead" data-r>Один подрядчик и один ответственный менеджер на всех этапах. Вы согласуете решения, мы ведём работу.</p>
+      <div class="eyebrow tri" data-r><i></i>Прозрачные этапы</div>
+      <h2 class="split" data-r="fade"><span class="ln"><span>Смета, доставка,</span></span><span class="ln"><span>монтаж, открытие</span></span></h2>
+      <p class="lead" data-r>Каждый этап с понятным результатом и сроком. Вы согласуете решения, мы ведём работу.</p>
     </div>
     <div class="proc-grid">
       <div class="proc-steps" id="procSteps">
         <div class="proc-step on" data-f="0">
-          <div class="n">01 <em>Исходные данные</em></div>
+          <div class="n">01 <em>Старт</em></div>
           <h3>Помещение и задача</h3>
-          <p>Присылаете адрес, план, площадь и высоту потолков, статус помещения. Обсуждаем, кто будет вкладывать и управлять парком.</p>
+          <p>Присылаете план, площадь и высоту потолков. Обсуждаем аудиторию ТЦ и модель участия.</p>
           <figure class="pimg"><img src="assets/img/pr-room.jpg" alt="Пустое помещение до начала работ" loading="lazy"><span class="tag">Помещение до работ · «Комета», Орск</span></figure>
         </div>
         <div class="proc-step" data-f="1">
-          <div class="n">02 <em>Расчёт и концепция</em></div>
-          <h3>Анализ площадки и 3D-проект</h3>
-          <p>Считаем экономику, подбираем формат и зонирование. Показываем будущий парк в 3D, чтобы решение принималось на картинке, а не на словах.</p>
+          <div class="n">02 <em>Концепция</em></div>
+          <h3>Концепция и 3D-проект</h3>
+          <p>Подбираем формат и зонирование, показываем будущий парк в 3D. По запросу готовим экономическое обоснование.</p>
           <figure class="pimg"><img src="assets/img/pr-3d.jpg" alt="Проектная визуализация детского центра" loading="lazy"><span class="tag">Проектная визуализация · «Комета»</span></figure>
         </div>
         <div class="proc-step" data-f="2">
-          <div class="n">03 <em>Смета и договор</em></div>
-          <h3>Состав, цена и график</h3>
-          <p>Фиксируем состав оборудования, стоимость и график производства и монтажа.</p>
+          <div class="n">03 <em>Смета</em></div>
+          <h3>Смета и договор</h3>
+          <p>Фиксируем состав оборудования, стоимость и график. Цена не меняется без вашего согласия.</p>
           <figure class="pimg"><img src="assets/img/f-plan.jpg" alt="Планировка зон парка" loading="lazy"><span class="tag">Планировка зон</span></figure>
         </div>
         <div class="proc-step" data-f="3">
-          <div class="n">04 <em>Производство</em></div>
-          <h3>Своё производство в Новосибирске</h3>
-          <p>Изготавливаем оборудование в своих цехах и печатаем оформление. Срок не зависит от посредников.</p>
-          <figure class="pimg"><img src="assets/img/f-factory.jpg" alt="Производство мягких элементов" loading="lazy"><span class="tag">Производство UNITRAMP</span></figure>
+          <div class="n">04 <em>Производство и доставка</em></div>
+          <h3>Изготовление и доставка</h3>
+          <p>Оборудование изготавливают и проверяют на фабриках, затем доставляем его на объект. Параллельно ТЦ готовит помещение по нашему техзаданию.</p>
+          <figure class="pimg"><img src="assets/img/f-factory.jpg" alt="Мягкие элементы перед отгрузкой" loading="lazy"><span class="tag">Подготовка к отгрузке</span></figure>
         </div>
         <div class="proc-step" data-f="4">
-          <div class="n">05 <em>Монтаж</em></div>
-          <h3>Своя бригада на объекте</h3>
-          <p>Монтаж занимает от 10 до 21 дня. Порядок работ согласуем с управляющей компанией.</p>
-          <figure class="pimg"><img src="assets/img/pr-mount.jpg" alt="Монтаж каркаса полосы препятствий" loading="lazy" style="object-position:50% 40%"><span class="tag">Монтаж · «Армирум», Омск</span></figure>
+          <div class="n">05 <em>10–21 день</em></div>
+          <h3>Монтаж</h3>
+          <p>Собираем парк своей бригадой. Время работ и маршрут завоза согласуем с управляющей компанией, чтобы не мешать арендаторам.</p>
+          <figure class="pimg"><img src="assets/img/pr-mount-bz.jpg" alt="Монтаж игрового лабиринта" loading="lazy"><span class="tag">Монтаж · Bezoom, Иркутск</span></figure>
         </div>
         <div class="proc-step" data-f="5">
           <div class="n">06 <em>Запуск</em></div>
@@ -1161,127 +1128,88 @@ form.done .sent{opacity:1;pointer-events:auto}
         <figure class="proc-frame on"><img src="assets/img/pr-room.jpg" alt="" loading="lazy"><figcaption><span class="tag">Помещение до работ · «Комета», Орск</span></figcaption></figure>
         <figure class="proc-frame"><img src="assets/img/pr-3d.jpg" alt="" loading="lazy"><figcaption><span class="tag acc">Проектная визуализация</span><span class="tag">«Комета», Орск</span></figcaption></figure>
         <figure class="proc-frame"><img src="assets/img/f-plan.jpg" alt="" loading="lazy" style="object-fit:cover"><figcaption><span class="tag acc">Проектная визуализация</span><span class="tag">Планировка зон</span></figcaption></figure>
-        <figure class="proc-frame"><img src="assets/img/f-factory.jpg" alt="" loading="lazy"><figcaption><span class="tag">Производство UNITRAMP, Новосибирск</span></figcaption></figure>
-        <figure class="proc-frame"><img src="assets/img/pr-mount.jpg" alt="" loading="lazy" style="object-position:50% 40%"><figcaption><span class="tag">Монтаж · «Армирум», Омск</span></figcaption></figure>
+        <figure class="proc-frame"><img src="assets/img/f-factory.jpg" alt="" loading="lazy"><figcaption><span class="tag">Подготовка к отгрузке</span></figcaption></figure>
+        <figure class="proc-frame"><img src="assets/img/pr-mount-bz.jpg" alt="" loading="lazy"><figcaption><span class="tag">Монтаж · Bezoom, Иркутск</span></figcaption></figure>
         <figure class="proc-frame"><img src="assets/img/pr-result.jpg" alt="" loading="lazy"><figcaption><span class="tag">Открытие · «Комета», Орск</span></figcaption></figure>
       </div>
     </div>
     <div class="proc-total" data-r>
       <div class="big">40–55 <small>рабочих дней</small></div>
-      <p>от договора до открытия. Типичный срок по 23 нашим проектам с указанным сроком. Монтаж на объекте от 10 до 21 дня.</p>
-      <a href="#form" class="btn btn-primary">Начать с оценки площади</a>
+      <p>от договора до открытия. Типичный срок по 23 нашим проектам с указанным сроком.</p>
+      <a href="#form" class="btn btn-primary">Обсудить сроки для вашего ТЦ</a>
     </div>
   </div>
 </section>
 
-<!-- 9 RISKS -->
-<section class="sec risks" id="risks">
+<!-- 8 TEAM -->
+<section class="sec team" id="team">
   <div class="wrap">
     <div class="sec-head">
-      <div class="eyebrow ring" data-r><i></i>Риски собственника</div>
-      <h2 class="split" data-r="fade"><span class="ln"><span>Чего опасается</span></span><span class="ln"><span>собственник и как</span></span><span class="ln"><span>мы это закрываем</span></span></h2>
-      <p class="lead" data-r>Стройка в работающем здании всегда риск. Разбираем его заранее, а не во время монтажа.</p>
+      <div class="eyebrow" data-r><i></i>Команда</div>
+      <h2 class="split" data-r="fade"><span class="ln"><span>Люди, которые</span></span><span class="ln"><span>отвечают за проект</span></span></h2>
+      <p class="lead" data-r>Вы говорите напрямую с теми, кто принимает решения по вашему парку, а не с колл-центром.</p>
     </div>
-    <div class="risk-grid">
-      <div class="risk" data-r><div class="q"><i></i>Сорвём открытие</div><h3>Срок</h3><p>График производства и монтажа прописываем в договоре.</p><div class="ans"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M2 8.5l4 4 8-9" fill="none" stroke="#145AF5" stroke-width="2"/></svg><span>Обычно 40–55 рабочих дней от договора до открытия.</span></div></div>
-      <div class="risk" data-r style="transition-delay:.06s"><div class="q"><i></i>Смета вырастет</div><h3>Бюджет</h3><p>Смету согласуем после 3D-проекта, до начала производства.</p><div class="ans"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M2 8.5l4 4 8-9" fill="none" stroke="#145AF5" stroke-width="2"/></svg><span>Цена не меняется без вашего согласия.</span></div></div>
-      <div class="risk" data-r style="transition-delay:.12s"><div class="q"><i></i>Десять подрядчиков</div><h3>Координация</h3><p>Расчёт, проект, производство и монтаж делает одна компания.</p><div class="ans"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M2 8.5l4 4 8-9" fill="none" stroke="#145AF5" stroke-width="2"/></svg><span>Один договор и один ответственный менеджер.</span></div></div>
-      <div class="risk" data-r><div class="q"><i></i>Пострадают арендаторы</div><h3>Работа ТЦ</h3><p>Порядок и время работ согласуем с управляющей компанией до выхода на объект.</p><div class="ans"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M2 8.5l4 4 8-9" fill="none" stroke="#145AF5" stroke-width="2"/></svg><span>Монтаж на объекте от 10 до 21 дня.</span></div></div>
-      <div class="risk" data-r style="transition-delay:.06s"><div class="q"><i></i>Проблемы с проверками</div><h3>Безопасность</h3><p>Оборудование соответствует ТР ЕАЭС 038 и ГОСТ 33807. К изделиям паспорта и инструкции.</p><div class="ans"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M2 8.5l4 4 8-9" fill="none" stroke="#145AF5" stroke-width="2"/></svg><span>Передаём пакет документов для запуска.</span></div></div>
-      <div class="risk" data-r style="transition-delay:.12s"><div class="q"><i></i>После запуска некому звонить</div><h3>Сервис</h3><p>Гарантия 12 месяцев на оборудование.</p><div class="ans"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M2 8.5l4 4 8-9" fill="none" stroke="#145AF5" stroke-width="2"/></svg><span>Обучаем персонал при запуске.</span></div></div>
+    <div class="team-grid t3">
+      <div class="person" data-r>
+        <div class="ph"><img src="assets/img/t-roman.jpg" alt="Роман Сотников" loading="lazy"></div>
+        <div class="role">Основатель</div><h3>Роман Сотников</h3><p class="what"><span class="resp">Отвечает за</span>концепцию парка и формат под вашу аудиторию</p>
+      </div>
+      <div class="person" data-r style="transition-delay:.06s">
+        <div class="ph"><img src="assets/img/t-kirill.jpg" alt="Кирилл Шувалов" loading="lazy" style="object-position:50% 20%"></div>
+        <div class="role">Генеральный директор</div><h3>Кирилл Шувалов</h3><p class="what"><span class="resp">Отвечает за</span>договор, сроки и бюджет проекта</p>
+      </div>
+      <div class="person" data-r style="transition-delay:.12s">
+        <div class="ph"><img src="assets/img/t-kazantsev.jpg" alt="Александр Казанцев" loading="lazy"></div>
+        <div class="role">Старший менеджер проектов</div><h3>Александр Казанцев</h3><p class="what"><span class="resp">Отвечает за</span>ваш контакт на всех этапах, от первой встречи до открытия</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- 10 FACTORY -->
-<section class="sec factory" id="factory">
-  <div class="wrap fac-grid">
-    <div class="fac-l on-dark">
-      <div class="eyebrow" data-r><i></i>Производство</div>
-      <h2 class="split" data-r="fade"><span class="ln"><span>Производим сами,</span></span><span class="ln"><span>поэтому держим</span></span><span class="ln"><span>срок и цену</span></span></h2>
-      <p class="lead" data-r>Проектировщики, цеха и монтажная бригада работают в одной компании. В смете нет наценки посредника, а график не зависит от чужого склада.</p>
-      <div class="fac-nums" data-r>
-        <div><b>3</b><span>цеха в Новосибирске</span></div>
-        <div><b><span data-count="2500" data-fmt="space">2 500</span> м²</b><span>производственных площадей</span></div>
-        <div><b>12</b><span>месяцев гарантии на оборудование</span></div>
-        <div><b>РАППА</b><span>член Российской ассоциации парков и производителей аттракционов</span></div>
-      </div>
-      <div class="fac-certs" data-r><span>ТР ЕАЭС 038</span><span>ТР ТС 042</span><span>ГОСТ 33807</span></div>
-      <div style="margin-top:36px;display:flex;gap:12px;flex-wrap:wrap" data-r>
-        <a href="#form" class="btn btn-light" data-topic="tour">Приехать на экскурсию</a>
-      </div>
-      
-    </div>
-    <div class="fac-r">
-      <figure data-r="clip"><img src="assets/img/f-factory.jpg" alt="Производство мягких элементов UNITRAMP" data-px="0.06" loading="lazy"><figcaption>Мягкие элементы перед отгрузкой</figcaption></figure>
-      <figure data-r="clip"><img src="assets/img/f-design.jpg" alt="Проектировщик за работой" data-px="-0.05" loading="lazy" style="object-position:60% 50%"><figcaption>Проектирование</figcaption></figure>
-      <figure data-r="clip"><img src="assets/img/f-print.jpg" alt="Декоративные панели с УФ-печатью" data-px="0.08" loading="lazy"><figcaption>Панели с УФ-печатью</figcaption></figure>
-    </div>
-  </div>
-</section>
-
-
-<!-- 12 FAQ -->
+<!-- 9 FAQ -->
 <section class="sec faq" id="faq">
   <div class="wrap faq-grid">
     <div class="faq-l">
-      <div class="eyebrow ring" data-r><i></i>Вопросы и ответы</div>
+      <div class="eyebrow ring" data-r><i></i>Вопросы</div>
       <h2 class="split" data-r="fade"><span class="ln"><span>Что спрашивают</span></span><span class="ln"><span>перед стартом</span></span></h2>
-      <p class="lead" data-r>Не нашли ответ? Руководитель проектов ответит в мессенджере.</p>
+      <p class="lead" data-r>Не нашли ответ? Напишите в WhatsApp или позвоните 8 800 700-78-09.</p>
     </div>
     <div class="faq-list" data-r>
-      <details class="qa"><summary>Сколько стоит парк?<i class="pm"></i></summary><div class="a"><p>Зависит от площади, состава зон и модели участия. Предварительную вилку даём после первого разговора, точную смету после 3D-проекта. Ориентир: 20–35 тыс. ₽ за м² оборудования, расчёт в блоке «Цифры».</p></div></details>
+      <details class="qa"><summary>Сколько стоит парк?<i class="pm"></i></summary><div class="a"><p>Зависит от площади, состава зон и модели участия. Предварительную вилку называем после первого разговора, точную смету после 3D-проекта, до начала производства.</p></div></details>
       <details class="qa"><summary>Сколько времени занимает проект?<i class="pm"></i></summary><div class="a"><p>От договора до открытия обычно 40–55 рабочих дней. Монтаж на объекте занимает от 10 до 21 дня.</p></div></details>
-      <details class="qa"><summary>Помешает ли монтаж работе торгового центра?<i class="pm"></i></summary><div class="a"><p>Порядок, время работ и маршрут завоза согласуем с управляющей компанией до выхода на объект.</p></div></details>
-      <details class="qa"><summary>Кто будет управлять парком?<i class="pm"></i></summary><div class="a"><p>Зависит от модели: оператор, ваша управляющая компания или партнёр в совместном проекте. Если управляете сами, обучаем персонал при запуске.</p></div></details>
-      <details class="qa"><summary>Какие документы мы получим?<i class="pm"></i></summary><div class="a"><p>Сертификаты соответствия ТР ЕАЭС 038 и ГОСТ 33807, паспорта изделий, инструкции по эксплуатации и пакет документов для запуска.</p></div></details>
-      <details class="qa"><summary>Какая гарантия?<i class="pm"></i></summary><div class="a"><p>12 месяцев на оборудование.</p></div></details>
-      <details class="qa"><summary>Работаете в нашем регионе?<i class="pm"></i></summary><div class="a"><p>У нас 81 объект в 63 городах и 5 странах. Доставку и монтаж организуем сами.</p></div></details>
-      <details class="qa"><summary>Можно посмотреть производство?<i class="pm"></i></summary><div class="a"><p>Да, приглашаем на экскурсию по цехам в Новосибирске. Заодно покажем оборудование вашего будущего парка в работе.</p></div></details>
+      <details class="qa"><summary>Кто делает ремонт и отделку помещения?<i class="pm"></i></summary><div class="a"><p>Торговый центр, самостоятельно. Мы передаём техзадание: требования к полу, потолкам, электрике и инженерным сетям.</p></div></details>
+      <details class="qa"><summary>Помешает ли монтаж работе ТЦ?<i class="pm"></i></summary><div class="a"><p>Порядок, время работ и маршрут завоза согласуем с управляющей компанией до выхода на объект.</p></div></details>
+      <details class="qa"><summary>Можно отдать вам только часть работ?<i class="pm"></i></summary><div class="a"><p>Да. Можем взять концепцию и 3D, поставку оборудования, монтаж или обновление действующего парка. Экономическое обоснование готовим по запросу.</p></div></details>
+      <details class="qa"><summary>Кто вкладывает и кто управляет парком?<i class="pm"></i></summary><div class="a"><p>Три модели, договариваемся на старте. ТЦ сдаёт площадь оператору и получает аренду и поток гостей. ТЦ строит свой парк, и выручка остаётся в здании. Или ТЦ и оператор делят вложения по договору. От модели зависят формат, расчёт и состав нашей работы.</p></div></details>
+      <details class="qa"><summary>В ТЦ уже есть парк, но он устарел. Обновите?<i class="pm"></i></summary><div class="a"><p>Да. Обновляем концепцию и оборудование действующего парка. В «Чудо Острове» (Великий Новгород) демонтировали старую арену и смонтировали новую за 23 дня.</p></div></details>
+      <details class="qa"><summary>Какие документы и гарантия?<i class="pm"></i></summary><div class="a"><p>Сертификаты ТР ЕАЭС 038 и ГОСТ 33807, паспорта изделий и инструкции по эксплуатации. Гарантия 12 месяцев на оборудование.</p></div></details>
     </div>
   </div>
 </section>
 
-<!-- OWN PARK -->
-<section class="sec own" id="own">
-  <div class="wrap own-grid">
-    <div class="own-l">
-      <div class="eyebrow tri" data-r><i></i>Модель «свой парк»</div>
-      <h2 class="split" data-r="fade"><span class="ln"><span>Свой парк: выручка</span></span><span class="ln"><span>остаётся в вашем ТЦ</span></span></h2>
-      <p class="lead" data-r>Оператор платит вам ставку и забирает выручку парка. Свой парк оставляет её в торговом центре, а площадь становится вашим бизнесом, а не только арендой.</p>
-      <a href="#form" class="btn btn-primary" data-r>Посчитать окупаемость для моей площади <svg class="arr" viewBox="0 0 18 18" fill="none"><path d="M3 9h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.8"/></svg></a>
-    </div>
-    <div class="own-list">
-      <div class="own-item" data-r><div class="n">01</div><h3>Выручка парка остаётся у вас</h3><p>Билеты, праздники, абонементы и кафе приносят деньги собственнику, а не оператору.</p></div>
-      <div class="own-item" data-r><div class="n">02</div><h3>Якорь не уйдёт к соседу</h3><p>Арендатор может съехать при первой выгодной ставке рядом. Свой парк остаётся причиной семейного визита в ваш ТЦ.</p></div>
-      <div class="own-item" data-r><div class="n">03</div><h3>Вы управляете форматом</h3><p>Сами решаете, как обновлять зоны, какие проводить события и как связывать парк с фудкортом и арендаторами.</p></div>
-      <div class="own-item hl" data-r><div class="n">04</div><h3>Окупаемость видна до вложений</h3><p>Считаем вложения, расходы и сценарии посещаемости под вашу площадку до подписания договора. <span class="gap">типичный срок окупаемости по нашим проектам</span></p></div>
-      <p class="own-honest" data-r>Вместе с выручкой собственник берёт на себя персонал, обслуживание и маркетинг парка. Поэтому обучаем команду при запуске и показываем эти расходы в расчёте.</p>
-    </div>
-  </div>
-</section>
-
-<!-- 13 FORM -->
+<!-- 10 FORM -->
 <section class="sec cta" id="form">
   <div class="wrap cta-grid">
     <div class="cta-l">
       <div class="eyebrow" data-r><i></i>Следующий шаг</div>
-      <h2 class="split" data-r="fade"><span class="ln"><span>Получите расчёт</span></span><span class="ln"><span>для вашей</span></span><span class="ln"><span>площади</span></span></h2>
-      <p class="lead" data-r>Расскажите о торговом центре и свободной площади. План помещения можно прислать позже. Руководитель проектов свяжется в течение рабочего дня.</p>
+      <h2 class="split" data-r="fade"><span class="ln"><span>Обсудим</span></span><span class="ln"><span>ваш торговый</span></span><span class="ln"><span>центр</span></span></h2>
+      <p class="lead" data-r>Оставьте контакты, и руководитель проектов свяжется в течение рабочего дня. План помещения можно прислать позже.</p>
       <div class="get" data-r>
         <div><i><svg width="12" height="12" viewBox="0 0 16 16"><path d="M2 8.5l4 4 8-9" fill="none" stroke="#6E9BFF" stroke-width="2.4"/></svg></i>Формат и зонирование под вашу площадь</div>
-        <div><i><svg width="12" height="12" viewBox="0 0 16 16"><path d="M2 8.5l4 4 8-9" fill="none" stroke="#6E9BFF" stroke-width="2.4"/></svg></i>Предварительную вилку бюджета</div>
-        <div><i><svg width="12" height="12" viewBox="0 0 16 16"><path d="M2 8.5l4 4 8-9" fill="none" stroke="#6E9BFF" stroke-width="2.4"/></svg></i>План, что нужно для расчёта экономики</div>
+        <div><i><svg width="12" height="12" viewBox="0 0 16 16"><path d="M2 8.5l4 4 8-9" fill="none" stroke="#6E9BFF" stroke-width="2.4"/></svg></i>Предварительная вилка бюджета</div>
+        <div><i><svg width="12" height="12" viewBox="0 0 16 16"><path d="M2 8.5l4 4 8-9" fill="none" stroke="#6E9BFF" stroke-width="2.4"/></svg></i>Подходящие объекты и модель участия</div>
       </div>
       <div class="contacts" data-r>
-        <a href="tel:88007007809">8 800 700-78-09</a>
-        <a href="https://wa.me/79607901070" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="tel:88007007809"><svg width="16" height="16" style="fill:currentColor"><use href="#i-tel"/></svg>8 800 700-78-09</a>
+        <a href="https://wa.me/79607901070" target="_blank" rel="noopener"><svg width="16" height="16" style="fill:currentColor"><use href="#i-wa"/></svg>WhatsApp</a>
+        <a href="https://t.me/+79607901070" target="_blank" rel="noopener"><svg width="16" height="16" style="fill:currentColor"><use href="#i-tg"/></svg>Telegram</a>
       </div>
     </div>
     <form class="lead-form" id="leadForm" novalidate data-r>
-      <div class="fld"><label for="f-tc">Торговый центр и город</label><input id="f-tc" name="tc" placeholder="ТРЦ «Галактика», Кемерово" autocomplete="organization"></div>
-      <div class="fld half"><label for="f-area">Свободная площадь, м²</label><input id="f-area" name="area" inputmode="numeric" placeholder="1 200"></div>
+      <div class="fld half"><label for="f-name">Имя</label><input id="f-name" name="name" placeholder="Как к вам обращаться" autocomplete="name"></div>
       <div class="fld half"><label for="f-phone">Телефон</label><input id="f-phone" name="phone" type="tel" inputmode="tel" placeholder="+7 (___) ___-__-__" autocomplete="tel"></div>
+      <div class="fld half"><label for="f-tc">Торговый центр и город</label><input id="f-tc" name="tc" placeholder="ТРЦ «Галактика», Кемерово" autocomplete="organization"></div>
+      <div class="fld half"><label for="f-area">Свободная площадь, м²</label><input id="f-area" name="area" inputmode="numeric" placeholder="1 200"></div>
       <div class="fld"><label>Кто вы</label>
         <div class="chips">
           <label><input type="radio" name="role" value="owner" checked><span>Собственник</span></label>
@@ -1289,13 +1217,22 @@ form.done .sent{opacity:1;pointer-events:auto}
           <label><input type="radio" name="role" value="op"><span>Оператор, инвестор</span></label>
         </div>
       </div>
-      <button class="btn btn-primary" type="submit">Получить расчёт для вашей площади <svg class="arr" viewBox="0 0 18 18" fill="none"><path d="M3 9h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.8"/></svg></button>
+      <button class="btn btn-primary" type="submit">Обсудить проект <svg class="arr" viewBox="0 0 18 18" fill="none"><path d="M3 9h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.8"/></svg></button>
       <p class="fine">Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных. План помещения можно прислать после звонка или в WhatsApp.</p>
       <div class="sent" aria-live="polite">
-        <div class="ok"><svg width="28" height="28" viewBox="0 0 16 16"><path d="M2 8.5l4 4 8-9" fill="none" stroke="#fff" stroke-width="2"/></svg></div>
+        <div class="ok"><svg width="26" height="26" viewBox="0 0 16 16"><path d="M2 8.5l4 4 8-9" fill="none" stroke="#fff" stroke-width="2"/></svg></div>
         <h3>Заявка принята</h3>
-        <p class="small">Это прототип: форма ничего не отправляет. На рабочем сайте заявка уйдёт в CRM, а руководитель проектов позвонит в течение рабочего дня.</p>
-        <button type="button" class="link-arr" id="again" style="background:none;border:0;border-bottom:1.5px solid;cursor:pointer">Заполнить снова</button>
+        <p>Руководитель проектов свяжется с вами в течение рабочего дня.</p>
+        <ol class="next">
+          <li>Позвоним и уточним площадь, планировку и задачи вашего ТЦ</li>
+          <li>Предложим формат, модель участия и предварительную вилку бюджета</li>
+          <li>Подготовим концепцию и 3D-проект, по запросу экономическое обоснование</li>
+        </ol>
+        <div class="acts">
+          <a href="#cases" class="btn btn-primary">Смотреть объекты</a>
+          <a href="https://wa.me/79607901070" target="_blank" rel="noopener" class="btn btn-wa"><svg class="ic"><use href="#i-wa"/></svg>Прислать план</a>
+        </div>
+        <button type="button" class="again" id="again">Отправить ещё одну заявку</button>
       </div>
     </form>
   </div>
@@ -1304,15 +1241,19 @@ form.done .sent{opacity:1;pointer-events:auto}
 
 <footer class="foot">
   <div class="wrap foot-grid">
-    <div class="logo"><img src="assets/img/logo-white.svg" alt="UNITRAMP"><p>ООО «ЮНИТРАМП». Проектируем, производим и запускаем семейные парки с 2014 года. Новосибирск.</p></div>
-    <div class="col"><b>Разделы</b><a href="#cases">Объекты</a><a href="#models">Модели участия</a><a href="#economics">Расчёт экономики</a><a href="#process">Как проходит проект</a></div>
-    <div class="col"><b>Связаться</b><a href="tel:88007007809">8 800 700-78-09</a><a href="https://wa.me/79607901070" target="_blank" rel="noopener">WhatsApp</a><a href="https://unitramp.ru" target="_blank" rel="noopener">unitramp.ru</a></div>
-    <div class="col"><b>Документы</b><a href="#risks">Сертификаты и гарантия</a><a href="#form">Политика обработки данных</a></div>
-    <div class="bottom"><span>© 2026 UNITRAMP</span><span>Прототип сайта для собственников ТЦ · версия 1 от 12.10.2026</span></div>
+    <div class="logo"><img src="assets/img/logo-white.svg" alt="UNITRAMP"><p>ООО «ЮНИТРАМП». Создаём семейные досуговые центры с 2014 года.</p></div>
+    <div class="col"><b>Разделы</b><a href="#scope">Что делаем</a><a href="#cases">Объекты</a><a href="#process">Этапы</a></div>
+    <div class="col"><b>Связаться</b><a href="tel:88007007809">8 800 700-78-09</a><a href="https://wa.me/79607901070" target="_blank" rel="noopener">WhatsApp</a><a href="https://t.me/+79607901070" target="_blank" rel="noopener">Telegram</a><a href="https://unitramp.ru" target="_blank" rel="noopener">unitramp.ru</a></div>
+    <div class="col"><b>Документы</b><a href="#faq">Сертификаты и гарантия</a><a href="#form">Политика обработки данных</a></div>
+    <div class="bottom"><span>© 2026 UNITRAMP</span><span>Семейные парки для торговых центров</span></div>
   </div>
 </footer>
 
-<button class="gaps-toggle" id="gapsToggle" type="button" title="Показать или скрыть пометки о недостающих данных">Пробелы в данных <b id="gapsN">0</b></button>
+<nav class="callbar" aria-label="Быстрая связь">
+  <a class="c1" href="tel:88007007809"><svg><use href="#i-tel"/></svg>Звонок</a>
+  <a class="c2" href="https://wa.me/79607901070" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp</a>
+  <a class="c3" href="#form">Обсудить проект</a>
+</nav>
 
 <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="mTitle">
   <div class="modal-bg" data-close></div>
@@ -1325,8 +1266,8 @@ form.done .sent{opacity:1;pointer-events:auto}
       <div class="where" id="mWhere"></div>
       <dl id="mDl"></dl>
       <p id="mText"></p>
-      
       <a id="mLink" class="link-arr" target="_blank" rel="noopener">Страница проекта на unitramp.ru <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M3 9h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.8"/></svg></a>
+      <a href="#form" class="btn btn-primary" data-close style="margin-top:20px;height:48px">Обсудить похожий проект</a>
     </div>
   </div>
 </div>
@@ -1338,9 +1279,19 @@ var D = document, $ = function(s,c){return (c||D).querySelector(s)}, $$ = functi
 
 /* ---------- cases data (unitramp.ru project pages, checked 12.10.2026) ---------- */
 var CASES = [
- {id:'kometa',big:true,title:'«Комета»',city:'Орск',year:'2026',area:'600',term:'55',
+ {id:'bezoom',big:true,title:'Bezoom',city:'Иркутск',year:'2026',area:'500',term:'35',termU:'календарных дней',
+  tags:[['Интерактивный парк','']],
+  did:'Интерактивный активити-парк под ключ: игровые лабиринты, полосы препятствий, мягкие игровые зоны и интерактивные проекции.',
+  text:'От идеи до открытия команда UNITRAMP прошла полный цикл: знакомство на производстве, зонирование и потоки посетителей, 3D-визуализация и технический проект, поставка и монтаж.',
+  img:['c-bezoom.jpg','bz-hero.jpg','c-bezoom-2.jpg','c-bezoom-3.jpg'],url:'https://unitramp.ru/detskie-razvlekatelnye-centry/detskij-interaktivnyj-park-bezoom'},
+ {id:'panda',title:'Panda Park',city:'Павлодар, Казахстан',year:'2020',area:'580',term:'65',
+  tags:[['В торговом центре','acc'],['Заказчик: владелец ТЦ','']],
+  did:'Парк в одном из главных ТЦ города. Шесть игровых зон и вся инфраструктура: ресепшн, раздевалки, зона ожидания.',
+  text:'Парк в одном из главных торговых центров Павлодара. Заказчик проекта сам владелец ТЦ. Спроектировали не только игровую часть, но и всю инфраструктуру для гостей. Арена разделена на шесть зон, поэтому каждый посетитель находит своё.',
+  img:['c-panda-2.jpg','c-panda.jpg'],url:'https://unitramp.ru/proekty-batutnyh-centrov/batutnyj-centr-panda-park'},
+ {id:'kometa',title:'«Комета»',city:'Орск',year:'2026',area:'600',term:'55',
   tags:[['Семейный центр','']],
-  did:'Батуты с интерактивом, скалодром, лабиринт. 3D-проект сделали до первой встречи, детали обсуждали на месте.',
+  did:'Лабиринт с горками и сухим бассейном, скалодром, активная арена с интерактивом. 3D-проект сделали до первой встречи.',
   text:'Детский развлекательный центр, который нужно было построить очень быстро. Сразу сделали объёмный 3D-проект, затем приехали к заказчику и обсудили все детали на месте.',
   img:['c-kometa.jpg','p-kometa-2.jpg','c-kometa-9.jpg'],url:'https://unitramp.ru/detskie-razvlekatelnye-centry/detskij-razvlekatelnyj-centr-kometa'},
  {id:'armirum',title:'«Армирум»',city:'Омск',year:'2026',area:'880',term:'40',
@@ -1357,17 +1308,7 @@ var CASES = [
   tags:[['Семейный центр','']],
   did:'Встроили колонны и перепады высот в игровую логику. Путь гостя распределяет поток по зонам.',
   text:'Заказчик хотел центр, который визуально и технологически отличается от конкурентов. Перепады высот и массивные колонны помещения стали частью игровой логики, а продуманный маршрут распределяет гостей по зонам.',
-  img:['c-neopolis.jpg','c-neopolis-2.jpg'],url:'https://unitramp.ru/detskie-razvlekatelnye-centry/detskij-razvlekatelnyj-centr-neopolis'},
- {id:'panda',title:'Panda Park',city:'Павлодар, Казахстан',year:'2020',area:'580',term:'65',mount:null,
-  tags:[['В торговом центре','acc'],['Заказчик: владелец ТЦ','']],
-  did:'Семейный парк из шести независимых зон и вся инфраструктура: ресепшн, раздевалки, зона ожидания, входная группа.',
-  text:'Парк в одном из главных торговых центров Павлодара. Заказчик проекта сам владелец ТЦ. Спроектировали не только игровую часть, но и всю инфраструктуру для гостей. Арена разделена на шесть зон, поэтому каждый посетитель находит своё.',
-  img:['c-panda.jpg','c-panda-2.jpg'],url:'https://unitramp.ru/proekty-batutnyh-centrov/batutnyj-centr-panda-park'},
- {id:'positive',title:'Positive Energy',city:'Омск',year:'2024',area:'600',term:'40',mount:'16',
-  tags:[['Семейный центр','']],
-  did:'Лабиринт с каскадной горкой, сухой бассейн, интерактивная мишень и арена. 3D-проект и встречи с заказчиком на каждом этапе.',
-  text:'Семейный центр, который нужно было открыть в сжатые сроки. Быстро сделали 3D-проект и учли пожелания заказчиков на личных встречах. В центре лабиринт с каскадной горкой, большой сухой бассейн, зона интерактивной мишени и активная арена. Монтаж занял 16 дней.',
-  img:['c-positive.jpg','c-positive-3.jpg','c-positive-2.jpg'],url:'https://unitramp.ru/detskie-razvlekatelnye-centry/positive-energy'}
+  img:['c-neopolis.jpg','c-neopolis-2.jpg'],url:'https://unitramp.ru/detskie-razvlekatelnye-centry/detskij-razvlekatelnyj-centr-neopolis'}
 ];
 var grid = $('#caseGrid');
 CASES.forEach(function(c,i){
@@ -1378,7 +1319,7 @@ CASES.forEach(function(c,i){
   if(!c.big) tags += '';
   b.innerHTML = '<div class="case-img"><img src="assets/img/'+c.img[0]+'" alt="'+c.title+', '+c.city+'" loading="lazy"><div class="tags">'+tags+'</div><span class="open"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M8 2v12M2 8h12" stroke="#10151D" stroke-width="2"/></svg></span></div>'+
    '<div class="case-body"><h3>'+c.title+'</h3><div class="where">'+c.city+', '+c.year+'</div>'+
-   '<div class="case-facts"><div><b>'+c.area+' м²</b>площадь</div><div><b>'+c.term+'</b>рабочих дней</div>'+(c.mount?'<div><b>'+c.mount+'</b>дней монтаж</div>':'')+'</div>'+
+   '<div class="case-facts"><div><b>'+c.area+' м²</b>площадь</div><div><b>'+c.term+'</b>'+(c.termU||'рабочих дней')+'</div>'+(c.mount?'<div><b>'+c.mount+'</b>дней монтаж</div>':'')+'</div>'+
    (c.big?'<p class="case-did">'+c.did+'</p>':'<p class="case-did">'+c.did+'</p>')+'</div>';
   b.addEventListener('click',function(){openCase(c)});
   grid.appendChild(b);
@@ -1393,7 +1334,7 @@ function openCase(c){
   $('#mTags').innerHTML = c.tags.map(function(t){return '<span class="tag '+t[1]+'" style="background:'+(t[1]?'':'var(--bg)')+'">'+t[0]+'</span>'}).join('');
   $('#mTitle').textContent = c.title;
   $('#mWhere').textContent = c.city+', '+c.year;
-  $('#mDl').innerHTML = '<dt>Площадь</dt><dd>'+c.area+' м²</dd><dt>Срок реализации</dt><dd>'+c.term+' рабочих дней</dd>'+(c.mount?'<dt>Монтаж</dt><dd>'+c.mount+' календарных дней</dd>':'')+'<dt>Что сделали</dt><dd style="font-weight:500">'+c.did+'</dd>';
+  $('#mDl').innerHTML = '<dt>Площадь</dt><dd>'+c.area+' м²</dd><dt>Срок реализации</dt><dd>'+c.term+' '+(c.termU||'рабочих дней')+'</dd>'+(c.mount?'<dt>Монтаж</dt><dd>'+c.mount+' календарных дней</dd>':'')+'<dt>Что сделали</dt><dd style="font-weight:500">'+c.did+'</dd>';
   $('#mText').textContent = c.text;
   $('#mLink').href = c.url;
   modal.classList.add('open'); modal.setAttribute('aria-hidden','false'); D.body.style.overflow='hidden';
@@ -1407,6 +1348,14 @@ function closeModal(){modal.classList.remove('open');modal.setAttribute('aria-hi
 $$('[data-close]',modal).forEach(function(e){e.addEventListener('click',closeModal)});
 D.addEventListener('keydown',function(e){if(e.key==='Escape'){if(modal.classList.contains('open'))closeModal();if(D.body.classList.contains('menu-open'))toggleMenu(false)}});
 
+
+/* ---------- hero rail ---------- */
+(function(){var tr=$('#heTrack');if(!tr)return;var pv=$('.he-arr.prev'),nx=$('.he-arr.next');
+function st(){pv.disabled=tr.scrollLeft<8;nx.disabled=tr.scrollLeft+tr.clientWidth>=tr.scrollWidth-8}
+function go(d){var c=tr.querySelector('.he-c');tr.scrollBy({left:d*(c.offsetWidth+16),behavior:RM?'auto':'smooth'})}
+pv.addEventListener('click',function(){go(-1)});nx.addEventListener('click',function(){go(1)});
+tr.addEventListener('scroll',st,{passive:true});window.addEventListener('resize',st);st();
+$$('.he-c[data-case]').forEach(function(a){a.addEventListener('click',function(e){var c=CASES.filter(function(x){return x.id===a.dataset.case})[0];if(c){e.preventDefault();openCase(c)}})});})();
 /* ---------- hero word split ---------- */
 var h1=$('#h1');
 h1.innerHTML = h1.textContent.trim().split(/\s+/).map(function(w,i){return '<span class="w"><span style="transition-delay:'+(0.12+i*0.05).toFixed(2)+'s">'+w+'</span></span>'}).join(' ');
@@ -1460,23 +1409,6 @@ function toggleMenu(open){D.body.classList.toggle('menu-open',open);$('#burger')
 $('#burger').addEventListener('click',function(){toggleMenu(!D.body.classList.contains('menu-open'))});
 $$('#mmenu a').forEach(function(a,i){a.style.transitionDelay=(0.08+i*0.04)+'s';a.addEventListener('click',function(){toggleMenu(false)})});
 
-/* ---------- models: hover highlight + mobile tabs ---------- */
-var mdl=$('#mdl');
-$$('.mdl-cell[data-c]',mdl).forEach(function(c){c.addEventListener('mouseenter',function(){mdl.dataset.hl=c.dataset.c});});
-mdl.addEventListener('mouseleave',function(){delete mdl.dataset.hl});
-$$('.mdl-tabs button').forEach(function(b){b.addEventListener('click',function(){$$('.mdl-tabs button').forEach(function(x){x.classList.toggle('on',x===b)});mdl.dataset.tab=b.dataset.t})});
-
-/* ---------- economics: map + steps ---------- */
-var map=$('#map'), dots=$('#dots'), g=$('.map .grid');
-var gl=''; for(var i=0;i<=600;i+=40){gl+='<line x1="'+i+'" y1="0" x2="'+i+'" y2="600"/><line x1="0" y1="'+i+'" x2="600" y2="'+i+'"/>'} g.innerHTML=gl;
-var seed=7; function rnd(){seed=(seed*16807)%2147483647;return seed/2147483647}
-var dh=''; for(var k=0;k<90;k++){var a=rnd()*Math.PI*2, rr=40+Math.pow(rnd(),0.8)*230; var x=300+Math.cos(a)*rr, yy=300+Math.sin(a)*rr; if(x<10||x>590||yy<10||yy>590)continue; dh+='<circle cx="'+x.toFixed(1)+'" cy="'+yy.toFixed(1)+'" r="'+(1.6+rnd()*2).toFixed(1)+'" style="transition-delay:'+(rnd()*0.8).toFixed(2)+'s"/>'} dots.innerHTML=dh;
-var steps=$$('.econ-step');
-function setStep(n){steps.forEach(function(s){s.classList.toggle('on',+s.dataset.s===n)}); map.classList.toggle('s2',n>=2); map.classList.toggle('s3',n>=3)}
-var mio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){map.classList.add('in')}})},{threshold:.3}); mio.observe(map);
-var sio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)setStep(+e.target.dataset.s)})},{rootMargin:'-45% 0px -45% 0px'});
-steps.forEach(function(s){sio.observe(s); s.addEventListener('mouseenter',function(){setStep(+s.dataset.s)})});
-
 /* ---------- process sticky frames ---------- */
 var frames=$$('.proc-frame'), bars=$$('.proc-bar i'), psteps=$$('.proc-step');
 function setFrame(n){frames.forEach(function(f,i){f.classList.toggle('on',i===n)});bars.forEach(function(b,i){b.classList.toggle('on',i===n)});psteps.forEach(function(s){s.classList.toggle('on',+s.dataset.f===n)})}
@@ -1503,14 +1435,10 @@ phone.addEventListener('input',function(){
 $('#f-area').addEventListener('input',function(e){var v=e.target.value.replace(/\D/g,'').slice(0,6);e.target.value=v.replace(/\B(?=(\d{3})+(?!\d))/g,' ')});
 form.addEventListener('submit',function(e){e.preventDefault();form.classList.add('done')});
 $('#again').addEventListener('click',function(){form.classList.remove('done');form.reset()});
+$$('.sent a[href^="#"]').forEach(function(a){a.addEventListener('click',function(){setTimeout(function(){form.classList.remove('done');form.reset()},800)})});
+$$('.modal a[data-close]').forEach(function(a){a.addEventListener('click',function(){closeModal()})});
 
-/* ---------- gaps toggle ---------- */
-var gaps=$$('.gap'); $('#gapsN').textContent=gaps.length;
-$('#gapsToggle').addEventListener('click',function(){D.body.classList.toggle('clean')});
 })();
 </script>
-<script>(function(){var a=document.getElementById('nmA');if(!a)return;function f(x){return x>=10?Math.round(x):Math.round(x*10)/10}
-function r(){var s=+a.value,lo=s*20000/1e6,hi=s*35000/1e6;document.getElementById('nmAo').textContent=s.toLocaleString('ru-RU')+' м²';document.getElementById('nmE').textContent=f(lo)+'–'+f(hi)+' млн ₽';document.getElementById('nmM').textContent=f(lo*.2)+'–'+f(hi*.2)+' млн ₽';document.getElementById('nmT').textContent=f(lo*1.2)+'–'+f(hi*1.2)+' млн ₽'}
-a.addEventListener('input',r);document.querySelectorAll('.nm-pre button').forEach(function(b){b.addEventListener('click',function(){a.value=b.dataset.a;r()})});r()})();</script>
 </body>
 </html>
