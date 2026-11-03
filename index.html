@@ -918,7 +918,7 @@ main{background:#fff;margin:12px 12px 0;border-radius:28px;overflow:clip;box-sha
 .lg-m{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
 .lg-t{display:flex;gap:56px;width:max-content;animation:lgrun 38s linear infinite}
 .lg-m:hover .lg-t{animation-play-state:paused}
-.lg-t span{font:800 24px/1 var(--h-font);letter-spacing:-.02em;color:rgba(255,255,255,.62);white-space:nowrap}
+.lg-t{gap:14px!important}.lg-i{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:6px;min-width:190px;height:84px;padding:0 22px;border:1px solid rgba(255,255,255,.14);border-radius:16px;background:rgba(255,255,255,.05);white-space:nowrap}.lg-i b{font:800 19px/1 var(--h-font);letter-spacing:-.02em;color:#fff}.lg-i small{font-size:12px;color:var(--on-navy-2)}
 @keyframes lgrun{to{transform:translateX(-50%)}}
 .hdr nav a{white-space:nowrap}
 @media (prefers-reduced-motion:reduce){.lg-t{animation:none;flex-wrap:wrap;justify-content:center;width:auto}}
@@ -928,7 +928,7 @@ main{background:#fff;margin:12px 12px 0;border-radius:28px;overflow:clip;box-sha
 .team-grid.noph .person{background:#fff;border-radius:var(--r-xl);padding:30px 28px;border:1px solid var(--line)}
 .team-grid.noph .person h3{font-size:26px;margin:8px 0 14px}
 .team-grid.noph .ph{display:none}
-@media(max-width:767px){.he .wrap{padding-top:110px}.he-bg{height:640px}.he h1{font-size:34px}.he-eb{font-size:11px;padding:7px 12px}.lg-t span{font-size:19px}.lg-t{gap:36px}.w2e-photo{aspect-ratio:4/3}.team-grid.t3.noph{grid-template-columns:1fr}.team-grid.t3.noph .person:last-child{max-width:none}}
+@media(max-width:767px){.he .wrap{padding-top:110px}.he-bg{height:640px}.he h1{font-size:34px}.he-eb{font-size:11px;padding:7px 12px}.lg-i{min-width:150px;height:70px}.lg-i b{font-size:16px}.lg-t{gap:36px}.w2e-photo{aspect-ratio:4/3}.team-grid.t3.noph{grid-template-columns:1fr}.team-grid.t3.noph .person:last-child{max-width:none}}
 </style>
 </head>
 <body>
@@ -986,14 +986,15 @@ main{background:#fff;margin:12px 12px 0;border-radius:28px;overflow:clip;box-sha
     </div>
     <div class="he-rail">
       <div class="he-track" id="heTrack">
-        <a class="he-c" href="#cases" data-case="bezoom"><img src="assets/img/bz-wide.jpg" alt="Bezoom, Иркутск" fetchpriority="high"><span><b>Bezoom</b>Иркутск · 500 м²</span></a>
-        <a class="he-c" href="https://unitramp.ru/detskie-razvlekatelnye-centry/detskij-razvlekatelnyj-centr-kosmos" target="_blank" rel="noopener"><img src="assets/img/gm-cover.jpg" alt="«Космос», Гомель" fetchpriority="high"><span><b>«Космос»</b>Гомель · 250 м²</span></a>
-        <a class="he-c" href="https://unitramp.ru/proekty-ninja-parkov/centr-razvlechenij-prityazhenie" target="_blank" rel="noopener"><img src="assets/img/pr-neon.jpg" alt="«Притяжение», Магнитогорск" fetchpriority="high"><span><b>«Притяжение»</b>Магнитогорск · 450 м²</span></a>
+        <a class="he-c" href="#cases"><img src="assets/img/tt-1.jpg" alt="«ТикиТаки», Череповец" fetchpriority="high"><span><b>«ТикиТаки»</b>Череповец · 2 200 м²</span></a>
+        <a class="he-c" href="#cases" data-case="armirum"><img src="assets/img/c-armirum.jpg" alt="«Армирум», Омск" fetchpriority="high"><span><b>«Армирум»</b>Омск · 880 м²</span></a>
+        <a class="he-c" href="#cases" data-case="kometa"><img src="assets/img/c-kometa.jpg" alt="«Комета», Орск" fetchpriority="high"><span><b>«Комета»</b>Орск · 600 м²</span></a>
+        <a class="he-c" href="#cases" data-case="panda"><img src="assets/img/c-panda-2.jpg" alt="Panda Park, Павлодар" loading="lazy"><span><b>Panda Park</b>Павлодар · 580 м² в ТЦ</span></a>
+        <a class="he-c" href="#cases" data-case="bezoom"><img src="assets/img/bz-wide.jpg" alt="Bezoom, Иркутск" loading="lazy"><span><b>Bezoom</b>Иркутск · 500 м²</span></a>
         <a class="he-c" href="#cases" data-case="neopolis"><img src="assets/img/c-neopolis.jpg" alt="«Неополис», Чита" loading="lazy"><span><b>«Неополис»</b>Чита · 500 м²</span></a>
-        <a class="he-c" href="#cases" data-case="panda"><img src="assets/img/c-panda-2.jpg" alt="Panda Park, Павлодар" loading="lazy"><span><b>Panda Park</b>Павлодар · в торговом центре</span></a>
+        <a class="he-c" href="https://unitramp.ru/proekty-ninja-parkov/centr-razvlechenij-prityazhenie" target="_blank" rel="noopener"><img src="assets/img/pr-neon.jpg" alt="«Притяжение», Магнитогорск" loading="lazy"><span><b>«Притяжение»</b>Магнитогорск · 450 м²</span></a>
+        <a class="he-c" href="https://unitramp.ru/detskie-razvlekatelnye-centry/detskij-razvlekatelnyj-centr-kosmos" target="_blank" rel="noopener"><img src="assets/img/gm-cover.jpg" alt="«Космос», Гомель" loading="lazy"><span><b>«Космос»</b>Гомель · 250 м²</span></a>
         <a class="he-c" href="https://unitramp.ru/detskie-razvlekatelnye-centry/razvlekatelnyj-centr-kosmopark-1" target="_blank" rel="noopener"><img src="assets/img/kp-cover.jpg" alt="«Космопарк № 1», Волгодонск" loading="lazy"><span><b>«Космопарк № 1»</b>Волгодонск · 210 м²</span></a>
-        <a class="he-c" href="#cases" data-case="kometa"><img src="assets/img/c-kometa.jpg" alt="«Комета», Орск" loading="lazy"><span><b>«Комета»</b>Орск · 600 м²</span></a>
-        <a class="he-c" href="#cases" data-case="armirum"><img src="assets/img/c-armirum.jpg" alt="«Армирум», Омск" loading="lazy"><span><b>«Армирум»</b>Омск · 880 м²</span></a>
       </div>
       <button class="he-arr prev" type="button" aria-label="Предыдущие парки"><svg viewBox="0 0 18 18" fill="none"><path d="M15 9H3m5-5L3 9l5 5" stroke="currentColor" stroke-width="1.8"/></svg></button>
       <button class="he-arr next" type="button" aria-label="Следующие парки"><svg viewBox="0 0 18 18" fill="none"><path d="M3 9h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.8"/></svg></button>
@@ -1003,9 +1004,9 @@ main{background:#fff;margin:12px 12px 0;border-radius:28px;overflow:clip;box-sha
       <a href="tel:88007007809" class="btn btn-ghost hx-tel"><svg class="ic"><use href="#i-tel"/></svg>8 800 700-78-09</a>
     </div>
   </div>
-  <div class="lg" aria-label="Компании, с которыми мы работали">
-    <div class="lg-h">Нам доверяют <span class="gap">список компаний и логотипы пришлёт Кирилл, сейчас названия с созвона 30.10</span></div>
-    <div class="lg-m"><div class="lg-t"><span>World Class</span><span>Мега</span><span>Сколково</span><span>Сбербанк</span><span>Газпром</span><span>Северсталь</span><span>Манжерок</span><span>Cirque du Soleil</span><span>Аватария</span><span>Superland</span><span aria-hidden="true">World Class</span><span aria-hidden="true">Мега</span><span aria-hidden="true">Сколково</span><span aria-hidden="true">Сбербанк</span><span aria-hidden="true">Газпром</span><span aria-hidden="true">Северсталь</span><span aria-hidden="true">Манжерок</span><span aria-hidden="true">Cirque du Soleil</span><span aria-hidden="true">Аватария</span><span aria-hidden="true">Superland</span></div></div>
+  <div class="lg" aria-label="Наши клиенты">
+    <div class="lg-h">Нам доверяют собственники парков и торговых центров <span class="gap">заменить на логотипы компаний, список запросить у Кирилла</span></div>
+    <div class="lg-m"><div class="lg-t"><span class="lg-i"><b>«ТикиТаки»</b><small>Череповец</small></span><span class="lg-i"><b>«Армирум»</b><small>Омск</small></span><span class="lg-i"><b>«Комета»</b><small>Орск</small></span><span class="lg-i"><b>Panda Park</b><small>Павлодар</small></span><span class="lg-i"><b>Bezoom</b><small>Иркутск</small></span><span class="lg-i"><b>«Неополис»</b><small>Чита</small></span><span class="lg-i"><b>«Притяжение»</b><small>Магнитогорск</small></span><span class="lg-i"><b>«Орбита Семьи»</b><small>Севастополь</small></span><span class="lg-i"><b>«Космопарк № 1»</b><small>Волгодонск</small></span><span class="lg-i"><b>Positive Energy</b><small>Омск</small></span><span class="lg-i" aria-hidden="true"><b>«ТикиТаки»</b><small>Череповец</small></span><span class="lg-i" aria-hidden="true"><b>«Армирум»</b><small>Омск</small></span><span class="lg-i" aria-hidden="true"><b>«Комета»</b><small>Орск</small></span><span class="lg-i" aria-hidden="true"><b>Panda Park</b><small>Павлодар</small></span><span class="lg-i" aria-hidden="true"><b>Bezoom</b><small>Иркутск</small></span><span class="lg-i" aria-hidden="true"><b>«Неополис»</b><small>Чита</small></span><span class="lg-i" aria-hidden="true"><b>«Притяжение»</b><small>Магнитогорск</small></span><span class="lg-i" aria-hidden="true"><b>«Орбита Семьи»</b><small>Севастополь</small></span><span class="lg-i" aria-hidden="true"><b>«Космопарк № 1»</b><small>Волгодонск</small></span><span class="lg-i" aria-hidden="true"><b>Positive Energy</b><small>Омск</small></span></div></div>
   </div>
 </section>
 
@@ -1088,7 +1089,6 @@ main{background:#fff;margin:12px 12px 0;border-radius:28px;overflow:clip;box-sha
         <div class="sc-f" data-r style="transition-delay:.1s"><div class="k">Оборудование</div><h4>Только проверенные фабрики</h4><p>Оборудование и аттракционы поставляем от проверенных фабрик России, Европы и Китая.</p></div>
         <div class="sc-f" data-r style="transition-delay:.15s"><div class="k">Безопасность</div><h4>Документы для запуска</h4><p>Сертификаты ТР ЕАЭС 038 и ГОСТ 33807, паспорта изделий и инструкции.</p></div>
       </div>
-      <div class="sc-own" data-r><i>i</i><p><b>Ремонт и отделку помещения ТЦ делает самостоятельно.</b> Мы передаём техзадание: требования к полу, потолкам, электрике и инженерным сетям, чтобы помещение было готово к монтажу в срок.</p></div>
     </div>
   </div>
 </section>
@@ -1142,7 +1142,7 @@ main{background:#fff;margin:12px 12px 0;border-radius:28px;overflow:clip;box-sha
         <div class="proc-step" data-f="3">
           <div class="n">04 <em>Производство и доставка</em></div>
           <h3>Изготовление и доставка</h3>
-          <p>Оборудование изготавливают и проверяют на фабриках, затем доставляем его на объект. Параллельно ТЦ готовит помещение по нашему техзаданию.</p>
+          <p>Оборудование изготавливают и проверяют на фабриках, затем доставляем его на объект. Параллельно передаём техзадание, чтобы помещение было готово к монтажу в срок.</p>
           <figure class="pimg"><img src="assets/img/f-factory.jpg" alt="Мягкие элементы перед отгрузкой" loading="lazy"><span class="tag">Подготовка к отгрузке</span></figure>
         </div>
         <div class="proc-step" data-f="4">
@@ -1209,7 +1209,6 @@ main{background:#fff;margin:12px 12px 0;border-radius:28px;overflow:clip;box-sha
     <div class="faq-list" data-r>
       <details class="qa"><summary>Сколько стоит парк?<i class="pm"></i></summary><div class="a"><p>Зависит от площади, состава зон и модели участия. Предварительную вилку называем после первого разговора, точную смету после 3D-проекта, до начала производства.</p></div></details>
       <details class="qa"><summary>Сколько времени занимает проект?<i class="pm"></i></summary><div class="a"><p>От договора до открытия обычно 40–55 рабочих дней. Монтаж на объекте занимает от 10 до 21 дня.</p></div></details>
-      <details class="qa"><summary>Кто делает ремонт и отделку помещения?<i class="pm"></i></summary><div class="a"><p>Торговый центр, самостоятельно. Мы передаём техзадание: требования к полу, потолкам, электрике и инженерным сетям.</p></div></details>
       <details class="qa"><summary>Помешает ли монтаж работе ТЦ?<i class="pm"></i></summary><div class="a"><p>Порядок, время работ и маршрут завоза согласуем с управляющей компанией до выхода на объект.</p></div></details>
       <details class="qa"><summary>Можно отдать вам только часть работ?<i class="pm"></i></summary><div class="a"><p>Да. Можем взять концепцию и 3D, поставку оборудования, монтаж или обновление действующего парка. Экономическое обоснование готовим по запросу.</p></div></details>
       <details class="qa"><summary>Кто вкладывает и кто управляет парком?<i class="pm"></i></summary><div class="a"><p>Три модели, договариваемся на старте. ТЦ сдаёт площадь оператору и получает аренду и поток гостей. ТЦ строит свой парк, и выручка остаётся в здании. Или ТЦ и оператор делят вложения по договору. От модели зависят формат, расчёт и состав нашей работы.</p></div></details>
