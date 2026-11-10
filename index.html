@@ -463,7 +463,7 @@ body.menu-open .hdr .logo .l-dark{opacity:0}body.menu-open .hdr .logo .l-light{o
 .contacts{margin-top:32px;display:flex;gap:12px;flex-wrap:wrap}
 .contacts a{display:inline-flex;align-items:center;gap:10px;height:48px;padding:0 18px;border-radius:999px;box-shadow:inset 0 0 0 1px var(--line-navy);font-weight:600;font-size:15px;transition:background .2s}
 .contacts a:hover{background:rgba(255,255,255,.06)}
-form.lead-form{grid-column:7/13;background:#fff;color:var(--ink);border-radius:var(--r-xl);padding:40px;display:grid;grid-template-columns:1fr 1fr;gap:16px;align-self:start;position:relative}
+.lead-form{grid-column:7/13;background:#fff;color:var(--ink);border-radius:var(--r-xl);padding:40px;display:grid;grid-template-columns:1fr 1fr;gap:16px;align-self:start;position:relative}
 .fld{display:flex;flex-direction:column;gap:8px;grid-column:span 2}
 .fld.half{grid-column:span 1}
 .fld label{font-size:13px;font-weight:600;color:var(--ink-2)}
@@ -476,8 +476,9 @@ form.lead-form{grid-column:7/13;background:#fff;color:var(--ink);border-radius:v
 .chips span{display:inline-flex;align-items:center;height:40px;padding:0 16px;border-radius:999px;border:1.5px solid var(--line);font-size:15px;font-weight:500;transition:all .2s;color:var(--ink)}
 .chips input:checked+span{background:var(--ink);color:#fff;border-color:var(--ink)}
 .chips input:focus-visible+span{outline:2px solid var(--accent);outline-offset:2px}
-form.lead-form .btn{grid-column:span 2;height:60px;font-size:17px;margin-top:8px}
-form.lead-form .fine{grid-column:span 2;font-size:13px;color:var(--ink-3);line-height:1.45}
+.lead-form .btn{grid-column:span 2;height:60px;font-size:17px;margin-top:8px}
+.contact-card h3{grid-column:1/-1;margin:0;font-size:28px}
+.lead-form .fine{grid-column:span 2;font-size:13px;color:var(--ink-3);line-height:1.45}
 .sent{position:absolute;inset:0;border-radius:var(--r-xl);background:#fff;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:40px;gap:16px;opacity:0;pointer-events:none;transition:opacity .4s}
 form.done .sent{opacity:1;pointer-events:auto}
 .sent .ok{width:64px;height:64px;border-radius:50%;background:var(--accent);display:grid;place-items:center}
@@ -543,7 +544,7 @@ form.done .sent{opacity:1;pointer-events:auto}
   .hero-cta{flex-direction:row}
   .hero-cap{display:none}
   .sec-head{grid-template-columns:1fr}.sec-head h2,.sec-head .lead{grid-column:1/-1;justify-self:start}
-  .why-grid .left,.why-grid .rows,.tasks-media,.tasks-list,.econ-l,.econ-r,.proc-steps,.fac-l,.fac-r,.faq-l,.faq-list,.cta-l,form.lead-form{grid-column:1/-1}
+  .why-grid .left,.why-grid .rows,.tasks-media,.tasks-list,.econ-l,.econ-r,.proc-steps,.fac-l,.fac-r,.faq-l,.faq-list,.cta-l,.lead-form{grid-column:1/-1}
   .why-grid .left,.tasks-media,.econ-r{position:relative;top:0}
   .why-grid .rows{margin-top:32px}
   .tasks-media{aspect-ratio:16/10}
@@ -568,7 +569,7 @@ form.done .sent{opacity:1;pointer-events:auto}
   .fac-r{margin-top:24px}
   .team-grid{grid-template-columns:repeat(2,1fr)}
   .faq-list{margin-top:24px}
-  form.lead-form{margin-top:32px}
+  .lead-form{margin-top:32px}
   .foot .logo{grid-column:1/-1}.foot .col{grid-column:span 6}
 }
 @media (max-width:767px){
@@ -664,7 +665,7 @@ form.done .sent{opacity:1;pointer-events:auto}
   .person p.what{font-size:13px}
   .qa summary{font-size:18px;padding:20px 0}
   .qa .a p{padding:0 0 22px;font-size:16px}
-  form.lead-form{padding:24px 20px;grid-template-columns:1fr}
+  .lead-form{padding:24px 20px;grid-template-columns:1fr}
   .fld.half{grid-column:span 2}
   .contacts a{flex:1;justify-content:center}
   .foot .col{grid-column:1/-1}
@@ -984,9 +985,9 @@ main{background:#fff;margin:12px 12px 0;border-radius:28px;overflow:clip;box-sha
         <a class="he-c" href="#cases" data-case="panda"><img src="assets/img/c-panda-2.jpg" alt="Panda Park, Павлодар" loading="lazy"><span><b>Panda Park</b>Павлодар · 580 м² в ТЦ</span></a>
         <a class="he-c" href="#cases" data-case="bezoom"><img src="assets/img/bz-wide.jpg" alt="Bezoom, Иркутск" loading="lazy"><span><b>Bezoom</b>Иркутск · 500 м²</span></a>
         <a class="he-c" href="#cases" data-case="neopolis"><img src="assets/img/c-neopolis.jpg" alt="«Неополис», Чита" loading="lazy"><span><b>«Неополис»</b>Чита · 500 м²</span></a>
-        <a class="he-c" href="https://unitramp.ru/proekty-ninja-parkov/centr-razvlechenij-prityazhenie" target="_blank" rel="noopener"><img src="assets/img/pr-neon.jpg" alt="«Притяжение», Магнитогорск" loading="lazy"><span><b>«Притяжение»</b>Магнитогорск · 450 м²</span></a>
-        <a class="he-c" href="https://unitramp.ru/detskie-razvlekatelnye-centry/detskij-razvlekatelnyj-centr-kosmos" target="_blank" rel="noopener"><img src="assets/img/gm-cover.jpg" alt="«Космос», Гомель" loading="lazy"><span><b>«Космос»</b>Гомель · 250 м²</span></a>
-        <a class="he-c" href="https://unitramp.ru/detskie-razvlekatelnye-centry/razvlekatelnyj-centr-kosmopark-1" target="_blank" rel="noopener"><img src="assets/img/kp-cover.jpg" alt="«Космопарк № 1», Волгодонск" loading="lazy"><span><b>«Космопарк № 1»</b>Волгодонск · 210 м²</span></a>
+        <div class="he-c"><img src="assets/img/pr-neon.jpg" alt="«Притяжение», Магнитогорск" loading="lazy"><span><b>«Притяжение»</b>Магнитогорск · 450 м²</span></div>
+        <div class="he-c"><img src="assets/img/gm-cover.jpg" alt="«Космос», Гомель" loading="lazy"><span><b>«Космос»</b>Гомель · 250 м²</span></div>
+        <div class="he-c"><img src="assets/img/kp-cover.jpg" alt="«Космопарк № 1», Волгодонск" loading="lazy"><span><b>«Космопарк № 1»</b>Волгодонск · 210 м²</span></div>
       </div>
       <button class="he-arr prev" type="button" aria-label="Предыдущие парки"><svg viewBox="0 0 18 18" fill="none"><path d="M15 9H3m5-5L3 9l5 5" stroke="currentColor" stroke-width="1.8"/></svg></button>
       <button class="he-arr next" type="button" aria-label="Следующие парки"><svg viewBox="0 0 18 18" fill="none"><path d="M3 9h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.8"/></svg></button>
@@ -1092,7 +1093,7 @@ main{background:#fff;margin:12px 12px 0;border-radius:28px;overflow:clip;box-sha
     <div class="case-grid" id="caseGrid"></div>
     <div class="cta-inline dark" data-r>
       <p>более 100 проектов в 63 городах и 5 странах. Покажем объект рядом с вами и расскажем, как он работает.</p>
-      <div class="acts"><a href="#form" class="btn btn-primary">Обсудить проект</a><a class="btn btn-ghost" href="https://unitramp.ru/projects/" target="_blank" rel="noopener">Все проекты</a></div>
+      <div class="acts"><a href="#form" class="btn btn-primary">Обсудить проект</a><a class="btn btn-ghost" href="#cases">Смотреть проекты</a></div>
     </div>
   </div>
 </section>
@@ -1212,7 +1213,7 @@ main{background:#fff;margin:12px 12px 0;border-radius:28px;overflow:clip;box-sha
     <div class="cta-l">
       <div class="eyebrow" data-r><i></i>Следующий шаг</div>
       <h2 class="split" data-r="fade"><span class="ln"><span>Обсудим</span></span><span class="ln"><span>ваш торговый</span></span><span class="ln"><span>центр</span></span></h2>
-      <p class="lead" data-r>Оставьте контакты, и руководитель проектов свяжется в течение рабочего дня. План помещения можно прислать позже.</p>
+      <p class="lead" data-r>Позвоните или напишите нам. План помещения можно прислать в мессенджере.</p>
       <div class="get" data-r>
         <div><i><svg width="12" height="12" viewBox="0 0 16 16"><path d="M2 8.5l4 4 8-9" fill="none" stroke="#6E9BFF" stroke-width="2.4"/></svg></i>Формат и зонирование под вашу площадь</div>
         <div><i><svg width="12" height="12" viewBox="0 0 16 16"><path d="M2 8.5l4 4 8-9" fill="none" stroke="#6E9BFF" stroke-width="2.4"/></svg></i>Предварительная вилка бюджета</div>
@@ -1224,36 +1225,13 @@ main{background:#fff;margin:12px 12px 0;border-radius:28px;overflow:clip;box-sha
         <a href="https://t.me/+79607901070" target="_blank" rel="noopener"><svg width="16" height="16" style="fill:currentColor"><use href="#i-tg"/></svg>Telegram</a>
       </div>
     </div>
-    <form class="lead-form" id="leadForm" novalidate data-r>
-      <div class="fld half"><label for="f-name">Имя</label><input id="f-name" name="name" placeholder="Как к вам обращаться" autocomplete="name"></div>
-      <div class="fld half"><label for="f-phone">Телефон</label><input id="f-phone" name="phone" type="tel" inputmode="tel" placeholder="+7 (___) ___-__-__" autocomplete="tel"></div>
-      <div class="fld half"><label for="f-tc">Торговый центр и город</label><input id="f-tc" name="tc" placeholder="ТРЦ «Галактика», Кемерово" autocomplete="organization"></div>
-      <div class="fld half"><label for="f-area">Свободная площадь, м²</label><input id="f-area" name="area" inputmode="numeric" placeholder="1 200"></div>
-      <div class="fld"><label>Кто вы</label>
-        <div class="chips">
-          <label><input type="radio" name="role" value="owner" checked><span>Собственник</span></label>
-          <label><input type="radio" name="role" value="uk"><span>Управляющая компания</span></label>
-          <label><input type="radio" name="role" value="op"><span>Оператор, инвестор</span></label>
-        </div>
-      </div>
-      <button class="btn btn-primary" type="submit">Обсудить проект <svg class="arr" viewBox="0 0 18 18" fill="none"><path d="M3 9h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.8"/></svg></button>
-      <p class="fine">Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных. План помещения можно прислать после звонка или в WhatsApp.</p>
-      <div class="sent" aria-live="polite">
-        <div class="ok"><svg width="26" height="26" viewBox="0 0 16 16"><path d="M2 8.5l4 4 8-9" fill="none" stroke="#fff" stroke-width="2"/></svg></div>
-        <h3>Заявка принята</h3>
-        <p>Руководитель проектов свяжется с вами в течение рабочего дня.</p>
-        <ol class="next">
-          <li>Позвоним и уточним площадь, планировку и задачи вашего ТЦ</li>
-          <li>Предложим формат, модель участия и предварительную вилку бюджета</li>
-          <li>Подготовим концепцию и 3D-проект, по запросу экономическое обоснование</li>
-        </ol>
-        <div class="acts">
-          <a href="#cases" class="btn btn-primary">Смотреть объекты</a>
-          <a href="https://wa.me/79607901070" target="_blank" rel="noopener" class="btn btn-wa"><svg class="ic"><use href="#i-wa"/></svg>Прислать план</a>
-        </div>
-        <button type="button" class="again" id="again">Отправить ещё одну заявку</button>
-      </div>
-    </form>
+    <div class="lead-form contact-card" data-r>
+      <h3>Свяжитесь с нами</h3>
+      <p class="fine">Укажите город, название ТЦ и свободную площадь, чтобы мы могли обсудить ваш проект.</p>
+      <a class="btn btn-primary" href="https://t.me/+79607901070" target="_blank" rel="noopener">Написать в Telegram</a>
+      <a class="btn btn-primary" href="https://wa.me/79607901070" target="_blank" rel="noopener">Написать в WhatsApp</a>
+      <a class="fine" href="mailto:info@unitramp.ru">info@unitramp.ru</a>
+    </div>
   </div>
 </section>
 </main>
@@ -1263,7 +1241,7 @@ main{background:#fff;margin:12px 12px 0;border-radius:28px;overflow:clip;box-sha
     <div class="logo"><img src="assets/img/logo-white.svg" alt="UNITRAMP"><p>ООО «ЮНИТРАМП». Создаём семейные досуговые центры с 2014 года.</p></div>
     <div class="col"><b>Разделы</b><a href="#scope">Что делаем</a><a href="#cases">Объекты</a><a href="#process">Этапы</a></div>
     <div class="col"><b>Связаться</b><a href="tel:88007007809">8 800 700-78-09</a><a href="https://wa.me/79607901070" target="_blank" rel="noopener">WhatsApp</a><a href="https://t.me/+79607901070" target="_blank" rel="noopener">Telegram</a><a href="https://unitramp.ru" target="_blank" rel="noopener">unitramp.ru</a></div>
-    <div class="col"><b>Документы</b><a href="#faq">Сертификаты и гарантия</a><a href="#form">Политика обработки данных</a></div>
+    <div class="col"><b>Документы</b><a href="#faq">Сертификаты и гарантия</a></div>
     <div class="bottom"><span>© 2026 UNITRAMP</span><span>Семейные парки для торговых центров</span></div>
   </div>
 </footer>
@@ -1285,7 +1263,6 @@ main{background:#fff;margin:12px 12px 0;border-radius:28px;overflow:clip;box-sha
       <div class="where" id="mWhere"></div>
       <dl id="mDl"></dl>
       <p id="mText"></p>
-      <a id="mLink" class="link-arr" target="_blank" rel="noopener">Страница проекта на unitramp.ru <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M3 9h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.8"/></svg></a>
       <a href="#form" class="btn btn-primary" data-close style="margin-top:20px;height:48px">Обсудить похожий проект</a>
     </div>
   </div>
@@ -1302,32 +1279,32 @@ var CASES = [
   tags:[['Интерактивный парк','']],
   did:'Интерактивный активити-парк под ключ: игровые лабиринты, полосы препятствий, мягкие игровые зоны и интерактивные проекции.',
   text:'От идеи до открытия команда UNITRAMP прошла полный цикл: знакомство на производстве, зонирование и потоки посетителей, 3D-визуализация и технический проект, поставка и монтаж.',
-  img:['c-bezoom.jpg','bz-hero.jpg','c-bezoom-2.jpg','c-bezoom-3.jpg'],url:'https://unitramp.ru/detskie-razvlekatelnye-centry/detskij-interaktivnyj-park-bezoom'},
+  img:['c-bezoom.jpg','bz-hero.jpg','c-bezoom-2.jpg','c-bezoom-3.jpg']},
  {id:'panda',title:'Panda Park',city:'Павлодар, Казахстан',year:'2020',area:'580',term:'65',
   tags:[['В торговом центре','acc'],['Заказчик: владелец ТЦ','']],
   did:'Парк в одном из главных ТЦ города. Шесть игровых зон и вся инфраструктура: ресепшн, раздевалки, зона ожидания.',
   text:'Парк в одном из главных торговых центров Павлодара. Заказчик проекта сам владелец ТЦ. Спроектировали не только игровую часть, но и всю инфраструктуру для гостей. Арена разделена на шесть зон, поэтому каждый посетитель находит своё.',
-  img:['c-panda-2.jpg','c-panda.jpg'],url:'https://unitramp.ru/proekty-batutnyh-centrov/batutnyj-centr-panda-park'},
+  img:['c-panda-2.jpg','c-panda.jpg']},
  {id:'kometa',title:'«Комета»',city:'Орск',year:'2026',area:'600',term:'55',
   tags:[['Семейный центр','']],
   did:'Лабиринт с горками и сухим бассейном, скалодром, активная арена с интерактивом. 3D-проект сделали до первой встречи.',
   text:'Детский развлекательный центр, который нужно было построить очень быстро. Сразу сделали объёмный 3D-проект, затем приехали к заказчику и обсудили все детали на месте.',
-  img:['c-kometa.jpg','p-kometa-2.jpg','c-kometa-9.jpg'],url:'https://unitramp.ru/detskie-razvlekatelnye-centry/detskij-razvlekatelnyj-centr-kometa'},
+  img:['c-kometa.jpg','p-kometa-2.jpg','c-kometa-9.jpg']},
  {id:'armirum',title:'«Армирум»',city:'Омск',year:'2026',area:'880',term:'40',
   tags:[['Ниндзя-спорт и OCR','']],
   did:'Один из крупнейших залов полосы препятствий для детей и взрослых. Монтаж под ключ нашей командой.',
   text:'Зал OCR и ниндзя-спорта: полоса препятствий, которую проходят и дети, и взрослые. Проект, производство и монтаж под ключ выполнила команда UNITRAMP.',
-  img:['c-armirum.jpg','c-armirum-2.jpg'],url:'https://unitramp.ru/proekty-ninja-parkov/sovremennaya-polosa-prepyatstvij-armirum'},
+  img:['c-armirum.jpg','c-armirum-2.jpg']},
  {id:'orbita',title:'«Орбита Семьи»',city:'Севастополь',year:'2023',area:'650',term:'55',mount:'18',
   tags:[['Семейный парк','']],
   did:'Крупнейший семейный парк города. Помещение было почти готово, поэтому производство уложили в сжатый срок.',
   text:'Заказчик хотел самый крупный и интересный парк на полуострове. Помещение было почти готово к монтажу, поэтому проектировщики быстро сделали 3D-проект, а производство уложилось в сжатый срок. В парке интерактивная арена, спиннер, интерактивный волейбол, баскетбольная зона.',
-  img:['p-orbita-1.jpg','p-orbita-4.jpg'],url:'https://unitramp.ru/detskie-razvlekatelnye-centry/razvlekatelnyj-centr-orbita-semi'},
+  img:['p-orbita-1.jpg','p-orbita-4.jpg']},
  {id:'neopolis',title:'«Неополис»',city:'Чита',year:'2026',area:'500',term:'55',
   tags:[['Семейный центр','']],
   did:'Встроили колонны и перепады высот в игровую логику. Путь гостя распределяет поток по зонам.',
   text:'Заказчик хотел центр, который визуально и технологически отличается от конкурентов. Перепады высот и массивные колонны помещения стали частью игровой логики, а продуманный маршрут распределяет гостей по зонам.',
-  img:['c-neopolis.jpg','c-neopolis-2.jpg'],url:'https://unitramp.ru/detskie-razvlekatelnye-centry/detskij-razvlekatelnyj-centr-neopolis'}
+  img:['c-neopolis.jpg','c-neopolis-2.jpg']}
 ];
 var grid = $('#caseGrid');
 CASES.forEach(function(c,i){
@@ -1355,7 +1332,6 @@ function openCase(c){
   $('#mWhere').textContent = c.city+', '+c.year;
   $('#mDl').innerHTML = '<dt>Площадь</dt><dd>'+c.area+' м²</dd><dt>Срок реализации</dt><dd>'+c.term+' '+(c.termU||'рабочих дней')+'</dd>'+(c.mount?'<dt>Монтаж</dt><dd>'+c.mount+' календарных дней</dd>':'')+'<dt>Что сделали</dt><dd style="font-weight:500">'+c.did+'</dd>';
   $('#mText').textContent = c.text;
-  $('#mLink').href = c.url;
   modal.classList.add('open'); modal.setAttribute('aria-hidden','false'); D.body.style.overflow='hidden';
   setTimeout(function(){$('.modal-x').focus()},50);
   var idx=0; clearInterval(galT);
@@ -1444,17 +1420,6 @@ $$('.qa').forEach(function(d){
   });
 });
 
-/* ---------- form (mock) ---------- */
-var form=$('#leadForm'), phone=$('#f-phone');
-phone.addEventListener('input',function(){
-  var d=phone.value.replace(/\D/g,''); if(d[0]==='8')d='7'+d.slice(1); if(d&&d[0]!=='7')d='7'+d; d=d.slice(0,11);
-  var r='+7'; if(d.length>1)r+=' ('+d.slice(1,4); if(d.length>=4)r+=')'; if(d.length>4)r+=' '+d.slice(4,7); if(d.length>7)r+='-'+d.slice(7,9); if(d.length>9)r+='-'+d.slice(9,11);
-  phone.value=d.length?r:'';
-});
-$('#f-area').addEventListener('input',function(e){var v=e.target.value.replace(/\D/g,'').slice(0,6);e.target.value=v.replace(/\B(?=(\d{3})+(?!\d))/g,' ')});
-form.addEventListener('submit',function(e){e.preventDefault();form.classList.add('done')});
-$('#again').addEventListener('click',function(){form.classList.remove('done');form.reset()});
-$$('.sent a[href^="#"]').forEach(function(a){a.addEventListener('click',function(){setTimeout(function(){form.classList.remove('done');form.reset()},800)})});
 $$('.modal a[data-close]').forEach(function(a){a.addEventListener('click',function(){closeModal()})});
 
 })();
