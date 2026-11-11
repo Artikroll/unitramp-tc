@@ -879,7 +879,7 @@ main{background:#fff;margin:12px 12px 0;border-radius:28px;overflow:clip;box-sha
 .w2e-photo figcaption{position:absolute;left:20px;bottom:16px;font-size:13px;color:#fff;background:rgba(11,18,32,.55);padding:6px 12px;border-radius:999px}
 @media(max-width:767px){.he .wrap{padding-top:110px}.he-bg{height:640px}.he h1{font-size:34px}.he-eb{font-size:11px;padding:7px 12px}.w2e-photo{aspect-ratio:4/3}.team-grid.t3.noph .person:last-child{max-width:none}}
 </style>
-<link rel="stylesheet" href="assets/tc-process.css?v=20261111b">
+<link rel="stylesheet" href="assets/tc-process.css?v=20261111c">
 <script src="assets/tc-process.js?v=20261111b" defer></script>
 </head>
 <body>
@@ -1076,7 +1076,7 @@ main{background:#fff;margin:12px 12px 0;border-radius:28px;overflow:clip;box-sha
       <button type="button" role="tab" id="tc-step-1" aria-controls="tc-panel-1" aria-selected="false"><span class="tc-number">01</span>Площадка</button>
       <button type="button" role="tab" id="tc-step-2" aria-controls="tc-panel-2" aria-selected="false"><span class="tc-number">02</span>Концепция</button>
       <button type="button" role="tab" id="tc-step-3" aria-controls="tc-panel-3" aria-selected="false"><span class="tc-number">03</span>Смета</button>
-      <button type="button" role="tab" id="tc-step-4" aria-controls="tc-panel-4" aria-selected="false"><span class="tc-number">04</span>Доставка</button>
+      <button type="button" role="tab" id="tc-step-4" aria-controls="tc-panel-4" aria-selected="false" aria-label="04 Изготовление и доставка"><span class="tc-number">04</span>Изготов&shy;ление и доставка</button>
       <button type="button" role="tab" id="tc-step-5" aria-controls="tc-panel-5" aria-selected="false"><span class="tc-number">05</span>Монтаж</button>
       <button type="button" role="tab" id="tc-step-6" aria-controls="tc-panel-6" aria-selected="false"><span class="tc-number">06</span>Открытие</button>
       </div>
@@ -1109,36 +1109,20 @@ main{background:#fff;margin:12px 12px 0;border-radius:28px;overflow:clip;box-sha
         <p>Согласуем состав оборудования, стоимость, сроки и ответственность сторон. Смета и график привязаны к согласованному проекту.</p>
         <div class="tc-phase-result"><b>Результат этапа</b><span>Договор с зафиксированным составом работ и графиком.</span></div>
       </div>
-      <figure class="tc-phase-docs">
-        <div class="tc-doc-stack">
-          <div class="tc-document tc-document-cost">
-            <b>Смета</b>
-            <span>Оборудование и работы</span>
-            <i aria-hidden="true"></i><i aria-hidden="true"></i>
-          </div>
-          <div class="tc-document tc-document-plan">
-            <b>График</b>
-            <span>Этапы и сроки</span>
-            <i aria-hidden="true"></i><i aria-hidden="true"></i>
-          </div>
-          <div class="tc-document tc-document-agreement">
-            <b>Договор</b>
-            <span>Состав работ и ответственность</span>
-            <i aria-hidden="true"></i><i aria-hidden="true"></i><i aria-hidden="true"></i>
-          </div>
-        </div>
-        <figcaption>Пример комплекта документов</figcaption>
+      <figure class="tc-phase-image">
+        <img src="assets/img/tc-contract-sample.webp" width="1536" height="1024" alt="На столе лежат образец договора, смета и график работ" loading="lazy" decoding="async">
+        <figcaption>Образец комплекта документов</figcaption>
       </figure>
     </article>
     <article class="tc-phase" id="tc-panel-4" role="tabpanel" aria-labelledby="tc-step-4" tabindex="0">
       <div class="tc-phase-copy">
         <h3>Изготовление и доставка</h3>
-        <p>Изготавливаем и комплектуем оборудование. Параллельно передаём требования к помещению, чтобы ТЦ мог подготовить его к завозу и монтажу.</p>
+        <p>Изготавливаем и комплектуем оборудование, готовим его к отправке и доставляем на объект. С командой ТЦ заранее согласуем, когда и куда его завезти.</p>
         <div class="tc-phase-result"><b>Результат этапа</b><span>Комплект оборудования и согласованный порядок завоза.</span></div>
       </div>
-      <figure class="tc-phase-image tc-phase-production">
-        <img src="assets/img/tc-production.jpg" alt="Сотрудник швейного цеха UNITRAMP за работой" loading="lazy" decoding="async">
-        <figcaption>Швейный цех UNITRAMP · изготовление мягких элементов</figcaption>
+      <figure class="tc-phase-image">
+        <img src="assets/img/tc-equipment-warehouse.webp" width="1920" height="1080" alt="Ящики и комплектующие на складе UNITRAMP" loading="lazy" decoding="async">
+        <figcaption>Комплектующие на складе UNITRAMP</figcaption>
       </figure>
     </article>
     <article class="tc-phase" id="tc-panel-5" role="tabpanel" aria-labelledby="tc-step-5" tabindex="0">
@@ -1147,9 +1131,9 @@ main{background:#fff;margin:12px 12px 0;border-radius:28px;overflow:clip;box-sha
         <p>Бригада собирает конструкции, устанавливает оборудование и проверяет его перед передачей. Время работ и маршрут завоза согласуем с управляющей компанией.</p>
         <div class="tc-phase-result"><b>Результат этапа</b><span>Собранное оборудование, готовое к приёмке.</span></div>
       </div>
-      <figure class="tc-phase-image">
-        <img src="assets/img/tc-installation-shchuchinsk.webp" alt="Монтажник затягивает крепление опоры каркаса" loading="lazy" decoding="async">
-        <figcaption>Крепление каркаса · Щучинск, Казахстан</figcaption>
+      <figure class="tc-phase-image tc-phase-installation">
+        <img src="assets/img/tc-installation-net.webp" width="1440" height="810" alt="Монтажник крепит защитную сетку к каркасу игрового комплекса" loading="lazy" decoding="async">
+        <figcaption>Монтаж защитной сетки · Щучинск, Казахстан</figcaption>
       </figure>
     </article>
     <article class="tc-phase" id="tc-panel-6" role="tabpanel" aria-labelledby="tc-step-6" tabindex="0">
@@ -1165,10 +1149,7 @@ main{background:#fff;margin:12px 12px 0;border-radius:28px;overflow:clip;box-sha
     </article>
     </div>
     </div>
-    <div class="proc-total">
-      <p>График зависит от состава парка, поставки и готовности помещения. Обсудим сроки для вашей площадки.</p>
-      <a href="#form" class="btn btn-primary">Обсудить сроки для вашего ТЦ</a>
-    </div>
+    <p class="tc-process-next"><a href="#form">Обсудить сроки для вашего ТЦ <span aria-hidden="true">↗</span></a></p>
   </div>
 </section>
 
