@@ -357,23 +357,6 @@ body.menu-open .hdr .logo .l-dark{opacity:0}body.menu-open .hdr .logo .l-light{o
 
 /* PROCESS */
 .process{background:var(--bg)}
-.proc-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
-.proc-steps{grid-column:1/6}
-.proc-step{padding:40px 0;border-top:1px solid var(--line);opacity:.35;transition:opacity .5s var(--ease);min-height:38vh;display:flex;flex-direction:column;justify-content:center}
-.proc-step.on{opacity:1}
-.proc-step .n{font:800 15px/1 var(--h-font);color:var(--accent);display:flex;gap:12px;align-items:center;margin-bottom:16px}
-.proc-step .n em{font-style:normal;color:var(--ink-3);font-weight:600;font-family:var(--b-font);font-size:13px}
-.proc-step h3{font-size:32px;font-weight:800;letter-spacing:-.03em;margin-bottom:12px}
-.proc-step p{font-size:17px;color:var(--ink-2);max-width:30em}
-.proc-step .pimg{display:none}
-.proc-vis{grid-column:7/13;position:sticky;top:96px;height:calc(100vh - 140px);max-height:760px;align-self:start}
-.proc-frame{position:absolute;inset:0;border-radius:var(--r-xl);overflow:hidden;opacity:0;transform:scale(1.04);transition:opacity .7s var(--ease),transform 1.2s var(--ease-out)}
-.proc-frame.on{opacity:1;transform:none}
-.proc-frame img{width:100%;height:100%;object-fit:cover}
-.proc-frame figcaption{position:absolute;left:16px;bottom:16px;display:flex;gap:8px;flex-wrap:wrap}
-.proc-bar{position:absolute;right:16px;top:16px;z-index:2;display:flex;gap:6px}
-.proc-bar i{width:28px;height:4px;border-radius:2px;background:rgba(255,255,255,.45);transition:background .3s,width .4s var(--ease)}
-.proc-bar i.on{background:#fff;width:44px}
 .proc-total{margin-top:48px;display:flex;gap:40px;align-items:center;flex-wrap:wrap;padding:32px;border-radius:var(--r-xl);background:var(--paper)}
 .proc-total .big{font:800 56px/1 var(--h-font);letter-spacing:-.04em}
 .proc-total .big small{font-size:.4em;letter-spacing:-.01em;font-weight:700}
@@ -419,16 +402,6 @@ body.menu-open .hdr .logo .l-dark{opacity:0}body.menu-open .hdr .logo .l-light{o
 
 /* TEAM */
 .team{background:var(--paper)}
-.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
-.person .ph{aspect-ratio:4/5;border-radius:var(--r-xl);background:var(--bg);position:relative;overflow:hidden;display:grid;place-items:end center;transition:background .3s}
-.person .ph svg{width:62%;fill:none;stroke:rgba(16,21,29,.18);stroke-width:2}
-.person .ph svg circle{fill:rgba(16,21,29,.06)}
-.person .ph .ph-l{position:absolute;left:14px;top:14px;font:600 12px/1 var(--b-font);letter-spacing:.04em;color:var(--ink-3);background:rgba(255,255,255,.7);padding:6px 10px;border-radius:var(--r-s)}
-.person:hover .ph{background:#E1DDD4}
-.person .role{margin-top:18px;font:600 12px/1.3 var(--b-font);letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
-.person h3{font-size:22px;margin:8px 0 6px}
-.person p.what{font-size:15px;color:var(--ink-2);line-height:1.45;margin-top:10px;padding-top:10px;border-top:1px solid var(--line)}
-.person p.what .resp{display:block;font-size:12px;color:var(--ink-3);margin-bottom:2px}
 .team-note{margin-top:32px}
 
 /* FAQ */
@@ -544,7 +517,7 @@ form.done .sent{opacity:1;pointer-events:auto}
   .hero-cta{flex-direction:row}
   .hero-cap{display:none}
   .sec-head{grid-template-columns:1fr}.sec-head h2,.sec-head .lead{grid-column:1/-1;justify-self:start}
-  .why-grid .left,.why-grid .rows,.tasks-media,.tasks-list,.econ-l,.econ-r,.proc-steps,.fac-l,.fac-r,.faq-l,.faq-list,.cta-l,.lead-form{grid-column:1/-1}
+  .why-grid .left,.why-grid .rows,.tasks-media,.tasks-list,.econ-l,.econ-r,.fac-l,.fac-r,.faq-l,.faq-list,.cta-l,.lead-form{grid-column:1/-1}
   .why-grid .left,.tasks-media,.econ-r{position:relative;top:0}
   .why-grid .rows{margin-top:32px}
   .tasks-media{aspect-ratio:16/10}
@@ -557,17 +530,10 @@ form.done .sent{opacity:1;pointer-events:auto}
   .feat-grid{grid-template-columns:1fr 1fr}
   .own-l,.own-list{grid-column:1/-1}.own-l{position:relative;top:0}.own-list{margin-top:32px}
   .econ-r{margin-top:40px}
-  .proc-vis{display:none}
-  .proc-steps{grid-column:1/-1}
-  .proc-step{opacity:1;min-height:0}
-  .proc-step .pimg{display:block;margin-top:20px;border-radius:var(--r-l);overflow:hidden;aspect-ratio:16/10;position:relative}
-  .proc-step .pimg img{width:100%;height:100%;object-fit:cover}
-  .proc-step .pimg .tag{position:absolute;left:12px;bottom:12px}
   .risk-grid{grid-template-columns:1fr 1fr}
   .risk,.risk:not(:nth-child(3n+1)){padding:28px 24px 32px 0;border-left:0}
   .risk:nth-child(2n){padding-left:24px;border-left:1px solid var(--line)}
   .fac-r{margin-top:24px}
-  .team-grid{grid-template-columns:repeat(2,1fr)}
   .faq-list{margin-top:24px}
   .lead-form{margin-top:32px}
   .foot .logo{grid-column:1/-1}.foot .col{grid-column:span 6}
@@ -648,8 +614,6 @@ form.done .sent{opacity:1;pointer-events:auto}
   .map{aspect-ratio:1/1.05}
   .report{padding:20px;grid-template-columns:1fr}
   .report .kpis{grid-template-columns:1fr 1fr}
-  .proc-step{padding:28px 0}
-  .proc-step h3{font-size:24px}
   .proc-total{padding:24px;gap:16px}
   .proc-total .big{font-size:44px}
   .proc-total .btn{margin-left:0;width:100%}
@@ -659,7 +623,6 @@ form.done .sent{opacity:1;pointer-events:auto}
   .fac-nums div:nth-child(even){padding-left:16px}
   .fac-r{gap:10px}
   .fac-r figure:nth-child(3){margin-top:24px}
-  .team-grid{grid-template-columns:1fr 1fr;gap:16px}
   .person h3{font-size:17px}
   .person .role{font-size:11px;margin-top:12px}
   .person p.what{font-size:13px}
@@ -790,8 +753,6 @@ form.done .sent{opacity:1;pointer-events:auto}
 .mdl-upd p strong{color:#fff;font-weight:700}
 
 /* TEAM */
-.team-grid.t3{grid-template-columns:repeat(3,1fr);max-width:1080px}
-.person .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 
 /* FORM + THANKS */
 .lead-form{position:relative}
@@ -891,8 +852,6 @@ main{background:#fff;margin:12px 12px 0;border-radius:28px;overflow:clip;box-sha
   .sc-mode h3{font-size:24px}
   .sc-feats{grid-template-columns:1fr;gap:22px}
   .sc-own{padding:18px}
-  .team-grid.t3{grid-template-columns:1fr 1fr;gap:16px}
-  .team-grid.t3 .person:last-child{grid-column:1/-1;max-width:calc(50% - 8px)}
   .mdl-upd{flex-direction:column;align-items:flex-start;gap:10px}
   .cta-inline{padding:20px}
   .cta-inline .acts{width:100%}
@@ -918,11 +877,10 @@ main{background:#fff;margin:12px 12px 0;border-radius:28px;overflow:clip;box-sha
 .w2e-photo{margin-top:40px;border-radius:24px;overflow:hidden;position:relative;aspect-ratio:21/8}
 .w2e-photo img{width:100%;height:100%;object-fit:cover}
 .w2e-photo figcaption{position:absolute;left:20px;bottom:16px;font-size:13px;color:#fff;background:rgba(11,18,32,.55);padding:6px 12px;border-radius:999px}
-.team-grid.noph .person{background:#fff;border-radius:var(--r-xl);padding:30px 28px;border:1px solid var(--line)}
-.team-grid.noph .person h3{font-size:26px;margin:8px 0 14px}
-.team-grid.noph .ph{display:none}
-@media(max-width:767px){.he .wrap{padding-top:110px}.he-bg{height:640px}.he h1{font-size:34px}.he-eb{font-size:11px;padding:7px 12px}.w2e-photo{aspect-ratio:4/3}.team-grid.t3.noph{grid-template-columns:1fr}.team-grid.t3.noph .person:last-child{max-width:none}}
+@media(max-width:767px){.he .wrap{padding-top:110px}.he-bg{height:640px}.he h1{font-size:34px}.he-eb{font-size:11px;padding:7px 12px}.w2e-photo{aspect-ratio:4/3}.team-grid.t3.noph .person:last-child{max-width:none}}
 </style>
+<link rel="stylesheet" href="assets/tc-process.css">
+<script src="assets/tc-process.js" defer></script>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -1104,62 +1062,92 @@ main{background:#fff;margin:12px 12px 0;border-radius:28px;overflow:clip;box-sha
 <section class="sec process" id="process">
   <div class="wrap">
     <div class="sec-head">
-      <div class="eyebrow tri" data-r><i></i>Прозрачные этапы</div>
-      <h2 class="split" data-r="fade"><span class="ln"><span>Смета, доставка,</span></span><span class="ln"><span>монтаж, открытие</span></span></h2>
-      <p class="lead" data-r>Каждый этап с понятным результатом и сроком. Вы согласуете решения, мы ведём работу.</p>
+      <h2>От плана ТЦ до открытия парка</h2>
+      <p class="lead">На каждом этапе видно, что согласуем с вашей командой и что вы получаете.</p>
     </div>
-    <div class="proc-grid">
-      <div class="proc-steps" id="procSteps">
-        <div class="proc-step on" data-f="0">
-          <div class="n">01 <em>Старт</em></div>
-          <h3>Помещение и задача</h3>
-          <p>Присылаете план, площадь и высоту потолков. Обсуждаем аудиторию ТЦ и модель участия.</p>
-          <figure class="pimg"><img src="assets/img/pr-room.jpg" alt="Пустое помещение до начала работ" loading="lazy"><span class="tag">Помещение до работ · «Комета», Орск</span></figure>
-        </div>
-        <div class="proc-step" data-f="1">
-          <div class="n">02 <em>Концепция</em></div>
-          <h3>Концепция и 3D-проект</h3>
-          <p>Подбираем формат и зонирование, показываем будущий парк в 3D. По запросу готовим экономическое обоснование.</p>
-          <figure class="pimg"><img src="assets/img/pr-3d.jpg" alt="Проектная визуализация детского центра" loading="lazy"><span class="tag">Проектная визуализация · «Комета»</span></figure>
-        </div>
-        <div class="proc-step" data-f="2">
-          <div class="n">03 <em>Смета</em></div>
-          <h3>Смета и договор</h3>
-          <p>Фиксируем состав оборудования, стоимость и график. Цена не меняется без вашего согласия.</p>
-          <figure class="pimg"><img src="assets/img/f-plan.jpg" alt="Планировка зон парка" loading="lazy"><span class="tag">Планировка зон</span></figure>
-        </div>
-        <div class="proc-step" data-f="3">
-          <div class="n">04 <em>Производство и доставка</em></div>
-          <h3>Изготовление и доставка</h3>
-          <p>Оборудование изготавливают и проверяют на фабриках, затем доставляем его на объект. Параллельно передаём техзадание, чтобы помещение было готово к монтажу в срок.</p>
-          <figure class="pimg"><img src="assets/img/f-factory.jpg" alt="Мягкие элементы перед отгрузкой" loading="lazy"><span class="tag">Подготовка к отгрузке</span></figure>
-        </div>
-        <div class="proc-step" data-f="4">
-          <div class="n">05 <em>10–21 день</em></div>
-          <h3>Монтаж</h3>
-          <p>Собираем парк своей бригадой. Время работ и маршрут завоза согласуем с управляющей компанией, чтобы не мешать арендаторам.</p>
-          <figure class="pimg"><img src="assets/img/pr-mount-bz.jpg" alt="Монтаж игрового лабиринта" loading="lazy"><span class="tag">Монтаж · Bezoom, Иркутск</span></figure>
-        </div>
-        <div class="proc-step" data-f="5">
-          <div class="n">06 <em>Запуск</em></div>
-          <h3>Открытие и передача</h3>
-          <p>Передаём документы, обучаем персонал, остаёмся на связи. Гарантия 12 месяцев.</p>
-          <figure class="pimg"><img src="assets/img/pr-result.jpg" alt="Готовый детский центр «Комета»" loading="lazy"><span class="tag">Открытие · «Комета», Орск</span></figure>
-        </div>
+    <div class="tc-process">
+      <div class="tc-process-tabs" role="tablist" aria-label="Этапы проекта" hidden>
+      <button type="button" role="tab" id="tc-step-1" aria-controls="tc-panel-1" aria-selected="false"><span class="tc-number">01</span>Площадка</button>
+      <button type="button" role="tab" id="tc-step-2" aria-controls="tc-panel-2" aria-selected="false"><span class="tc-number">02</span>Концепция</button>
+      <button type="button" role="tab" id="tc-step-3" aria-controls="tc-panel-3" aria-selected="false"><span class="tc-number">03</span>Смета</button>
+      <button type="button" role="tab" id="tc-step-4" aria-controls="tc-panel-4" aria-selected="false"><span class="tc-number">04</span>Доставка</button>
+      <button type="button" role="tab" id="tc-step-5" aria-controls="tc-panel-5" aria-selected="false"><span class="tc-number">05</span>Монтаж</button>
+      <button type="button" role="tab" id="tc-step-6" aria-controls="tc-panel-6" aria-selected="false"><span class="tc-number">06</span>Открытие</button>
       </div>
-      <div class="proc-vis" id="procVis" aria-hidden="true">
-        <div class="proc-bar"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
-        <figure class="proc-frame on"><img src="assets/img/pr-room.jpg" alt="" loading="lazy"><figcaption><span class="tag">Помещение до работ · «Комета», Орск</span></figcaption></figure>
-        <figure class="proc-frame"><img src="assets/img/pr-3d.jpg" alt="" loading="lazy"><figcaption><span class="tag acc">Проектная визуализация</span><span class="tag">«Комета», Орск</span></figcaption></figure>
-        <figure class="proc-frame"><img src="assets/img/f-plan.jpg" alt="" loading="lazy" style="object-fit:cover"><figcaption><span class="tag acc">Проектная визуализация</span><span class="tag">Планировка зон</span></figcaption></figure>
-        <figure class="proc-frame"><img src="assets/img/f-factory.jpg" alt="" loading="lazy"><figcaption><span class="tag">Подготовка к отгрузке</span></figcaption></figure>
-        <figure class="proc-frame"><img src="assets/img/pr-mount-bz.jpg" alt="" loading="lazy"><figcaption><span class="tag">Монтаж · Bezoom, Иркутск</span></figcaption></figure>
-        <figure class="proc-frame"><img src="assets/img/pr-result.jpg" alt="" loading="lazy"><figcaption><span class="tag">Открытие · «Комета», Орск</span></figcaption></figure>
+    <article class="tc-phase" id="tc-panel-1" role="tabpanel" aria-labelledby="tc-step-1" tabindex="0">
+      <div class="tc-phase-copy">
+        <h3>План помещения и задача ТЦ</h3>
+        <p>Смотрим план, площадь и высоту потолков. Обсуждаем, кто приходит в ТЦ, где разместить парк и как гости будут в него попадать.</p>
+        <div class="tc-phase-result"><b>Результат этапа</b><span>Требования к площадке и исходные данные для концепции.</span></div>
       </div>
+      <figure class="tc-phase-image">
+        <img src="assets/img/pr-room.jpg" alt="Помещение до начала работ в Орске" loading="lazy" decoding="async">
+        <figcaption>«Комета», Орск · площадка до работ</figcaption>
+      </figure>
+    </article>
+    <article class="tc-phase" id="tc-panel-2" role="tabpanel" aria-labelledby="tc-step-2" tabindex="0">
+      <div class="tc-phase-copy">
+        <h3>Зонирование и 3D-проект</h3>
+        <p>Распределяем активности, проходы и места для родителей. В 3D показываем, как зоны связаны между собой и сколько места занимает оборудование.</p>
+        <div class="tc-phase-result"><b>Результат этапа</b><span>План игровых зон и визуализация будущего парка.</span></div>
+      </div>
+      <figure class="tc-phase-image">
+        <img src="assets/img/tc-concept.webp" alt="Проектная визуализация детского центра с игровыми зонами" loading="lazy" decoding="async">
+        <figcaption>3D-визуализация из архива UNITRAMP</figcaption>
+      </figure>
+    </article>
+    <article class="tc-phase" id="tc-panel-3" role="tabpanel" aria-labelledby="tc-step-3" tabindex="0">
+      <div class="tc-phase-copy">
+        <h3>Смета, договор и график</h3>
+        <p>Согласуем состав оборудования, стоимость, сроки и ответственность сторон. Смета и график привязаны к согласованному проекту.</p>
+        <div class="tc-phase-result"><b>Результат этапа</b><span>Договор с зафиксированным составом работ и графиком.</span></div>
+      </div>
+      <div class="tc-phase-estimate">
+        <b>Что фиксируем в смете и договоре</b>
+        <ul>
+          <li>Оборудование и комплектация зон</li>
+          <li>Доставка, завоз и монтаж</li>
+          <li>Стоимость и график работ</li>
+          <li>Ответственность сторон и условия гарантии</li>
+        </ul>
+      </div>
+    </article>
+    <article class="tc-phase" id="tc-panel-4" role="tabpanel" aria-labelledby="tc-step-4" tabindex="0">
+      <div class="tc-phase-copy">
+        <h3>Изготовление и доставка</h3>
+        <p>Изготавливаем и комплектуем оборудование. Параллельно передаём требования к помещению, чтобы ТЦ мог подготовить его к завозу и монтажу.</p>
+        <div class="tc-phase-result"><b>Результат этапа</b><span>Комплект оборудования и согласованный порядок завоза.</span></div>
+      </div>
+      <figure class="tc-phase-image">
+        <img src="assets/img/tc-production.jpg" alt="Сотрудник швейного цеха UNITRAMP за работой" loading="lazy" decoding="async">
+        <figcaption>Швейный цех UNITRAMP · изготовление мягких элементов</figcaption>
+      </figure>
+    </article>
+    <article class="tc-phase" id="tc-panel-5" role="tabpanel" aria-labelledby="tc-step-5" tabindex="0">
+      <div class="tc-phase-copy">
+        <h3>Монтаж на площадке</h3>
+        <p>Бригада собирает конструкции, устанавливает оборудование и проверяет его перед передачей. Время работ и маршрут завоза согласуем с управляющей компанией.</p>
+        <div class="tc-phase-result"><b>Результат этапа</b><span>Собранное оборудование, готовое к приёмке.</span></div>
+      </div>
+      <figure class="tc-phase-image">
+        <img src="assets/img/tc-installation.jpg" alt="Монтажники и металлические каркасы на площадке парка" loading="lazy" decoding="async">
+        <figcaption>Монтаж конструкций · «Пружина», Ноябрьск</figcaption>
+      </figure>
+    </article>
+    <article class="tc-phase" id="tc-panel-6" role="tabpanel" aria-labelledby="tc-step-6" tabindex="0">
+      <div class="tc-phase-copy">
+        <h3>Передача парка и открытие</h3>
+        <p>Передаём паспорта изделий и инструкции, объясняем персоналу, как пользоваться оборудованием. На оборудование действует гарантия 12 месяцев.</p>
+        <div class="tc-phase-result"><b>Результат этапа</b><span>Комплект документов и подготовка команды к открытию.</span></div>
+      </div>
+      <figure class="tc-phase-image">
+        <img src="assets/img/tc-open.webp" alt="Посетители в интерактивной зоне Bezoom в Иркутске" loading="lazy" decoding="async">
+        <figcaption>Действующий парк Bezoom, Иркутск</figcaption>
+      </figure>
+    </article>
     </div>
-    <div class="proc-total" data-r>
-      <div class="big">40–55 <small>рабочих дней</small></div>
-      <p>от договора до открытия. Типичный срок по 23 нашим проектам с указанным сроком.</p>
+    <div class="proc-total">
+      <p>График зависит от состава парка, поставки и готовности помещения. Обсудим сроки для вашей площадки.</p>
       <a href="#form" class="btn btn-primary">Обсудить сроки для вашего ТЦ</a>
     </div>
   </div>
@@ -1169,20 +1157,34 @@ main{background:#fff;margin:12px 12px 0;border-radius:28px;overflow:clip;box-sha
 <section class="sec team" id="team">
   <div class="wrap">
     <div class="sec-head">
-      <div class="eyebrow" data-r><i></i>Команда</div>
-      <h2 class="split" data-r="fade"><span class="ln"><span>Люди, которые</span></span><span class="ln"><span>отвечают за проект</span></span></h2>
-      <p class="lead" data-r>Вы говорите напрямую с теми, кто принимает решения по вашему парку, а не с колл-центром.</p>
+      <h2>Люди, которые отвечают за проект</h2>
+      <p class="lead">С ними вы обсуждаете концепцию, договор и ход работ до открытия парка.</p>
     </div>
-    <div class="team-grid t3 noph">
-      <div class="person" data-r>
-        <div class="role">Основатель</div><h3>Роман Сотников</h3><p class="what"><span class="resp">Отвечает за</span>концепцию парка и формат под вашу аудиторию</p>
-      </div>
-      <div class="person" data-r style="transition-delay:.06s">
-        <div class="role">Генеральный директор</div><h3>Кирилл Шувалов</h3><p class="what"><span class="resp">Отвечает за</span>договор, сроки и бюджет проекта</p>
-      </div>
-      <div class="person" data-r style="transition-delay:.12s">
-        <div class="role">Старший менеджер проектов</div><h3>Александр Казанцев</h3><p class="what"><span class="resp">Отвечает за</span>ваш контакт на всех этапах, от первой встречи до открытия</p>
-      </div>
+    <div class="tc-team-grid">
+      <article class="tc-person">
+        <div class="tc-person-photo"><img src="assets/img/tc-roman.webp" width="231" height="274" alt="Роман Сотников" loading="lazy" decoding="async"></div>
+        <div class="tc-person-info">
+          <p class="role">Основатель</p>
+          <h3>Роман Сотников</h3>
+          <p>Отвечает за концепцию парка и формат под вашу аудиторию.</p>
+        </div>
+      </article>
+      <article class="tc-person">
+        <div class="tc-person-photo"><img src="assets/img/tc-kirill.webp" width="411" height="500" alt="Кирилл Шувалов" loading="lazy" decoding="async"></div>
+        <div class="tc-person-info">
+          <p class="role">Генеральный директор</p>
+          <h3>Кирилл Шувалов</h3>
+          <p>Отвечает за договор, сроки и бюджет проекта.</p>
+        </div>
+      </article>
+      <article class="tc-person">
+        <div class="tc-person-photo"><img src="assets/img/tc-kazantsev.webp" width="411" height="500" alt="Александр Казанцев" loading="lazy" decoding="async"></div>
+        <div class="tc-person-info">
+          <p class="role">Старший менеджер проектов</p>
+          <h3>Александр Казанцев</h3>
+          <p>Ведёт проект от первой встречи до открытия и координирует работу с вашей командой.</p>
+        </div>
+      </article>
     </div>
   </div>
 </section>
@@ -1242,6 +1244,17 @@ main{background:#fff;margin:12px 12px 0;border-radius:28px;overflow:clip;box-sha
     <div class="col"><b>Разделы</b><a href="#scope">Что делаем</a><a href="#cases">Объекты</a><a href="#process">Этапы</a></div>
     <div class="col"><b>Связаться</b><a href="tel:88007007809">8 800 700-78-09</a><a href="https://wa.me/79607901070" target="_blank" rel="noopener">WhatsApp</a><a href="https://t.me/+79607901070" target="_blank" rel="noopener">Telegram</a><a href="https://unitramp.ru" target="_blank" rel="noopener">unitramp.ru</a></div>
     <div class="col"><b>Документы</b><a href="#faq">Сертификаты и гарантия</a></div>
+    <nav class="tc-social" aria-labelledby="tc-social-title">
+      <h2 id="tc-social-title">UNITRAMP в соцсетях</h2>
+      <ul>
+        <li><a href="https://vk.com/unitramp" target="_blank" rel="noopener"><svg class="rv-ico" viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.391 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4.03 8.57 4.03 8.096c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.677.863 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.204.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.813-.542 1.254-1.406 2.151-3.574 2.151-3.574.119-.254.322-.491.763-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.05.17.49-.085.744-.576.744z"></path></svg><span>ВКонтакте</span><span class="tc-social-arrow" aria-hidden="true">↗</span></a></li>
+        <li><a href="https://t.me/industriya_detstva" target="_blank" rel="noopener"><svg class="rv-ico" viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"></path></svg><span>Telegram</span><span class="tc-social-arrow" aria-hidden="true">↗</span></a></li>
+        <li><a href="https://www.youtube.com/@uni-tramp" target="_blank" rel="noopener"><svg class="rv-ico" viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M23 12s0-3.9-.5-5.7a3 3 0 0 0-2.1-2.1C18.6 3.7 12 3.7 12 3.7s-6.6 0-8.4.5A3 3 0 0 0 1.5 6.3C1 8.1 1 12 1 12s0 3.9.5 5.7a3 3 0 0 0 2.1 2.1c1.8.5 8.4.5 8.4.5s6.6 0 8.4-.5a3 3 0 0 0 2.1-2.1c.5-1.8.5-5.7.5-5.7ZM9.8 15.5v-7l6 3.5-6 3.5Z"></path></svg><span>YouTube</span><span class="tc-social-arrow" aria-hidden="true">↗</span></a></li>
+        <li><a href="https://ru.pinterest.com/pin/1115274295255791589/" target="_blank" rel="noopener"><svg class="rv-ico" viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"></path></svg><span>Pinterest</span><span class="tc-social-arrow" aria-hidden="true">↗</span></a></li>
+        <li><a href="https://www.instagram.com/unitramp/" target="_blank" rel="noopener"><svg class="rv-ico" viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5.2"></rect><circle cx="12" cy="12" r="4.2"></circle></g><circle cx="17.4" cy="6.6" r="1.25"></circle></svg><span>Instagram</span><span class="tc-social-arrow" aria-hidden="true">↗</span></a></li>
+        <li><a href="https://rutube.ru/channel/49700737/" target="_blank" rel="noopener"><svg class="rv-ico" viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.7" stroke-linejoin="round" d="M4.5 20V7.5h9.2a3.7 3.7 0 0 1 0 7.4H4.5m8.4 0 3.6 5.1"></path><circle cx="20" cy="4.6" r="2.4"></circle></svg><span>RUTUBE</span><span class="tc-social-arrow" aria-hidden="true">↗</span></a></li>
+      </ul>
+    </nav>
     <div class="bottom"><span>© 2026 UNITRAMP</span><span>Семейные парки для торговых центров</span></div>
   </div>
 </footer>
@@ -1403,12 +1416,6 @@ onScroll();
 function toggleMenu(open){D.body.classList.toggle('menu-open',open);$('#burger').setAttribute('aria-expanded',open?'true':'false')}
 $('#burger').addEventListener('click',function(){toggleMenu(!D.body.classList.contains('menu-open'))});
 $$('#mmenu a').forEach(function(a,i){a.style.transitionDelay=(0.08+i*0.04)+'s';a.addEventListener('click',function(){toggleMenu(false)})});
-
-/* ---------- process sticky frames ---------- */
-var frames=$$('.proc-frame'), bars=$$('.proc-bar i'), psteps=$$('.proc-step');
-function setFrame(n){frames.forEach(function(f,i){f.classList.toggle('on',i===n)});bars.forEach(function(b,i){b.classList.toggle('on',i===n)});psteps.forEach(function(s){s.classList.toggle('on',+s.dataset.f===n)})}
-var pio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting&&desk())setFrame(+e.target.dataset.f)})},{rootMargin:'-45% 0px -45% 0px'});
-psteps.forEach(function(s){pio.observe(s)});
 
 /* ---------- FAQ smooth ---------- */
 $$('.qa').forEach(function(d){
