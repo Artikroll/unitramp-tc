@@ -879,8 +879,8 @@ main{background:#fff;margin:12px 12px 0;border-radius:28px;overflow:clip;box-sha
 .w2e-photo figcaption{position:absolute;left:20px;bottom:16px;font-size:13px;color:#fff;background:rgba(11,18,32,.55);padding:6px 12px;border-radius:999px}
 @media(max-width:767px){.he .wrap{padding-top:110px}.he-bg{height:640px}.he h1{font-size:34px}.he-eb{font-size:11px;padding:7px 12px}.w2e-photo{aspect-ratio:4/3}.team-grid.t3.noph .person:last-child{max-width:none}}
 </style>
-<link rel="stylesheet" href="assets/tc-process.css">
-<script src="assets/tc-process.js" defer></script>
+<link rel="stylesheet" href="assets/tc-process.css?v=20261111b">
+<script src="assets/tc-process.js?v=20261111b" defer></script>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -1066,6 +1066,12 @@ main{background:#fff;margin:12px 12px 0;border-radius:28px;overflow:clip;box-sha
       <p class="lead">На каждом этапе видно, что согласуем с вашей командой и что вы получаете.</p>
     </div>
     <div class="tc-process">
+      <div class="tc-process-tools" hidden>
+        <button class="tc-rotation" type="button" aria-label="Автолистание этапов" aria-pressed="true">
+          <span class="tc-rotation-icon" aria-hidden="true"></span>
+          <span>Автолистание</span>
+        </button>
+      </div>
       <div class="tc-process-tabs" role="tablist" aria-label="Этапы проекта" hidden>
       <button type="button" role="tab" id="tc-step-1" aria-controls="tc-panel-1" aria-selected="false"><span class="tc-number">01</span>Площадка</button>
       <button type="button" role="tab" id="tc-step-2" aria-controls="tc-panel-2" aria-selected="false"><span class="tc-number">02</span>Концепция</button>
@@ -1074,15 +1080,16 @@ main{background:#fff;margin:12px 12px 0;border-radius:28px;overflow:clip;box-sha
       <button type="button" role="tab" id="tc-step-5" aria-controls="tc-panel-5" aria-selected="false"><span class="tc-number">05</span>Монтаж</button>
       <button type="button" role="tab" id="tc-step-6" aria-controls="tc-panel-6" aria-selected="false"><span class="tc-number">06</span>Открытие</button>
       </div>
+    <div class="tc-process-panels">
     <article class="tc-phase" id="tc-panel-1" role="tabpanel" aria-labelledby="tc-step-1" tabindex="0">
       <div class="tc-phase-copy">
         <h3>План помещения и задача ТЦ</h3>
         <p>Смотрим план, площадь и высоту потолков. Обсуждаем, кто приходит в ТЦ, где разместить парк и как гости будут в него попадать.</p>
         <div class="tc-phase-result"><b>Результат этапа</b><span>Требования к площадке и исходные данные для концепции.</span></div>
       </div>
-      <figure class="tc-phase-image">
-        <img src="assets/img/pr-room.jpg" alt="Помещение до начала работ в Орске" loading="lazy" decoding="async">
-        <figcaption>«Комета», Орск · площадка до работ</figcaption>
+      <figure class="tc-phase-image tc-phase-plan">
+        <img src="assets/img/f-plan.jpg" alt="Планировка площадки с игровыми зонами, вид сверху" loading="lazy" decoding="async">
+        <figcaption>Пример планировки площадки</figcaption>
       </figure>
     </article>
     <article class="tc-phase" id="tc-panel-2" role="tabpanel" aria-labelledby="tc-step-2" tabindex="0">
@@ -1102,15 +1109,26 @@ main{background:#fff;margin:12px 12px 0;border-radius:28px;overflow:clip;box-sha
         <p>Согласуем состав оборудования, стоимость, сроки и ответственность сторон. Смета и график привязаны к согласованному проекту.</p>
         <div class="tc-phase-result"><b>Результат этапа</b><span>Договор с зафиксированным составом работ и графиком.</span></div>
       </div>
-      <div class="tc-phase-estimate">
-        <b>Что фиксируем в смете и договоре</b>
-        <ul>
-          <li>Оборудование и комплектация зон</li>
-          <li>Доставка, завоз и монтаж</li>
-          <li>Стоимость и график работ</li>
-          <li>Ответственность сторон и условия гарантии</li>
-        </ul>
-      </div>
+      <figure class="tc-phase-docs">
+        <div class="tc-doc-stack">
+          <div class="tc-document tc-document-cost">
+            <b>Смета</b>
+            <span>Оборудование и работы</span>
+            <i aria-hidden="true"></i><i aria-hidden="true"></i>
+          </div>
+          <div class="tc-document tc-document-plan">
+            <b>График</b>
+            <span>Этапы и сроки</span>
+            <i aria-hidden="true"></i><i aria-hidden="true"></i>
+          </div>
+          <div class="tc-document tc-document-agreement">
+            <b>Договор</b>
+            <span>Состав работ и ответственность</span>
+            <i aria-hidden="true"></i><i aria-hidden="true"></i><i aria-hidden="true"></i>
+          </div>
+        </div>
+        <figcaption>Пример комплекта документов</figcaption>
+      </figure>
     </article>
     <article class="tc-phase" id="tc-panel-4" role="tabpanel" aria-labelledby="tc-step-4" tabindex="0">
       <div class="tc-phase-copy">
@@ -1118,7 +1136,7 @@ main{background:#fff;margin:12px 12px 0;border-radius:28px;overflow:clip;box-sha
         <p>Изготавливаем и комплектуем оборудование. Параллельно передаём требования к помещению, чтобы ТЦ мог подготовить его к завозу и монтажу.</p>
         <div class="tc-phase-result"><b>Результат этапа</b><span>Комплект оборудования и согласованный порядок завоза.</span></div>
       </div>
-      <figure class="tc-phase-image">
+      <figure class="tc-phase-image tc-phase-production">
         <img src="assets/img/tc-production.jpg" alt="Сотрудник швейного цеха UNITRAMP за работой" loading="lazy" decoding="async">
         <figcaption>Швейный цех UNITRAMP · изготовление мягких элементов</figcaption>
       </figure>
@@ -1130,8 +1148,8 @@ main{background:#fff;margin:12px 12px 0;border-radius:28px;overflow:clip;box-sha
         <div class="tc-phase-result"><b>Результат этапа</b><span>Собранное оборудование, готовое к приёмке.</span></div>
       </div>
       <figure class="tc-phase-image">
-        <img src="assets/img/tc-installation.jpg" alt="Монтажники и металлические каркасы на площадке парка" loading="lazy" decoding="async">
-        <figcaption>Монтаж конструкций · «Пружина», Ноябрьск</figcaption>
+        <img src="assets/img/tc-installation-shchuchinsk.webp" alt="Монтажник затягивает крепление опоры каркаса" loading="lazy" decoding="async">
+        <figcaption>Крепление каркаса · Щучинск, Казахстан</figcaption>
       </figure>
     </article>
     <article class="tc-phase" id="tc-panel-6" role="tabpanel" aria-labelledby="tc-step-6" tabindex="0">
@@ -1145,6 +1163,7 @@ main{background:#fff;margin:12px 12px 0;border-radius:28px;overflow:clip;box-sha
         <figcaption>Действующий парк Bezoom, Иркутск</figcaption>
       </figure>
     </article>
+    </div>
     </div>
     <div class="proc-total">
       <p>График зависит от состава парка, поставки и готовности помещения. Обсудим сроки для вашей площадки.</p>
